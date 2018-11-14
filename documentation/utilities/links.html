@@ -12,148 +12,111 @@
   <link rel="shortcut icon" href="../../favicon.ico">
 
   <!-- Google Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
-
-  <!-- CSS Global Compulsory -->
-  <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.css">
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
   <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="../../assets/vendor/hs-megamenu/src/hs.megamenu.css">
-  <link rel="stylesheet" href="../assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
-  <link rel="stylesheet" href="../assets/vendor/prism/prism.css">
+  <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+  <link rel="stylesheet" href="../../documentation/assets/vendor/prism/prism.css">
 
   <!-- CSS Front Template -->
-  <link rel="stylesheet" href="../../assets/css/front.css">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
 
   <!-- CSS Front Doc -->
-  <link rel="stylesheet" href="../assets/css/starter.css">
+  <link rel="stylesheet" href="../../documentation/assets/css/starter.css">
 </head>
-
 <body>
-  <!-- Skippy -->
-  <a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
-    <div class="container">
-      <span class="u-skiplink-text">Skip to main content</span>
-    </div>
-  </a>
-  <!-- End Skippy -->
-
-  <style type="text/css">
-    p {
-      color: #1e2022;
-    }
-  </style>
-
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--sticky-top">
-    <div class="u-header__section bg-dark u-header--white-nav-links">
-      <div class="container-fluid">
+  <header id="header" class="u-header u-header--navbar-bg u-header--bg-transparent-xl u-header--sticky-top-xl u-header--starter">
+    <div class="u-header__section bg-primary">
+      <div id="logoAndNav" class="container-fluid">
         <!-- Nav -->
-        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar">
-          <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="../index.html" aria-label="Front">
-            <img src="../../assets/svg/logos/logo-white.svg" alt="Logo">
-          </a>
-          <!-- End Logo -->
+        <nav class="js-mega-menu navbar navbar-expand-xl u-header__navbar u-header__navbar--no-space">
+          <div class="u-header--starter__logo">
+            <!-- White Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-default u-header__navbar-brand-text-white" href="../../html/home/index.html" aria-label="Front">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                <path fill="#E1E4EA" opacity=".65" d="M23,41.1L23,41.1c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C41,33,32.9,41.1,23,41.1z"/>
+                <path class="fill-white" opacity=".5" d="M28,36L28,36c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3C43,0.1,46,3.1,46,6.7v11.4C46,28,38,36,28,36z"/>
+                <path class="fill-white" opacity=".7" d="M18,46.1L18,46.1c-10,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C35.9,38.1,27.9,46.1,18,46.1z"/>
+                <path class="fill-primary" d="M17.4,34.1V18.4h10.2v2.9h-6.4v3.4H26v2.9h-4.8v6.5H17.4z"/>
+              </svg>
+              <span class="u-header__navbar-brand-text">Front</span>
+            </a>
+            <!-- End White Logo -->
 
-          <!-- Responsive Toggle Button -->
-          <button type="button" class="navbar-toggler btn fd-header-toggle"
-                  aria-label="Toggle navigation"
-                  aria-expanded="false"
-                  aria-controls="navBar"
-                  data-toggle="collapse"
-                  data-target="#navBar">
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
-              <title>Menu</title>
-              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
-            </svg>
-          </button>
-          <!-- End Responsive Toggle Button -->
+            <!-- Default Logo -->
+            <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center u-header__navbar-brand-collapsed" href="../../html/home/index.html" aria-label="Front">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+                <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
+                <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
+                <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
+                <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
+              </svg>
+              <span class="u-header__navbar-brand-text">Front</span>
+            </a>
+            <!-- End Default Logo -->
+
+            <!-- Responsive Toggle Button -->
+            <button type="button" class="navbar-toggler btn u-hamburger"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="navBar"
+                    data-toggle="collapse"
+                    data-target="#navBar">
+              <span id="hamburgerTrigger" class="u-hamburger__box">
+                <span class="u-hamburger__inner"></span>
+              </span>
+            </button>
+            <!-- End Responsive Toggle Button -->
+          </div>
 
           <!-- Navigation -->
-          <div id="navBar" class="collapse navbar-collapse py-0">
-            <ul class="navbar-nav navbar-expand-md w-100 u-header__navbar-nav">
-              <!-- Live Preview -->
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <!-- Search -->
+            <form class="form-inline input-group input-group-sm shadow-sm">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="docsSearch">
+                  <span class="fas fa-search"></span>
+                </span>
+              </div>
+              <input class="js-hs-docs-search form-control" type="text" placeholder="Search..." aria-label="Search..." aria-describedby="docsSearch" data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+            </form>
+            <!-- End Search -->
+
+            <ul class="navbar-nav u-header__navbar-nav">
               <li class="nav-item u-header__nav-item">
                 <a class="nav-link u-header__nav-link" href="../../html/home/index.html">Live Preview</a>
               </li>
-              <!-- End Live Preview -->
-
-              <!-- Starter -->
-              <li class="nav-item u-header__nav-item">
-                <a class="nav-link u-header__nav-link" href="../../starter/index.html">Starter</a>
-              </li>
-              <!-- End Starter -->
-
-              <!-- Contact Us -->
-              <li class="nav-item u-header__nav-item">
-                <a class="nav-link u-header__nav-link" href="mailto:support@htmlstream.com">Contact Us</a>
-              </li>
-              <!-- End Contact Us -->
 
               <!-- Changelog -->
-              <li class="nav-item hs-has-mega-menu d-none d-lg-inline-block u-header__nav-item position-relative ml-lg-auto"
+              <li class="nav-item hs-has-sub-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut"
                   data-position="left">
-                <a id="changelogMenu" class="nav-link u-header__nav-link" href="javascript:;"
-                   aria-haspopup="true"
-                   aria-expanded="false">
-                  v1.3
-                  <span class="fa fa-angle-down u-header__nav-link-icon ml-2"></span>
+                <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
+                  v2.0
                 </a>
 
-                <!-- Submenu -->
-                <ul class="hs-mega-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y" style="min-width: 220px;"
-                    aria-labelledby="changelogMenu">
-                  <li class="dropdown-item px-0">
-                    <a class="nav-link u-list__link px-4" href="../getting-started/changelog.html#version1_3">v1.3</a>
-                    <a class="nav-link u-list__link px-4" href="../getting-started/changelog.html#version1_2">v1.2</a>
-                    <a class="nav-link u-list__link px-4" href="../getting-started/changelog.html#version1_1">v1.1</a>
-                    <a class="nav-link u-list__link px-4" href="../getting-started/changelog.html#initial-release">v1.0</a>
-                  </li>
+                <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_0">v2.0</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_3">v1.3</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_2">v1.2</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_1">v1.1</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#initial-release">v1.0</a></li>
                 </ul>
-                <!-- End Submenu -->
               </li>
               <!-- End Changelog -->
 
-              <!-- Social Icons -->
-              <li class="ml-md-auto ml-lg-0">
-                <ul class="list-inline mb-5 mb-md-0 pt-3 pt-md-0">
-                  <li class="list-inline-item mx-0">
-                    <a class="u-bg-transparent u-icon u-icon-light--air" href="https://www.facebook.com/htmlstream" target="_blank">
-                      <span class="fab fa-facebook-f u-icon__inner"></span>
-                    </a>
-                  </li>
-                  <li class="list-inline-item mx-0">
-                    <a class="u-bg-transparent u-icon u-icon-light--air" href="https://twitter.com/htmlstream" target="_blank">
-                      <span class="fab fa-twitter u-icon__inner"></span>
-                    </a>
-                  </li>
-                  <li class="list-inline-item mx-0">
-                    <a class="u-bg-transparent u-icon u-icon-light--air" href="https://github.com/htmlstream" target="_blank">
-                      <span class="fab fa-github u-icon__inner"></span>
-                    </a>
-                  </li>
-                  <li class="list-inline-item mx-0">
-                    <a class="u-bg-transparent u-icon u-icon-light--air" href="https://dribbble.com/htmlstream" target="_blank">
-                      <span class="fab fa-dribbble u-icon__inner"></span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <!-- End Social Icons -->
-
-              <!-- Button -->
-              <li class="nav-item pl-md-3">
-                <a class="btn btn-white u-btn-white btn-sm transition-3d-hover" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">
-                  Buy Now
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-light transition-3d-hover" href="../../starter/index.html">
+                  Get Started
                 </a>
               </li>
-              <!-- End Button -->
             </ul>
           </div>
           <!-- End Navigation -->
@@ -164,200 +127,208 @@
   </header>
   <!-- ========== END HEADER ========== -->
 
-  <div class="container-fluid">
-    <div class="row flex-xl-nowrap">
-      <!-- ========== LEFT ========== -->
-      <div class="col-12 col-md-3 col-xl-2 fd-sidebar">
-        <!-- Sidebar Search -->
-        <form class="fd-search d-flex align-items-center">
-          <input id="fd-sidebar-navigation__search-autocomplete" class="form-control form-control-sm" type="text" placeholder="Search..." data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+  <!-- ========== LEFT ========== -->
+  <div class="js-scrollbar hs-docs-sidebar">
+    <div class="d-flex justify-content-between py-2 py-xl-0">
+      <!-- Search -->
+      <form class="col form-inline input-group-sm u-form--no-brd">
+        <input class="js-hs-docs-search form-control w-100" type="text" placeholder="Search..." data-url="../assets/include/ajax/autocomplete-data-for-documentation-search.json">
+      </form>
+      <!-- End Search -->
 
-          <!-- Responsive Toggle Button -->
-          <button class="btn btn-link fd-search-docs-toggle d-md-none p-0 ml-3" type="button"
-                  data-toggle="collapse"
-                  data-target="#navside-accordion"
-                  aria-controls="navside-accordion"
-                  aria-expanded="false"
-                  aria-label="Toggle docs navigation">
-            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
-              <title>Menu</title>
-              <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
-            </svg>
-          </button>
-          <!-- End Responsive Toggle Button -->
-        </form>
-        <!-- End Sidebar Search -->
-
-        <!-- Sidebar Nav -->
-        <nav id="navside-accordion" class="fd-navside collapse">
-          <div class="fd-navside__block">
-            <a class="fd-navside__title" data-toggle="collapse" data-target="#getting-started" aria-expanded="true" aria-controls="getting-started" href="javascript:;">Getting started</a>
-
-            <ul id="getting-started" class="fd-navside__links collapse" data-parent="#navside-accordion">
-              <li><a href="../index.html">Introduction</a></li>
-              <li><a href="../getting-started/file-structures.html">File structures</a></li>
-              <li><a href="../getting-started/gulp.html">Gulp</a></li>
-              <li><a href="../getting-started/credits.html">Credits</a></li>
-              <li><a href="../getting-started/update.html">Update</a></li>
-              <li><a href="../getting-started/changelog.html">Changelog</a></li>
-            </ul>
-          </div>
-
-          <div class="fd-navside__block">
-            <a class="fd-navside__title" data-toggle="collapse" data-target="#components" aria-expanded="true" aria-controls="components" href="javascript:;">Components</a>
-
-            <ul id="components" class="fd-navside__links collapse" data-parent="#navside-accordion">
-              <li><a href="../components/typography.html">Typography</a></li>
-              <li><a href="../components/alerts.html">Alerts</a></li>
-              <li><a href="../components/animations.html">Animations</a></li>
-              <li><a href="../components/avatars.html">Avatars</a></li>
-              <li><a href="../components/badge.html">Badge</a></li>
-              <li><a href="../components/bg-video.html">Background Video</a></li>
-              <li><a href="../components/breadcrumb.html">Breadcrumb</a></li>
-              <li><a href="../components/buttons.html">Buttons</a></li>
-              <li><a href="../components/charts.html">Charts</a></li>
-              <li><a href="../components/circles.html">Circles (Pir Chart)</a></li>
-              <li><a href="../components/collapse.html">Collapse</a></li>
-              <li><a href="../components/countdown.html">Countdown</a></li>
-              <li><a href="../components/counters.html">Counters</a></li>
-              <li><a href="../components/cubeportfolio.html">Cubeportfolio</a></li>
-              <li><a href="../components/datatables.html">Datatables</a></li>
-              <li><a href="../components/dividers.html">Dividers</a></li>
-              <li><a href="../components/unfold.html">Unfold (Dropdown and others)</a></li>
-              <li><a href="../components/fancybox.html">Fancybox</a></li>
-              <li><a href="../components/flatpickr.html">Flatpickr</a></li>
-              <li><a href="../components/forms.html">Forms</a></li>
-              <li><a href="../components/input-group.html">Input Groups</a></li>
-              <li><a href="../components/google-map.html">Google Map</a></li>
-              <li><a href="../components/go-to.html">Go to</a></li>
-              <li><a href="../components/headers.html">Headers</a></li>
-              <li><a href="../components/header-mega-menu.html">Header Mega Menu</a></li>
-              <li><a href="../components/header-fullscreen.html">Header Fullscreen</a></li>
-              <li><a href="../components/header-searches.html">Header Searches</a></li>
-              <li><a href="../components/header-shopping-carts.html">Header Shopping Carts</a></li>
-              <li><a href="../components/icons.html">Icons</a></li>
-              <li><a href="../components/labels.html">Label</a></li>
-              <li><a href="../components/list.html">List</a></li>
-              <li><a href="../components/malihu-scrollbar.html">Malihu Scrollbar</a></li>
-              <li><a href="../components/modal-window.html">Modal Window</a></li>
-              <li><a href="../components/pagination.html">Pagination</a></li>
-              <li><a href="../components/parallax.html">Parallax</a></li>
-              <li><a href="../components/progress.html">Progress</a></li>
-              <li><a href="../components/scroll-effect.html">Scroll Effect</a></li>
-              <li><a href="../components/scroll-nav.html">Scroll Nav</a></li>
-              <li><a href="../components/select.html">Select</a></li>
-              <li><a href="../components/show-animation.html">Show Animation</a></li>
-              <li><a href="../components/skippy.html">Skippy</a></li>
-              <li><a href="../components/slick-carousel.html">Slick Carousel</a></li>
-              <li><a href="../components/social-apis.html">Social APIs</a></li>
-              <li><a href="../components/sticky-block.html">Sticky Block</a></li>
-              <li><a href="../components/sticky-footer.html">Sticky Footer</a></li>
-              <li><a href="../components/summernote.html">Summernote WYSIWYG Editor</a></li>
-              <li><a href="../components/tables.html">Tables</a></li>
-              <li><a href="../components/tabs.html">Tabs</a></li>
-              <li><a href="../components/tagsinput.html">Tagsinput</a></li>
-              <li><a href="../components/toggle-state.html">Toggle state</a></li>
-              <li><a href="../components/typedjs.html">Typedjs</a></li>
-              <li><a href="../components/validation.html">Validation</a></li>
-              <li><a href="../components/video-player.html">Video Player</a></li>
-            </ul>
-          </div>
-
-          <div class="fd-navside__block">
-            <a class="fd-navside__title collapsed" data-toggle="collapse" data-target="#utilities" aria-expanded="true" aria-controls="utilities" href="javascript:;">Utilities</a>
-
-            <ul id="utilities" class="fd-navside__links collapse show" data-parent="#navside-accordion">
-              <li><a href="borders.html">Borders</a></li>
-              <li><a href="colors.html">Colors</a></li>
-              <li><a href="content-alignments.html">Content Alignments (with Position)</a></li>
-              <li><a class="active" href="links.html">Links</a></li>
-              <li><a href="position.html">Position</a></li>
-              <li><a href="sizing.html">Sizing</a></li>
-              <li><a href="shadows.html">Shadows</a></li>
-              <li><a href="spacing.html">Spacing</a></li>
-              <li><a href="transitions.html">Transitions</a></li>
-              <li><a href="others.html">Others</a></li>
-            </ul>
-          </div>
-
-          <div class="fd-navside__block">
-            <a class="fd-navside__title" data-toggle="collapse" data-target="#customization" aria-expanded="true" aria-controls="customization" href="javascript:;">Customization</a>
-
-            <ul id="customization" class="fd-navside__links collapse" data-parent="#navside-accordion">
-              <li><a href="../customization/css.html">CSS</a></li>
-              <li><a href="../customization/sass.html">SASS</a></li>
-              <li><a href="../customization/bootstrap-sass.html">Bootstrap SASS</a></li>
-              <li><a href="../customization/js.html">JavaScript</a></li>
-              <li><a href="../customization/typography.html">Typography</a></li>
-              <li><a href="../customization/colors.html">Colors</a></li>
-            </ul>
-          </div>
-        </nav>
-        <!-- End Sidebar Nav -->
-      </div>
-      <!-- ========== END LEFT ========== -->
-
-      <!-- ========== RIGHT ========== -->
-      <div class="d-none d-xl-block col-xl-2 fd-toc">
-      </div>
-      <!-- ========== END RIGHT ========== -->
-
-      <!-- ========== MAIN ========== -->
-      <main class="col-12 col-md-9 col-xl-8 pl-md-5 fd-content u-space-3" role="main">
-        <div class="mb-9">
-          <h1 class="font-weight-bold">Links</h1>
-          <p class="lead font-weight-normal">Examples for common link utilities.</p>
-        </div>
-
-        <div id="color" class="mb-9">
-          <h2 class="h4">Links <a class="anchorjs-link" href="#color" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-
-          <div class="fd-example">
-            <p>
-              <a class="u-link-muted" href="#">.u-link-muted</a>
-            </p>
-            <p class="bg-dark p-2">
-              <a class="u-link-light" href="#">.u-link-light</a>
-            </p>
-            <p class="bg-dark p-2">
-              <a class="u-link-white" href="#">.u-link-white</a>
-            </p>
-            <p>
-              <a class="u-link" href="#">
-                .u-link__icon
-                <span class="u-link__icon ml-1">
-                  <span class="u-link__icon-inner">&#43;</span>
-                </span>
-              </a>
-            </p>
-          </div>
-
-          <pre>
-            <code class="language-markup" data-lang="html">
-              &lt;p&gt;
-                &lt;a class="u-link-muted" href="#"&gt;.u-link-muted&lt;/a&gt;
-              &lt;/p&gt;
-              &lt;p class="bg-dark p-2"&gt;
-                &lt;a class="u-link-light" href="#"&gt;.u-link-light&lt;/a&gt;
-              &lt;/p&gt;
-              &lt;p class="bg-dark p-2"&gt;
-                &lt;a class="u-link-white" href="#"&gt;.u-link-white&lt;/a&gt;
-              &lt;/p&gt;
-              &lt;p&gt;
-                &lt;a class="u-link" href="#"&gt;
-                  .u-link__icon
-                  &lt;span class="u-link__icon ml-1"&gt;
-                    &lt;span class="u-link__icon-inner"&gt;&#43;&lt;/span&gt;
-                  &lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/p&gt;
-            </code>
-          </pre>
-        </div>
-      </main>
-      <!-- ========== END MAIN ========== -->
+      <!-- Responsive Toggle Button -->
+      <button class="btn btn-link hs-docs-sidebar__toggle" type="button"
+              data-toggle="collapse"
+              data-target="#navside-accordion"
+              aria-controls="navside-accordion"
+              aria-expanded="false"
+              aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30 30" width="30" height="30" focusable="false">
+          <title>Menu</title>
+          <path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/>
+        </svg>
+      </button>
+      <!-- End Responsive Toggle Button -->
     </div>
+
+    <!-- Sidebar Nav -->
+    <nav id="navside-accordion" class="hs-docs-navside collapse">
+      <div id="components" class="collapse show" data-parent="#navside-accordion">
+        <span class="hs-docs-navside__title">Getting started</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../index.html">Introduction</a></li>
+          <li><a href="../getting-started/file-structures.html">File structures</a></li>
+          <li><a href="../getting-started/approach.html">Approach</a></li>
+          <li><a href="../getting-started/gulp.html">Gulp</a></li>
+          <li><a href="../getting-started/customization.html">Customization</a></li>
+          <li><a href="../getting-started/credits.html">Credits</a></li>
+          <li><a href="../getting-started/changelog.html">Changelog</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Components</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../components/typography.html">Typography</a></li>
+          <li><a href="../components/alerts.html">Alerts</a></li>
+          <li><a href="../components/avatars.html">Avatars</a></li>
+          <li><a href="../components/badge.html">Badge</a></li>
+          <li><a href="../components/breadcrumb.html">Breadcrumb</a></li>
+          <li><a href="../components/buttons.html">Buttons</a></li>
+          <li><a href="../components/cards.html">Cards</a></li>
+          <li><a href="../components/collapse.html">Collapse</a></li>
+          <li><a href="../components/dividers.html">Dividers</a></li>
+          <li><a href="../components/forms.html">Forms</a></li>
+          <li><a href="../components/icons.html">Icons</a></li>
+          <li><a href="../components/label.html">Label</a></li>
+          <li><a href="../components/list-group.html">List group</a></li>
+          <li><a href="../components/pagination.html">Pagination</a></li>
+          <li><a href="../components/progress.html">Progress</a></li>
+          <li><a href="../components/sticky-footer.html">Sticky footer</a></li>
+          <li><a href="../components/tables.html">Tables</a></li>
+          <li><a href="../components/tabs.html">Tabs</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Plugins</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="../plugins/animations.html">Animations</a></li>
+          <li><a href="../plugins/background-video.html">Background video</a></li>
+          <li><a href="../plugins/bootstrap-select.html">Bootstrap select</a></li>
+          <li><a href="../plugins/bootstrap-tagsinput.html">Bootstrap tagsinput</a></li>
+          <li><a href="../plugins/charts.html">Charts</a></li>
+          <li><a href="../plugins/circles.html">Circles (Pie chart)</a></li>
+          <li><a href="../plugins/clipboard.html">Clipboard</a></li>
+          <li><a href="../plugins/countdown.html">Countdown</a></li>
+          <li><a href="../plugins/counters.html">Counters</a></li>
+          <li><a href="../plugins/cubeportfolio.html">Cubeportfolio</a></li>
+          <li><a href="../plugins/datatables.html">Datatables</a></li>
+          <li><a href="../plugins/unfold.html">Unfold (Dropdown and others)</a></li>
+          <li><a href="../plugins/fancybox.html">Fancybox</a></li>
+          <li><a href="../plugins/flatpickr.html">Flatpickr</a></li>
+          <li><a href="../plugins/google-map.html">Google Map</a></li>
+          <li><a href="../plugins/go-to.html">Go-to</a></li>
+          <li><a href="../plugins/headers.html">Headers</a></li>
+          <li><a href="../plugins/header-mega-menu.html">Header mega menu</a></li>
+          <li><a href="../plugins/header-fullscreen.html">Header fullscreen</a></li>
+          <li><a href="../plugins/header-searches.html">Header searches</a></li>
+          <li><a href="../plugins/icon-libraries.html">Icon libraries</a></li>
+          <li><a href="../plugins/malihu-scrollbar.html">Malihu scrollbar</a></li>
+          <li><a href="../plugins/modal-window.html">Modal window</a></li>
+          <li><a href="../plugins/parallax.html">Parallax</a></li>
+          <li><a href="../plugins/range-slider.html">Range slider</a></li>
+          <li><a href="../plugins/scroll-effect.html">Scroll effect</a></li>
+          <li><a href="../plugins/scroll-nav.html">Scroll nav</a></li>
+          <li><a href="../plugins/show-animation.html">Show animation</a></li>
+          <li><a href="../plugins/slick-carousel.html">Slick carousel</a></li>
+          <li><a href="../plugins/social-apis.html">Social APIs</a></li>
+          <li><a href="../plugins/step-form.html">Step form (Wizards)</a></li>
+          <li><a href="../plugins/sticky-block.html">Sticky block</a></li>
+          <li><a href="../plugins/svg.html">SVG</a></li>
+          <li><a href="../plugins/summernote.html">Summernote WYSIWYG</a></li>
+          <li><a href="../plugins/toggle-state.html">Toggle state</a></li>
+          <li><a href="../plugins/typedjs.html">Typedjs</a></li>
+          <li><a href="../plugins/validation.html">Validation</a></li>
+          <li><a href="../plugins/video-player.html">Video player</a></li>
+        </ul>
+
+        <span class="hs-docs-navside__title">Utilities</span>
+        <ul class="hs-docs-navside__links">
+          <li><a href="borders.html">Borders</a></li>
+          <li><a href="colors.html">Colors</a></li>
+          <li><a href="content-alignments.html">Content alignments (with position)</a></li>
+          <li><a class="active" href="links.html">Links</a></li>
+          <li><a href="position.html">Position</a></li>
+          <li><a href="shadows.html">Shadows</a></li>
+          <li><a href="sizing.html">Sizing</a></li>
+          <li><a href="spacing.html">Spacing</a></li>
+          <li><a href="transitions.html">Transitions</a></li>
+          <li><a href="others.html">Others</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End Sidebar Nav -->
   </div>
+  <!-- ========== END LEFT ========== -->
+
+  <!-- ========== MAIN ========== -->
+  <main class="hs-docs-content space-2 space-top-xl-3" role="main">
+    <div class="row">
+      <!-- Section Nav -->
+      <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block">
+      </div>
+      <!-- End Section Nav -->
+
+      <div class="col-xl-10 order-xl-1">
+        <div class="border-bottom pb-6 mb-6">
+          <h1 class="font-weight-semi-bold">Links</h1>
+          <p class="text-dark font-weight-normal mb-0" style="font-size: 1.125rem;">Examples for common link utilities.</p>
+        </div>
+
+        <div id="links" class="mb-9">
+          <h2 class="h4">Links <a class="anchorjs-link" href="#links" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-1" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-1" data-toggle="pill" href="#pills-result-1" role="tab" aria-controls="pills-result-1" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-1" data-toggle="pill" href="#pills-html-1" role="tab" aria-controls="pills-html-1" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-1">
+              <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                <p>
+                  <a class="link-muted" href="#">.link-muted</a>
+                </p>
+                <p class="bg-dark p-2">
+                  <a class="text-light" href="#">.text-light</a>
+                </p>
+                <p class="bg-dark p-2">
+                  <a class="link-white" href="#">.link-white</a>
+                </p>
+                <p>
+                  <a class="link" href="#">
+                    .link__icon
+                    <span class="link__icon ml-1">
+                      <span class="link__icon-inner">+</span>
+                    </span>
+                  </a>
+                </p>
+              </div>
+              <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;p&gt;
+                      &lt;a class="link-muted" href="#"&gt;.link-muted&lt;/a&gt;
+                    &lt;/p&gt;
+                    &lt;p class="bg-dark p-2"&gt;
+                      &lt;a class="text-light" href="#"&gt;.text-light&lt;/a&gt;
+                    &lt;/p&gt;
+                    &lt;p class="bg-dark p-2"&gt;
+                      &lt;a class="link-white" href="#"&gt;.link-white&lt;/a&gt;
+                    &lt;/p&gt;
+                    &lt;p&gt;
+                      &lt;a class="link" href="#"&gt;
+                        .link__icon
+                        &lt;span class="link__icon ml-1"&gt;
+                          &lt;span class="link__icon-inner"&gt;+&lt;/span&gt;
+                        &lt;/span&gt;
+                      &lt;/a&gt;
+                    &lt;/p&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- ========== END MAIN ========== -->
 
   <!-- Go to Top -->
   <a class="js-go-to u-go-to" href="javascript:;"
@@ -367,7 +338,7 @@
     data-compensation="#header"
     data-show-effect="slideInUp"
     data-hide-effect="slideOutDown">
-    <span class="fa fa-arrow-up u-go-to__inner"></span>
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
   </a>
   <!-- End Go to Top -->
 
@@ -379,18 +350,20 @@
 
   <!-- JS Implementing Plugins -->
   <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
-  <script src="../assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
-  <script src="../assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
-  <script src="../assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
-  <script src="../assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
-  <script src="../assets/vendor/prism/prism.js"></script>
+  <script src="../../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
+  <script src="../../documentation/assets/vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+  <script src="../../documentation/assets/vendor/prism/prism.js"></script>
 
   <!-- JS Front -->
   <script src="../../assets/js/hs.core.js"></script>
   <script src="../../assets/js/components/hs.header.js"></script>
-  <script src="../../assets/js/components/hs.unfold.js"></script>
   <script src="../../assets/js/components/hs.go-to.js"></script>
-  <script src="../assets/js/components/hs.autocomplete-local-search.js"></script>
+  <script src="../../assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="../../assets/js/components/hs.scroll-nav.js"></script>
+  <script src="../../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
 
   <!-- JS Plugins Init. -->
   <script>
@@ -400,6 +373,11 @@
 
       // initialization of go to
       $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of malihu scrollbar
+      var $scrollbar = $('.js-scrollbar');
+      $.HSCore.components.HSMalihuScrollBar.init($scrollbar);
+      $($scrollbar).mCustomScrollbar('scrollTo', '#components li a.active');
     });
 
     $(window).on('load', function () {
@@ -407,12 +385,20 @@
       $('.js-mega-menu').HSMegaMenu({
         event: 'hover',
         pageContainer: $('.container'),
-        breakpoint: 767,
+        breakpoint: 991.98,
         hideTimeOut: 0
       });
 
       // initialization of autocomplet
-      $.HSCore.components.HSLocalSearchAutocomplete.init('#fd-sidebar-navigation__search-autocomplete');
+      $.HSCore.components.HSLocalSearchAutocomplete.init('.js-hs-docs-search');
+
+      // initialization of HSScrollNav component
+      var offsetTop = $('#logoAndNav').outerHeight();
+
+      $.HSCore.components.HSScrollNav.init($('.js-scroll-nav'), {
+        duration: 700,
+        customOffsetTop: 77
+      });
     });
   </script>
 </body>

@@ -12,36 +12,30 @@
   <link rel="shortcut icon" href="../../favicon.ico">
 
   <!-- Google Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
-
-  <!-- CSS Global Compulsory -->
-  <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.css">
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
 
   <!-- CSS Front Template -->
-  <link rel="stylesheet" href="../../assets/css/front.css">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
 </head>
-
-<body>
-  <!-- Skippy -->
-  <a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
-    <div class="container">
-      <span class="u-skiplink-text">Skip to main content</span>
-    </div>
-  </a>
-  <!-- End Skippy -->
-
+<body class="bg-img-hero-fixed" style="background-image: url(../../assets/svg/illustrations/error-404.svg);">
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--bg-transparent u-header--abs-top mt-3">
+  <header id="header" class="u-header u-header--bg-transparent u-header--abs-top">
     <div class="u-header__section">
-      <div class="container">
+      <div id="logoAndNav" class="container">
         <!-- Nav -->
-        <nav class="navbar navbar-expand u-header__navbar py-2">
+        <nav class="navbar navbar-expand u-header__navbar">
           <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand" href="../home/index.html" aria-label="Front">
-            <img src="../../assets/svg/logos/logo.svg" alt="Logo">
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="../home/index.html" aria-label="Front">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+              <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
+              <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
+              <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
+              <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
+            </svg>
+            <span class="u-header__navbar-brand-text">Front</span>
           </a>
           <!-- End Logo -->
         </nav>
@@ -54,18 +48,18 @@
   <!-- ========== MAIN ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
-    <div class="d-flex align-items-center u-bg-img-hero u-space-4 min-height-100vh--lg" style="background-image: url(../../assets/svg/flat-icons/error-404-flat-concept-illustration.svg);">
-      <div class="container">
+    <div class="d-lg-flex">
+      <div class="container d-lg-flex align-items-lg-center min-height-lg-100vh space-4">
         <div class="w-lg-60 w-xl-50">
           <!-- Title -->
           <div class="mb-5">
-            <h1 class="text-primary font-weight-normal">Page not <span class="font-weight-bold">found</span></h1>
+            <h1 class="text-primary font-weight-normal">Page not <span class="font-weight-semi-bold">found</span></h1>
             <p class="mb-0">Oops! Looks like you followed a bad link.</p>
             <p>If you think this is a problem with us, please <a href="#">tell us</a>.</p>
           </div>
           <!-- End Title -->
 
-          <a class="btn btn-primary u-btn-primary u-btn-wide transition-3d-hover" href="../home/index.html">Go Back</a>
+          <a class="btn btn-primary btn-wide transition-3d-hover" href="../home/index.html">Go Back</a>
         </div>
       </div>
     </div>
@@ -74,9 +68,9 @@
   <!-- ========== END MAIN ========== -->
 
   <!-- ========== FOOTER ========== -->
-  <footer class="position-absolute-bottom-0--lg">
+  <footer class="position-md-absolute right-md-0 bottom-md-0 left-md-0">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-center u-space-1">
+      <div class="d-flex justify-content-between align-items-center space-1">
         <!-- Copyright -->
         <p class="small text-muted mb-0">&copy; Front. 2018 Htmlstream.</p>
         <!-- End Copyright -->
@@ -84,23 +78,23 @@
         <!-- Social Networks -->
         <ul class="list-inline mb-0">
           <li class="list-inline-item">
-            <a class="u-bg-transparent u-icon u-icon-secondary--air" href="#">
-              <span class="fab fa-facebook-f u-icon__inner"></span>
+            <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="#">
+              <span class="fab fa-facebook-f btn-icon__inner"></span>
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="u-bg-transparent u-icon u-icon-secondary--air" href="#">
-              <span class="fab fa-google u-icon__inner"></span>
+            <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="#">
+              <span class="fab fa-google btn-icon__inner"></span>
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="u-bg-transparent u-icon u-icon-secondary--air" href="#">
-              <span class="fab fa-twitter u-icon__inner"></span>
+            <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="#">
+              <span class="fab fa-twitter btn-icon__inner"></span>
             </a>
           </li>
           <li class="list-inline-item">
-            <a class="u-bg-transparent u-icon u-icon-secondary--air" href="#">
-              <span class="fab fa-github u-icon__inner"></span>
+            <a class="btn btn-sm btn-icon btn-soft-secondary btn-bg-transparent" href="#">
+              <span class="fab fa-github btn-icon__inner"></span>
             </a>
           </li>
         </ul>

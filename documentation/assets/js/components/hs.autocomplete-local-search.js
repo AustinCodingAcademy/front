@@ -14,8 +14,11 @@
       this.widget().menu('option', 'items', '> :not(.ui-autocomplete-category)');
     },
     _renderItem: function (ul, item) {
+      var category = item.category ? '<span class="hd-doc-search__category">' + item.category + '</span>' : '',
+        innerText = category + '<span class="hd-doc-search__label">' + item.label + '</span>';
+
       if (item.url) {
-        return $('<li><a href="' + window.location.protocol + '//' + window.location.host + '/' + window.location.pathname.split('/')[1] + '/' + item.url + '">' + item.label + '<span class="fd-search__cat">· ' + item.category + '</span></a></li>')
+        return $('<li><a href="' + window.location.protocol + '//' + window.location.host + '/' + window.location.pathname.split('/')[1] + '/' + item.url + '">' + innerText + '</a></li>')
           .appendTo(ul);
       } else {
         return $('<li>' + item.label + '</li>')
@@ -79,9 +82,10 @@
 
         $.getJSON(dataUrl, function (data) {
           $this.localcatcomplete({
+            appendTo: $this.parent(),
             delay: 0,
             source: data,
-            select: function( event, ui ) {
+            select: function (event, ui) {
               window.location = window.location.protocol + '//' + window.location.host + '/' + window.location.pathname.split('/')[1] + '/' + ui.item.url;
             }
           });

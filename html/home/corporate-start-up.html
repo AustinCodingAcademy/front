@@ -12,10 +12,7 @@
   <link rel="shortcut icon" href="../../favicon.ico">
 
   <!-- Google Fonts -->
-  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600" rel="stylesheet">
-
-  <!-- CSS Global Compulsory -->
-  <link rel="stylesheet" href="../../assets/vendor/bootstrap/css/bootstrap.css">
+  <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 
   <!-- CSS Implementing Plugins -->
   <link rel="stylesheet" href="../../assets/vendor/font-awesome/css/fontawesome-all.min.css">
@@ -25,27 +22,18 @@
   <link rel="stylesheet" href="../../assets/vendor/cubeportfolio/css/cubeportfolio.min.css">
 
   <!-- CSS Front Template -->
-  <link rel="stylesheet" href="../../assets/css/front.css">
+  <link rel="stylesheet" href="../../assets/css/theme.css">
 </head>
-
 <body>
-  <!-- Skippy -->
-  <a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
-    <div class="container">
-      <span class="u-skiplink-text">Skip to main content</span>
-    </div>
-  </a>
-  <!-- End Skippy -->
-
   <!-- ========== HEADER ========== -->
-  <header id="header" class="u-header u-header--bg-transparent u-header--abs-top">
+  <header id="header" class="u-header u-header--abs-top-md u-header--bg-transparent">
     <div class="u-header__section">
       <!-- Topbar -->
       <div class="container u-header__hide-content pt-2">
-        <div class="d-flex align-items-center mb-0">
+        <div class="d-flex align-items-center">
           <!-- Language -->
           <div class="position-relative">
-            <a id="languageDropdownInvoker" class="d-flex align-items-center u-unfold-wrapper" href="javascript:;" role="button"
+            <a id="languageDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
                aria-controls="languageDropdown"
                aria-haspopup="true"
                aria-expanded="false"
@@ -57,16 +45,15 @@
                data-unfold-hide-on-scroll="true"
                data-unfold-animation-in="slideInUp"
                data-unfold-animation-out="fadeOut">
-               <img class="u-unfold__icon" src="../../assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="SVG">
+               <img class="dropdown-item-icon" src="../../assets/vendor/flag-icon-css/flags/4x3/us.svg" alt="SVG">
               <span class="d-inline-block d-sm-none">US</span>
               <span class="d-none d-sm-inline-block">United States</span>
-              <span class="fa fa-angle-down u-unfold__icon-pointer"></span>
             </a>
 
-            <div id="languageDropdown" class="u-unfold mt-2" aria-labelledby="languageDropdownInvoker">
-              <a class="active u-list__link" href="#">English</a>
-              <a class="u-list__link" href="#">Deutsch</a>
-              <a class="u-list__link" href="#">Español‎</a>
+            <div id="languageDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="languageDropdownInvoker">
+              <a class="dropdown-item active" href="#">English</a>
+              <a class="dropdown-item" href="#">Deutsch</a>
+              <a class="dropdown-item" href="#">Español‎</a>
             </div>
           </div>
           <!-- End Language -->
@@ -74,7 +61,7 @@
           <div class="ml-auto">
             <!-- Jump To -->
             <div class="d-inline-block d-sm-none position-relative mr-2">
-              <a id="jumpToDropdownInvoker" class="d-flex align-items-center u-unfold-wrapper" href="javascript:;" role="button"
+              <a id="jumpToDropdownInvoker" class="dropdown-nav-link dropdown-toggle d-flex align-items-center" href="javascript:;" role="button"
                  aria-controls="jumpToDropdown"
                  aria-haspopup="true"
                  aria-expanded="false"
@@ -87,12 +74,11 @@
                  data-unfold-animation-in="slideInUp"
                  data-unfold-animation-out="fadeOut">
                 Jump to
-                <span class="fa fa-angle-down u-unfold__icon-pointer"></span>
               </a>
 
-              <div id="jumpToDropdown" class="u-unfold right-0 mt-2" aria-labelledby="jumpToDropdownInvoker">
-                <a class="u-list__link" href="../pages/help.html">Help</a>
-                <a class="u-list__link" href="../pages/contacts-agency.html">Contacts</a>
+              <div id="jumpToDropdown" class="dropdown-menu dropdown-unfold" aria-labelledby="jumpToDropdownInvoker">
+                <a class="dropdown-item" href="../pages/help.html">Help</a>
+                <a class="dropdown-item" href="../pages/contacts-agency.html">Contacts</a>
               </div>
             </div>
             <!-- End Jump To -->
@@ -101,10 +87,10 @@
             <div class="d-none d-sm-inline-block ml-sm-auto">
               <ul class="list-inline mb-0">
                 <li class="list-inline-item mr-0">
-                  <a class="u-header__topbar-nav-link" href="../pages/help.html">Help</a>
+                  <a class="u-header__navbar-link" href="../pages/help.html">Help</a>
                 </li>
                 <li class="list-inline-item mr-0">
-                  <a class="u-header__topbar-nav-link" href="../pages/contacts-agency.html">Contacts</a>
+                  <a class="u-header__navbar-link pr-0" href="../pages/contacts-agency.html">Contacts</a>
                 </li>
               </ul>
             </div>
@@ -116,10 +102,16 @@
 
       <div id="logoAndNav" class="container">
         <!-- Nav -->
-        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar">
+        <nav class="js-mega-menu navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
           <!-- Logo -->
-          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-top-space" href="index.html" aria-label="Front">
-            <img src="../../assets/svg/logos/logo.svg" alt="Logo">
+          <a class="navbar-brand u-header__navbar-brand u-header__navbar-brand-center" href="index.html" aria-label="Front">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46px" height="46px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+              <path fill="#3F7DE0" opacity=".65" d="M23,41L23,41c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18h11.3C38,5,41,8,41,11.7V23C41,32.9,32.9,41,23,41z"/>
+              <path class="fill-info" opacity=".5" d="M28,35.9L28,35.9c-9.9,0-18-8-18-18v0c0-9.9,8-18,18-18l11.3,0C43,0,46,3,46,6.6V18C46,27.9,38,35.9,28,35.9z"/>
+              <path class="fill-primary" opacity=".7" d="M18,46L18,46C8,46,0,38,0,28v0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6V28C35.9,38,27.9,46,18,46z"/>
+              <path class="fill-white" d="M17.4,34V18.3h10.2v2.9h-6.4v3.4h4.8v2.9h-4.8V34H17.4z"/>
+            </svg>
+            <span class="u-header__navbar-brand-text">Front</span>
           </a>
           <!-- End Logo -->
 
@@ -137,92 +129,72 @@
           <!-- End Responsive Toggle Button -->
 
           <!-- Navigation -->
-          <div id="navBar" class="collapse navbar-collapse py-0">
-            <ul class="navbar-nav u-header__navbar-nav ml-lg-auto">
+          <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+            <ul class="navbar-nav u-header__navbar-nav">
               <!-- Home -->
               <li class="nav-item hs-has-mega-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut"
                   data-position="left">
-                <a id="homeMegaMenu" class="nav-link u-header__nav-link pl-0" href="javascript:;"
-                   aria-haspopup="true"
-                   aria-expanded="false">
-                  Home
-                  <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-                </a>
+                <a id="homeMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Home</a>
 
                 <!-- Home - Mega Menu -->
-                <div class="hs-mega-menu u-header__sub-menu w-100 u-header__mega-menu-wrapper-v2" aria-labelledby="homeMegaMenu">
-                  <div class="row p-0 mr-0">
-                    <div class="col-lg-6 pr-0">
+                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="homeMegaMenu">
+                  <div class="row no-gutters">
+                    <div class="col-lg-6">
                       <!-- Banner Image -->
-                      <div class="d-none d-lg-block u-header__banner-v1" data-bg-img-src="../../assets/img/750x750/img1.jpg">
-                        <div class="w-100 text-center u-header__banner-v1-content u-content-centered-y p-4">
+                      <div class="u-header__banner" style="background-image: url(../../assets/img/750x750/img1.jpg);">
+                        <div class="u-header__banner-content">
                           <div class="mb-4">
-                            <strong class="d-block u-header__banner-v1-title mb-2">Branding Works</strong>
-                            <span class="u-header__banner-v1-text">Experience a level of our quality in both design &amp; customization works.</span>
+                            <span class="u-header__banner-title">Branding Works</span>
+                            <p class="u-header__banner-text">Experience a level of our quality in both design &amp; customization works.</p>
                           </div>
-                          <a class="btn btn-primary u-btn-primary btn-sm transition-3d-hover" href="#">Learn More <span class="fa fa-angle-right ml-2"></span></a>
+                          <a class="btn btn-primary btn-sm transition-3d-hover" href="#">Learn More <span class="fas fa-angle-right ml-2"></span></a>
                         </div>
                       </div>
                       <!-- End Banner Image -->
                     </div>
 
-                    <div class="col-lg-6 u-header__mega-menu-wrapper-v3">
-                      <div class="row u-header__mega-menu-wrapper-v1">
-                        <div class="col-sm-6">
-                          <strong class="d-block mb-2">Classic</strong>
-
-                          <!-- Links -->
-                          <ul class="list-unstyled mb-4">
-                            <li><a class="nav-link u-list__link py-2 px-0" href="index.html">Classic Agency</a></li>
-                            <li><a class="nav-link u-list__link py-2 px-0" href="classic-crypto.html">Classic Crypto</a></li>
-                            <li><a class="nav-link u-list__link py-2 px-0" href="classic-business.html">Classic Business</a></li>
-                            <li><a class="nav-link u-list__link py-2 px-0" href="classic-marketing.html">Classic Marketing</a></li>
-                            <li><a class="nav-link u-list__link py-2 px-0" href="classic-consulting.html">Classic Consulting</a></li>
+                    <div class="col-lg-6">
+                      <div class="row u-header__mega-menu-wrapper">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                          <span class="u-header__sub-menu-title">Classic</span>
+                          <ul class="u-header__sub-menu-nav-group mb-3">
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="index.html">Classic Agency</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="classic-business.html">Classic Business</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="classic-marketing.html">Classic Marketing</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="classic-consulting.html">Classic Consulting</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="classic-hosting.html">Classic Hosting <span class="badge badge-success badge-primary ml-2">New</span></a></li>
                           </ul>
-                          <!-- End Links -->
 
-                          <strong class="d-block mb-2">Corporate</strong>
-
-                          <!-- Links -->
-                          <ul class="list-unstyled mb-4">
-                            <li><a class="nav-link u-list__link py-2 px-0" href="corporate-agency.html">Corporate Agency</a></li>
-                            <li><a class="nav-link u-list__link py-2 px-0" href="corporate-start-up.html">Corporate Start-Up</a></li>
-                            <li><a class="nav-link u-list__link py-2 px-0" href="corporate-business.html">Corporate Business <span class="badge badge-success ml-1">New</span></a></li>
+                          <span class="u-header__sub-menu-title">Corporate</span>
+                          <ul class="u-header__sub-menu-nav-group">
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="corporate-agency.html">Corporate Agency</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="corporate-start-up.html">Corporate Start-Up</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="corporate-business.html">Corporate Business</a></li>
                           </ul>
-                          <!-- End Links -->
                         </div>
 
                         <div class="col-sm-6">
-                          <strong class="d-block mb-2">Landing</strong>
-
-                          <!-- Links -->
-                          <ul class="list-unstyled mb-4">
-                            <li><a class="nav-link u-list__link py-2 px-0" href="landing-house.html">Landing House <span class="badge badge-success ml-1">New</span></a></li>
-                            <li><a class="nav-link u-list__link py-2 px-0" href="landing-job.html">Landing Job <span class="badge badge-success ml-1">New</span></a></li>
+                          <span class="u-header__sub-menu-title">Onepages</span>
+                          <ul class="u-header__sub-menu-nav-group mb-3">
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="onepage-creative.html">Onepage Creative <span class="badge badge-success badge-primary ml-1">New</span></a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="onepage-saas.html">Onepage SaaS <span class="badge badge-success badge-primary ml-1">New</span></a></li>
                           </ul>
-                          <!-- End Links -->
 
-                          <strong class="d-block mb-2">Blog</strong>
-
-                          <!-- Links -->
-                          <ul class="list-unstyled mb-4">
-                            <li><a class="nav-link u-list__link py-2 px-0" href="blog-agency.html">Blog Agency</a></li>
-                            <li><a class="nav-link u-list__link py-2 px-0" href="blog-start-up.html">Blog Start-Up</a></li>
-                            <li><a class="nav-link u-list__link py-2 px-0" href="blog-business.html">Blog Business</a></li>
+                          <span class="u-header__sub-menu-title">Blog</span>
+                          <ul class="u-header__sub-menu-nav-group mb-3">
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="blog-agency.html">Blog Agency</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="blog-start-up.html">Blog Start-Up</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="blog-business.html">Blog Business</a></li>
                           </ul>
-                          <!-- End Links -->
 
-                          <strong class="d-block mb-2">Portfolio</strong>
-
-                          <!-- Links -->
-                          <ul class="list-unstyled u-list">
-                            <li><a class="nav-link u-list__link py-2 px-0" href="portfolio-agency.html">Portfolio Agency</a></li>
-                            <li><a class="nav-link u-list__link py-2 px-0" href="portfolio-profile.html">Portfolio Profile</a></li>
+                          <span class="u-header__sub-menu-title">Portfolio</span>
+                          <ul class="u-header__sub-menu-nav-group">
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="portfolio-agency.html">Portfolio Agency</a></li>
+                            <li><a class="nav-link u-header__sub-menu-nav-link" href="portfolio-profile.html">Portfolio Profile</a></li>
                           </ul>
-                          <!-- End Links -->
                         </div>
                       </div>
                     </div>
@@ -237,258 +209,136 @@
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut">
-                <a id="pagesMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="pagesSubMenu">
-                  Pages
-                  <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-                </a>
+                <a id="pagesMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="pagesSubMenu">Pages</a>
 
                 <!-- Pages - Submenu -->
-                <ul id="pagesSubMenu" class="list-inline hs-sub-menu u-header__sub-menu py-3 mb-0" style="min-width: 220px;"
-                    aria-labelledby="pagesMegaMenu">
+                <ul id="pagesSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="pagesMegaMenu" style="min-width: 230px;">
                   <!-- Account -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkPagesAccount" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuPagesAccount">
-                      Account
-                      <span class="badge badge-success ml-1">New</span>
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkPagesAccount" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesAccount">Account</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuPagesAccount" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkPagesAccount">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/dashboard.html">Dashboard</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/profile.html">Profile</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/my-tasks.html">My tasks</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/projects.html">Projects</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/members.html">Members</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/edit-profile.html">Edit profile</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/change-password.html">Change password</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/notifications.html">Notifications</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/activity.html">Activity</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/payment-methods.html">Payment methods</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/invite-friends.html">Invite friends</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/plans.html">Plans</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../account/api-token.html">API Token</a>
-                      </li>
+                    <ul id="navSubmenuPagesAccount" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesAccount" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/dashboard.html">Dashboard</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/profile.html">Profile</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/my-tasks.html">My tasks</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/projects.html">Projects</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/members.html">Members</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/edit-profile.html">Edit profile</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/change-password.html">Change password</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/notifications.html">Notifications</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/activity.html">Activity</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/payment-methods.html">Payment methods</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/invite-friends.html">Invite friends</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/plans.html">Plans</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../account/api-token.html">API Token</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- End Account -->
 
-                  <!-- About -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkPagesAbout" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuPagesAbout">
-                      About
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <!-- Portfolio -->
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkPagesPortfolio" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesPortfolio">Portfolio</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuPagesAbout" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkPagesAbout">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/about-agency.html">About Agency</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/about-start-up.html">About Start-Up</a>
-                      </li>
+                    <ul id="navSubmenuPagesPortfolio" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesPortfolio" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/boxed-classic.html">All layouts</a></li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/case-studies-simple.html">Case Studies Simple</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/case-studies-modern.html">Case Studies Modern</a></li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/single-page-simple.html">Single Page Simple</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/single-page-grid.html">Single Page Grid</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../portfolio/single-page-masonry.html">Single Page Masonry</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
+                  </li>
+                  <!-- End Portfolio -->
+
+                  <!-- About -->
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkPagesAbout" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesAbout">About</a>
+
+                    <ul id="navSubmenuPagesAbout" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesAbout" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/about-agency.html">About Agency</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/about-start-up.html">About Start-Up</a></li>
+                    </ul>
                   </li>
                   <!-- About -->
 
                   <!-- Services -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkPagesServices" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuPagesServices">
-                      Services
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkPagesServices" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesServices">Services</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuPagesServices" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkPagesServices">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/services-agency.html">Services Agency</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/services-start-up.html">Services Start-Up</a>
-                      </li>
+                    <ul id="navSubmenuPagesServices" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesServices" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/services-agency.html">Services Agency</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/services-start-up.html">Services Start-Up</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- Services -->
 
                   <!-- Careers -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkPagesCareers" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuPagesCareers">
-                      Careers
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkPagesCareers" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesCareers">Careers</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuPagesCareers" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkPagesCareers">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/careers.html">Careers</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/careers-single.html">Careers Single</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/hire-us.html">Hire Us</a>
-                      </li>
+                    <ul id="navSubmenuPagesCareers" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesCareers" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/careers.html">Careers</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/careers-single.html">Careers Single</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/hire-us.html">Hire Us</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- Careers -->
 
                   <!-- Login -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkPagesLogin" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuPagesLogin">
-                      Login &amp; Signup
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkPagesLogin" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesLogin">Login &amp; Signup</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuPagesLogin" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkPagesLogin">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/login-simple.html">Login Simple</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/signup-simple.html">Signup Simple</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/recover-account.html">Recover Account</a>
-                      </li>
+                    <ul id="navSubmenuPagesLogin" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesLogin" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/login.html">Login</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/signup.html">Signup</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/recover-account.html">Recover Account</a></li>
+                      <li class="dropdown-divider"></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/login-simple.html">Login Simple</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/signup-simple.html">Signup Simple</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/recover-account-simple.html">Recover Account Simple</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- Signup -->
 
                   <!-- Contacts -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkContactsServices" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuContactsServices">
-                      Contacts
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkContactsServices" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuContactsServices">Contacts</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuContactsServices" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkContactsServices">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/contacts-agency.html">Contacts Agency</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/contacts-start-up.html">Contacts Start-Up</a>
-                      </li>
+                    <ul id="navSubmenuContactsServices" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkContactsServices" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/contacts-agency.html">Contacts Agency</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/contacts-start-up.html">Contacts Start-Up</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- Contacts -->
 
                   <!-- Utilities -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkPagesUtilities" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuPagesUtilities">
-                      Utilities
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkPagesUtilities" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesUtilities">Utilities</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuPagesUtilities" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkPagesUtilities">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/help.html">Help</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/pricing.html">Pricing</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/terms.html">Terms &amp; Conditions</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/privacy.html">Privacy &amp; Policy</a>
-                      </li>
+                    <ul id="navSubmenuPagesUtilities" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesUtilities" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/help.html">Help</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/help-article.html">Help article</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/faq.html">FAQ</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/pricing.html">Pricing</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/invoice.html">Invoice</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/terms.html">Terms &amp; Conditions</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/privacy.html">Privacy &amp; Policy</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- Utilities -->
 
                   <!-- Specialty -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkPagesSpecialty" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuPagesSpecialty">
-                      Specialty
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkPagesSpecialty" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuPagesSpecialty">Specialty</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuPagesSpecialty" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkPagesSpecialty">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/cover-page.html">Cover Page</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/coming-soon.html">Coming Soon</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/maintenance-mode.html">Maintenance Mode</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../pages/error-404.html">Error 404</a>
-                      </li>
+                    <ul id="navSubmenuPagesSpecialty" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkPagesSpecialty" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/cover-page.html">Cover Page</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/coming-soon.html">Coming Soon</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/maintenance-mode.html">Maintenance Mode</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../pages/error-404.html">Error 404</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- Specialty -->
                 </ul>
@@ -496,248 +346,83 @@
               </li>
               <!-- End Pages -->
 
-              <!-- Works -->
-              <li class="nav-item hs-has-mega-menu u-header__nav-item"
-                  data-event="hover"
-                  data-animation-in="slideInUp"
-                  data-animation-out="fadeOut"
-                  data-position="right">
-                <a id="worksMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
-                   aria-haspopup="true"
-                   aria-expanded="false">
-                  Work
-                  <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-                </a>
-
-                <!-- Works - Mega Menu -->
-                <div class="hs-mega-menu w-100 u-header__sub-menu u-header__mega-menu-wrapper-v1" aria-labelledby="worksMegaMenu">
-                  <div class="row">
-                    <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
-                      <strong class="d-block mb-2">Boxed Layouts</strong>
-
-                      <!-- Links -->
-                      <ul class="list-unstyled u-list">
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/boxed-classic.html">Portfolio Classic</a></li>
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/boxed-grid.html">Portfolio Grid</a></li>
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/boxed-masonry.html">Portfolio Masonry</a></li>
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/boxed-modern.html">Portfolio Modern</a></li>
-                      </ul>
-                      <!-- End Links -->
-                    </div>
-
-                    <div class="col-sm-6 col-lg-3 mb-3 mb-lg-0">
-                      <strong class="d-block mb-2">Full Width Layouts</strong>
-
-                      <!-- Links -->
-                      <ul class="list-unstyled u-list">
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/fullwidth-classic.html">Portfolio Classic</a></li>
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/fullwidth-grid.html">Portfolio Grid</a></li>
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/fullwidth-masonry.html">Portfolio Masonry</a></li>
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/fullwidth-modern.html">Portfolio Modern</a></li>
-                      </ul>
-                      <!-- End Links -->
-                    </div>
-
-                    <div class="col-sm-6 col-lg-3 mb-3 mb-sm-0">
-                      <strong class="d-block mb-2">Single Pages</strong>
-
-                      <!-- Links -->
-                      <ul class="list-unstyled u-list">
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/single-page-simple.html">Single Page Simple</a></li>
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/single-page-grid.html">Single Page Grid</a></li>
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/single-page-masonry.html">Single Page Masonry</a></li>
-                      </ul>
-                      <!-- End Links -->
-                    </div>
-
-                    <div class="col-sm-6 col-lg-3">
-                      <strong class="d-block mb-2">Case Studies</strong>
-
-                      <!-- Links -->
-                      <ul class="list-unstyled u-list">
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/case-studies-simple.html">Case Studies Simple</a></li>
-                        <li><a class="nav-link u-list__link py-2 px-0" href="../portfolio/case-studies-modern.html">Case Studies Modern</a></li>
-                      </ul>
-                      <!-- End Links -->
-                    </div>
-                  </div>
-                </div>
-                <!-- End Works - Mega Menu -->
-              </li>
-              <!-- End Works -->
-
               <!-- Blog -->
               <li class="nav-item hs-has-sub-menu u-header__nav-item"
                   data-event="hover"
                   data-animation-in="slideInUp"
                   data-animation-out="fadeOut">
-                <a id="blogMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
-                   aria-haspopup="true"
-                   aria-expanded="false"
-                   aria-labelledby="blogSubMenu">
-                  Blog
-                  <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-                </a>
+                <a id="blogMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-labelledby="blogSubMenu">Blog</a>
 
                 <!-- Blog - Submenu -->
-                <ul id="blogSubMenu" class="list-inline hs-sub-menu u-header__sub-menu py-3 mb-0" style="min-width: 220px;"
-                    aria-labelledby="blogMegaMenu">
+                <ul id="blogSubMenu" class="hs-sub-menu u-header__sub-menu" aria-labelledby="blogMegaMenu" style="min-width: 230px;">
                   <!-- Classic -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuBlogClassic">
-                      Classic
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkBlogClassic" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogClassic">Classic</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuBlogClassic" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkBlogClassic">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/classic-left-sidebar.html">Left Sidebar</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/classic-right-sidebar.html">Right Sidebar</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/classic-full-width.html">Full Width</a>
-                      </li>
+                    <ul id="navSubmenuBlogClassic" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogClassic" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-left-sidebar.html">Left Sidebar</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-right-sidebar.html">Right Sidebar</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/classic-full-width.html">Full Width</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- Classic -->
 
                   <!-- Grid -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkBlogGrid" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuBlogGrid">
-                      Grid
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkBlogGrid" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogGrid">Grid</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuBlogGrid" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkBlogGrid">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/grid-left-sidebar.html">Left Sidebar</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/grid-right-sidebar.html">Right Sidebar</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/grid-full-width.html">Full Width</a>
-                      </li>
+                    <ul id="navSubmenuBlogGrid" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogGrid" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-left-sidebar.html">Left Sidebar</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-right-sidebar.html">Right Sidebar</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/grid-full-width.html">Full Width</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- Grid -->
 
                   <!-- List -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkBlogList" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuBlogList">
-                      List
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkBlogList" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogList">List</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuBlogList" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkBlogList">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/list-left-sidebar.html">Left Sidebar</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/list-right-sidebar.html">Right Sidebar</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/list-full-width.html">Full Width</a>
-                      </li>
+                    <ul id="navSubmenuBlogList" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogList" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-left-sidebar.html">Left Sidebar</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-right-sidebar.html">Right Sidebar</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/list-full-width.html">Full Width</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- List -->
 
                   <!-- Modern -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkBlogCard" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuBlogCard">
-                      Modern
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkBlogCard" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogCard">Modern</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuBlogCard" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkBlogCard">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/modern-left-sidebar.html">Left Sidebar</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/modern-right-sidebar.html">Right Sidebar</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/modern-full-width.html">Full Width</a>
-                      </li>
+                    <ul id="navSubmenuBlogCard" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogCard" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/modern-left-sidebar.html">Left Sidebar</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/modern-right-sidebar.html">Right Sidebar</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/modern-full-width.html">Full Width</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- Grid Modern -->
 
                   <!-- Masonry -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkBlogGridMinimal" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuBlogGridMinimal">
-                      Masonry
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkBlogGridMinimal" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogGridMinimal">Masonry</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuBlogGridMinimal" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkBlogGridMinimal">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/masonry-left-sidebar.html">Left Sidebar</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/masonry-right-sidebar.html">Right Sidebar</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/masonry-full-width.html">Full Width</a>
-                      </li>
+                    <ul id="navSubmenuBlogGridMinimal" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogGridMinimal" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-left-sidebar.html">Left Sidebar</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-right-sidebar.html">Right Sidebar</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/masonry-full-width.html">Full Width</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- Masonry -->
 
                   <!-- Single Article -->
-                  <li class="dropdown-item hs-has-sub-menu">
-                    <a id="navLinkBlogGridMasonry" class="nav-link u-header__sub-menu-nav-link u-list__link py-2" href="javascript:;"
-                       aria-haspopup="true"
-                       aria-expanded="false"
-                       aria-controls="navSubmenuBlogGridMasonry">
-                      Single Article
-                      <span class="fa fa-angle-right u-header__sub-menu-nav-link-icon"></span>
-                    </a>
+                  <li class="hs-has-sub-menu">
+                    <a id="navLinkBlogGridMasonry" class="nav-link u-header__sub-menu-nav-link u-header__sub-menu-nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false" aria-controls="navSubmenuBlogGridMasonry">Single Article</a>
 
-                    <!-- Submenu (level 2) -->
-                    <ul id="navSubmenuBlogGridMasonry" class="hs-sub-menu list-unstyled u-header__sub-menu u-header__sub-menu-menu-gutter--y u-header__sub-menu-offset" style="min-width: 220px;"
-                        aria-labelledby="navLinkBlogGridMasonry">
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/single-article-classic.html">Classic</a>
-                      </li>
-                      <li class="dropdown-item px-0">
-                        <a class="nav-link u-list__link px-4" href="../blog/single-article-simple.html">Simple</a>
-                      </li>
+                    <ul id="navSubmenuBlogGridMasonry" class="hs-sub-menu u-header__sub-menu" aria-labelledby="navLinkBlogGridMasonry" style="min-width: 230px;">
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/single-article-classic.html">Classic</a></li>
+                      <li><a class="nav-link u-header__sub-menu-nav-link" href="../blog/single-article-simple.html">Simple</a></li>
                     </ul>
-                    <!-- End Submenu (level 2) -->
                   </li>
                   <!-- Single Article -->
                 </ul>
@@ -752,50 +437,41 @@
                   data-animation-out="fadeOut"
                   data-max-width="440px"
                   data-position="right">
-                <a id="shopMegaMenu" class="nav-link u-header__nav-link" href="javascript:;"
-                   aria-haspopup="true"
-                   aria-expanded="false">
-                  Shop
-                  <span class="fa fa-angle-down u-header__nav-link-icon"></span>
-                </a>
+                <a id="shopMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Shop</a>
 
                 <!-- Shop - Mega Menu -->
-                <div class="hs-mega-menu u-header__sub-menu" aria-labelledby="shopMegaMenu">
-                  <div class="u-header__mega-menu-wrapper-v1">
-                    <strong class="d-block mb-2">Shop Elements</strong>
+                <div class="hs-mega-menu u-header__sub-menu u-header__mega-menu-position-right-fix--md" aria-labelledby="shopMegaMenu">
+                  <div class="u-header__mega-menu-wrapper">
+                    <span class="u-header__sub-menu-title">Shop Elements</span>
 
                     <div class="row">
                       <div class="col-sm-6">
-                        <!-- Links -->
-                        <ul class="list-unstyled u-list">
-                          <li><a class="nav-link u-list__link py-2 px-0" href="../shop/classic.html">Classic</a></li>
-                          <li><a class="nav-link u-list__link py-2 px-0" href="../shop/masonry.html">Masonry</a></li>
-                          <li><a class="nav-link u-list__link py-2 px-0" href="../shop/single-product.html">Single Product</a></li>
+                        <ul class="u-header__sub-menu-nav-group">
+                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/classic.html">Classic</a></li>
+                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/masonry.html">Masonry</a></li>
+                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/single-product.html">Single Product</a></li>
                         </ul>
-                        <!-- End Links -->
                       </div>
 
                       <div class="col-sm-6">
-                        <!-- Links -->
-                        <ul class="list-unstyled u-list">
-                          <li><a class="nav-link u-list__link py-2 px-0" href="../shop/cart.html">Cart</a></li>
-                          <li><a class="nav-link u-list__link py-2 px-0" href="../shop/checkout.html">Checkout</a></li>
+                        <ul class="u-header__sub-menu-nav-group">
+                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/cart.html">Cart</a></li>
+                          <li><a class="nav-link u-header__sub-menu-nav-link" href="../shop/checkout.html">Checkout</a></li>
                         </ul>
-                        <!-- End Links -->
                       </div>
                     </div>
                   </div>
 
                   <!-- Mega Menu Banner -->
-                  <div class="d-none d-md-block u-header__banner-v2 pr-4">
+                  <div class="u-header__product-banner">
                     <div class="d-flex align-items-end">
-                      <img class="img-fluid mr-4" src="../../assets/img/mockups/img4.png" alt="Image Description" style="width: 200px;">
-                      <div class="py-4">
+                      <img class="img-fluid mr-4" src="../../assets/img/mockups/img4.png" alt="Image Description">
+                      <div class="u-header__product-banner-content">
                         <div class="mb-4">
-                          <strong class="d-block u-header__banner-v2-title mb-2">Win T-shirt</strong>
-                          <span class="d-block u-header__banner-v2-text">Win one of our Front brand T-shirts.</span>
+                          <span class="u-header__product-banner-title">Win T-shirt</span>
+                          <p class="u-header__product-banner-text">Win one of our Front brand T-shirts.</p>
                         </div>
-                        <a class="btn btn-sm u-btn-primary--air transition-3d-hover" href="../shop/classic.html">Learn More <span class="fa fa-angle-right ml-2"></span></a>
+                        <a class="btn btn-sm btn-soft-primary transition-3d-hover" href="../shop/classic.html">Learn More <span class="fas fa-angle-right ml-2"></span></a>
                       </div>
                     </div>
                   </div>
@@ -805,17 +481,151 @@
               </li>
               <!-- End Shop -->
 
-              <!-- Starter - Link -->
-              <li class="nav-item">
-                <a class="nav-link u-header__nav-link" href="../../starter/index.html">
-                  Starter
-                </a>
+              <!-- Demos -->
+              <li class="nav-item hs-has-mega-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut"
+                  data-max-width="600px"
+                  data-position="right">
+                <a id="demosMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Demos</a>
+
+                <!-- Demos - Mega Menu -->
+                <div class="hs-mega-menu w-100 u-header__sub-menu" aria-labelledby="demosMegaMenu">
+                  <div class="row no-gutters">
+                    <div class="col-md-6">
+                      <!-- Promo Item -->
+                      <div class="u-header__promo-item">
+                        <a class="u-header__promo-link" href="../house/index.html">
+                          <div class="media align-items-center">
+                            <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-13.svg" alt="SVG">
+                            <div class="media-body">
+                              <span class="u-header__promo-title">House</span>
+                              <small class="u-header__promo-text">Real estate demo.</small>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Promo Item -->
+
+                      <!-- Promo Item -->
+                      <div class="u-header__promo-item">
+                        <a class="u-header__promo-link" href="../job/index.html">
+                          <div class="media align-items-center">
+                            <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-19.svg" alt="SVG">
+                            <div class="media-body">
+                              <span class="u-header__promo-title">Job</span>
+                              <small class="u-header__promo-text">Job vacancy demo.</small>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Promo Item -->
+
+                      <!-- Promo Item -->
+                      <div class="u-header__promo-item">
+                        <a class="u-header__promo-link" href="../crypto/index.html">
+                          <div class="media align-items-center">
+                            <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-5.svg" alt="SVG">
+                            <div class="media-body">
+                              <span class="u-header__promo-title">Crypto landing</span>
+                              <small class="u-header__promo-text">Cryptocurrency demo.</small>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <!-- End Promo Item -->
+                    </div>
+
+                    <!-- Promo -->
+                    <div class="col-md-6 u-header__promo">
+                      <a class="d-block u-header__promo-inner" href="#">
+                        <div class="position-relative">
+                          <img class="img-fluid rounded mb-3" src="../../assets/img/380x227/img6.jpg" alt="Image Description">
+                          <span class="badge badge-success badge-pill badge-pos shadow-sm mt-3">New</span>
+                        </div>
+                        <span class="text-secondary font-size-1">Front makes you look at things from a different perspectives.</span>
+                      </a>
+                    </div>
+                    <!-- End Promo -->
+                  </div>
+                </div>
+                <!-- End Demos - Mega Menu -->
               </li>
-              <!-- End Starter - Link -->
+              <!-- End Demos -->
+
+              <!-- Docs -->
+              <li class="nav-item hs-has-mega-menu u-header__nav-item"
+                  data-event="hover"
+                  data-animation-in="slideInUp"
+                  data-animation-out="fadeOut"
+                  data-max-width="260px"
+                  data-position="right">
+                <a id="docsMegaMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">Docs</a>
+
+                <!-- Docs - Submenu -->
+                <div class="hs-mega-menu u-header__sub-menu" aria-labelledby="docsMegaMenu" style="min-width: 330px;">
+                  <!-- Promo Item -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="../../documentation/index.html">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-2.svg" alt="SVG">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">
+                            Documentation
+                            <span class="badge badge-primary badge-pill ml-1">v2.0</span>
+                          </span>
+                          <small class="u-header__promo-text">Development guides</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Promo Item -->
+
+                  <!-- Promo Item -->
+                  <div class="u-header__promo-item">
+                    <a class="u-header__promo-link" href="../../starter/index.html">
+                      <div class="media align-items-center">
+                        <img class="js-svg-injector u-header__promo-icon" src="../../assets/svg/icons/icon-1.svg" alt="SVG">
+                        <div class="media-body">
+                          <span class="u-header__promo-title">Get started</span>
+                          <small class="u-header__promo-text">Components and snippets</small>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- End Promo Item -->
+
+                  <div class="u-header__promo-footer">
+                    <!-- List -->
+                    <div class="row no-gutters">
+                      <div class="col-6">
+                        <div class="u-header__promo-footer-item">
+                          <small class="text-muted d-block">Check what's new</small>
+                          <a class="small" href="../../documentation/getting-started/changelog.html">
+                            Changelog
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-6 u-header__promo-footer-ver-divider">
+                        <div class="u-header__promo-footer-item">
+                          <small class="text-muted d-block">Have a question?</small>
+                          <a class="small" href="http://htmlstream.com/contact-us">
+                            Contact us
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End List -->
+                  </div>
+                </div>
+                <!-- End Docs - Submenu -->
+              </li>
+              <!-- End Docs -->
 
               <!-- Button -->
-              <li class="nav-item d-none d-md-inline-block pl-3 pr-0">
-                <a class="btn btn-sm btn-primary u-btn-primary transition-3d-hover" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">
+              <li class="nav-item u-header__nav-last-item">
+                <a class="btn btn-sm btn-primary transition-3d-hover" href="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/" target="_blank">
                   Buy Now
                 </a>
               </li>
@@ -833,219 +643,26 @@
   <!-- ========== MAIN ========== -->
   <main id="content" role="main">
     <!-- Hero Section -->
-    <div class="container u-space-5-top--md u-space-4-top u-space-3-bottom">
+    <div class="container space-2 space-top-md-5 space-bottom-md-3 space-top-lg-4">
       <div class="row justify-content-lg-between align-items-lg-center">
         <div class="col-lg-5 mb-4">
           <!-- Title -->
           <div class="mb-3">
-            <h1 class="display-4 font-size-48--md-down mb-0">Easy start,</h1>
-            <h2 class="text-primary display-3 font-size-48--md-down font-weight-bold">Easy setup</h2>
+            <h1 class="display-4 font-size-md-down-5 mb-0">Easy start,</h1>
+            <h2 class="text-primary display-3 font-size-md-down-5 font-weight-semi-bold">Easy setup</h2>
           </div>
-          <p>Integrate and setup your business with Front. Covert more visitors, and win more business with Front template.</p>
+          <p>Integrate and setup your business with Front. Attract more visitors, and win more business with Front template.</p>
           <!-- End Title -->
         </div>
 
         <div class="col-lg-6 mb-4">
           <!-- SVG Icon -->
-          <figure class="d-none d-lg-block">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                 viewBox="0 0 189.2 103.8" style="enable-background:new 0 0 189.2 103.8;" xml:space="preserve">
-              <g id="XMLID_306_">
-                <rect id="XMLID_684_" x="129.8" y="66.9" class="u-fill-white" width="9.3" height="5.7"/>
-                <polyline id="XMLID_381_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" points="129.8,72.5 129.8,66.9 135.4,66.9  "/>
-                <path id="XMLID_682_" class="u-fill-white" d="M141.9,102.7h-14.7V71.5c0-0.8,0.6-1.4,1.4-1.4h11.9c0.8,0,1.4,0.6,1.4,1.4V102.7z"/>
-                <line id="XMLID_380_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="128.2" y1="70.1" x2="135.4" y2="70.1"/>
-                <line id="XMLID_686_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="134.6" y1="61.3" x2="134.6" y2="66.4"/>
-                <line id="XMLID_685_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="130.6" y1="73.9" x2="130.6" y2="100.8"/>
-                <line id="XMLID_687_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="134.5" y1="73.9" x2="134.5" y2="100.8"/>
-                <line id="XMLID_688_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="138.5" y1="73.9" x2="138.5" y2="100.8"/>
-                <g id="XMLID_315_">
-                  <path id="XMLID_379_" class="u-fill-primary-lighter" opacity=".2" d="M156.9,67.4v32.9c0,1.1-0.9,1.9-1.9,1.9h-15.5c-1.1,0-1.9-0.9-1.9-1.9V67.4
-                    c0-1.1,0.9-1.9,1.9-1.9H155C156,65.4,156.9,66.3,156.9,67.4z"/>
-                  <path id="XMLID_357_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M156.9,87.8v-17v-3.3c0-1.2-0.9-2.1-2.1-2.1h-15.1c-1.2,0-2.1,0.9-2.1,2.1v19.8v9.8v2.9
-                    c0,1.2,0.9,2.1,2.1,2.1h9.6"/>
-                  <path id="XMLID_356_" class="u-fill-white" d="M153.6,83.9c-0.1,3.6-3,6.5-6.6,6.4c-3.6-0.1-6.5-3-6.4-6.6c0.1-3.6,3-6.4,6.6-6.4
-                    C150.9,77.3,153.7,80.3,153.6,83.9z"/>
-                  <path id="XMLID_350_" class="u-fill-white" d="M148.7,73.6c0,1-0.8,1.7-1.8,1.7c-1,0-1.7-0.8-1.7-1.8c0-1,0.8-1.7,1.8-1.7
-                    C148,71.8,148.7,72.6,148.7,73.6z"/>
-                  <path id="XMLID_349_" class="u-fill-white" d="M148.7,94.3c0,1-0.8,1.7-1.8,1.7c-1,0-1.7-0.8-1.7-1.8c0-1,0.8-1.7,1.8-1.7
-                    C148,92.5,148.7,93.3,148.7,94.3z"/>
-                  <g id="XMLID_329_">
-                    <path id="XMLID_335_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M144.7,81.1v3.2c0,0.7,0.6,1.2,1.2,1.2l0,0c0.7,0,1.2-0.6,1.2-1.2V83c0-0.7,0.6-1.2,1.2-1.2
-                      l0,0c0.7,0,1.2,0.6,1.2,1.2v3.3"/>
-                    <line id="XMLID_332_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="142.6" y1="83.7" x2="151.6" y2="83.7"/>
-                  </g>
-                  <path id="XMLID_323_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M153.8,75.3V72c0-0.2-0.1-0.3-0.3-0.3c-1.7-0.1-3-1.5-3.2-3.2c0-0.2-0.1-0.3-0.3-0.3
-                    c-1.1,0-4.7,0-5.7,0c-0.2,0-0.3,0.1-0.3,0.3c-0.1,1.7-1.5,3.1-3.2,3.2c-0.2,0-0.3,0.1-0.3,0.3v2.8"/>
-                  <path id="XMLID_317_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M149.6,99.6c-1.1,0-5.3,0-6.4,0c-0.2,0-0.3-0.1-0.3-0.3c-0.1-1.7-1.5-3.1-3.2-3.2
-                    c-0.2,0-0.3-0.1-0.3-0.3v-2.8"/>
-                </g>
-                <path id="XMLID_313_" class="u-fill-white" d="M150.9,103v-3.3c0-0.3,0.2-0.5,0.5-0.5h12.7c0.3,0,0.5,0.2,0.5,0.5v3.3H150.9z"/>
-                <path id="XMLID_312_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M150.9,103v-3.3c0-0.3,0.2-0.5,0.5-0.5h12.7c0.3,0,0.5,0.2,0.5,0.5v3.3"/>
-                <path id="XMLID_310_" class="u-fill-white" d="M165,98.7H152c-0.2,0-0.4-0.2-0.4-0.4v-3.6c0-0.2,0.2-0.4,0.4-0.4H165c0.2,0,0.4,0.2,0.4,0.4
-                  v3.6C165.3,98.5,165.2,98.7,165,98.7z"/>
-                <path id="XMLID_309_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M165,98.7H152c-0.2,0-0.4-0.2-0.4-0.4v-3.6c0-0.2,0.2-0.4,0.4-0.4H165c0.2,0,0.4,0.2,0.4,0.4
-                  v3.6C165.3,98.5,165.2,98.7,165,98.7z"/>
-                <path id="XMLID_308_" class="u-fill-white" d="M164.3,93.8h-12.9c-0.2,0-0.4-0.2-0.4-0.4v-3.6c0-0.2,0.2-0.4,0.4-0.4h12.9
-                  c0.2,0,0.4,0.2,0.4,0.4v3.6C164.7,93.6,164.6,93.8,164.3,93.8z"/>
-                <path id="XMLID_307_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M164.3,93.8h-12.9c-0.2,0-0.4-0.2-0.4-0.4v-3.6c0-0.2,0.2-0.4,0.4-0.4h12.9
-                  c0.2,0,0.4,0.2,0.4,0.4v3.6C164.7,93.6,164.6,93.8,164.3,93.8z"/>
-              </g>
-              <g id="XMLID_364_">
-                <line id="XMLID_366_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="96.4" y1="5.8" x2="100.7" y2="5.8"/>
-                <line id="XMLID_365_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="98.5" y1="7.9" x2="98.5" y2="3.6"/>
-              </g>
-              <g id="XMLID_438_">
-                <line id="XMLID_441_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="37.7" y1="22.6" x2="42" y2="22.6"/>
-                <line id="XMLID_439_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="39.8" y1="24.8" x2="39.8" y2="20.5"/>
-              </g>
-              <g id="XMLID_358_">
-                <line id="XMLID_360_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="185.4" y1="41.5" x2="188.4" y2="38.5"/>
-                <line id="XMLID_359_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="188.4" y1="41.5" x2="185.4" y2="38.5"/>
-              </g>
-              <g id="XMLID_446_">
-                <line id="XMLID_448_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="4.6" y1="62.8" x2="7.6" y2="59.8"/>
-                <line id="XMLID_447_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="7.6" y1="62.8" x2="4.6" y2="59.8"/>
-              </g>
-              <line id="XMLID_397_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="11.3" y1="48" x2="28.7" y2="48"/>
-              <line id="XMLID_398_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="69.7" y1="5.8" x2="50" y2="5.8"/>
-              <line id="XMLID_437_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="145.7" y1="40" x2="183.5" y2="40"/>
-              <line id="XMLID_396_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="33.8" y1="48" x2="30.2" y2="48"/>
-              <line id="XMLID_436_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="95.2" y1="11.8" x2="112.6" y2="11.8"/>
-              <line id="XMLID_267_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="117.6" y1="11.8" x2="114.1" y2="11.8"/>
-              <path id="XMLID_344_" class="u-fill-primary" d="M128.5,34.7c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3c0-0.7,0.6-1.3,1.3-1.3
-                C127.9,33.3,128.5,33.9,128.5,34.7z"/>
-              <path id="XMLID_445_" class="u-fill-primary" d="M59.5,55.5c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3c0-0.7,0.6-1.3,1.3-1.3
-                C58.9,54.2,59.5,54.8,59.5,55.5z"/>
-              <path id="XMLID_442_" class="u-fill-primary" d="M148.4,20.6c0,0.4-0.3,0.8-0.8,0.8c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8
-                C148.1,19.8,148.4,20.1,148.4,20.6z"/>
-              <path id="XMLID_444_" class="u-fill-primary" d="M56.7,1c0,0.6-0.5,1-1,1c-0.6,0-1-0.5-1-1c0-0.6,0.5-1,1-1C56.2,0,56.7,0.5,56.7,1z"/>
-              <g id="XMLID_2_">
-                <path id="XMLID_269_" class="u-fill-white" d="M121.7,103H47c-4.2,0-7.5-3.4-7.5-7.5v-0.3c0-4.2,3.4-7.5,7.5-7.5h74.7c4.2,0,7.5,3.4,7.5,7.5
-                  v0.3C129.3,99.6,125.9,103,121.7,103z"/>
-
-                  <ellipse id="XMLID_299_" transform="matrix(0.7341 -0.6791 0.6791 0.7341 -36.064 59.677)" class="u-fill-white" cx="58.2" cy="75.9" rx="11.7" ry="11.7"/>
-                <path id="XMLID_298_" class="u-fill-white" d="M50,77.7c0,2.6-2.1,4.6-4.6,4.6c-2.6,0-4.6-2.1-4.6-4.6c0-2.6,2.1-4.6,4.6-4.6
-                  C47.9,73,50,75.1,50,77.7z"/>
-                <path id="XMLID_42_" class="u-fill-white" d="M47.7,83c0,3.8-3.1,6.9-6.9,6.9c-3.8,0-6.9-3.1-6.9-6.9c0-3.8,3.1-6.9,6.9-6.9
-                  C44.7,76.1,47.7,79.2,47.7,83z"/>
-                <path id="XMLID_229_" class="u-fill-white" d="M48.7,93.8c0,5.1-4.1,9.3-9.3,9.3c-5.1,0-9.3-4.1-9.3-9.3c0-5.1,4.1-9.3,9.3-9.3
-                  C44.6,84.5,48.7,88.6,48.7,93.8z"/>
-                <path id="XMLID_278_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M39.5,103c-5.1,0-9.3-4.1-9.3-9.3c0-3.1,1.6-5.9,3.9-7.6"/>
-                <path id="XMLID_297_" class="u-fill-white" d="M72.5,85.3c0,2.1-1.7,3.9-3.9,3.9c-2.1,0-3.9-1.7-3.9-3.9c0-2.1,1.7-3.9,3.9-3.9
-                  C70.8,81.4,72.5,83.1,72.5,85.3z"/>
-
-                  <ellipse id="XMLID_296_" transform="matrix(0.1597 -0.9872 0.9872 0.1597 17.3587 171.1808)" class="u-fill-white" cx="109.2" cy="75.4" rx="10.7" ry="10.7"/>
-                <path id="XMLID_435_" class="u-fill-white" d="M121.8,81.4c-0.3,3.8-3.1,6.8-6.8,6.8c-3.8,0-6.8-3.1-6.8-6.8s3.1-6.8,6.8-6.8
-                  C118.7,74.5,122.1,77.6,121.8,81.4z"/>
-                <path id="XMLID_284_" class="u-fill-white" d="M114.9,86.1c-0.3,3.8-3.1,6.8-6.8,6.8s-6.8-3.1-6.8-6.8c0-3.8,3.1-6.8,6.8-6.8
-                  S115.3,82.3,114.9,86.1z"/>
-                <path id="XMLID_285_" class="u-fill-white" d="M67.9,86.2C67.2,90,62,93,54.8,93c-7.2,0-13-3.1-13-6.8c0-3.8,5.8-6.8,13-6.8
-                  C62,79.3,68.5,82.4,67.9,86.2z"/>
-                <path id="XMLID_261_" class="u-fill-white" d="M135.4,83c-0.5,5.5-4.5,10-10,10c-5.5,0-10-4.5-10-10c0-5.5,4.5-10,10-10
-                  C131,73,135.9,77.5,135.4,83z"/>
-                <path id="XMLID_262_" class="u-fill-white" d="M132.7,93.4c-0.5,5.3-4.3,9.6-9.6,9.6c-5.3,0-9.6-4.3-9.6-9.6c0-5.3,4.3-9.6,9.6-9.6
-                  C128.4,83.7,133.2,88.1,132.7,93.4z"/>
-                <path id="XMLID_292_" class="u-fill-white" d="M106.4,82.5c0,3.5-2.8,6.3-6.3,6.3c-3.5,0-6.3-2.8-6.3-6.3s2.8-6.3,6.3-6.3
-                  C103.6,76.2,106.4,79,106.4,82.5z"/>
-                <path id="XMLID_290_" class="u-fill-white" d="M98.3,88c0,2-1.6,3.7-3.7,3.7c-2,0-3.7-1.6-3.7-3.7c0-2,1.6-3.7,3.7-3.7
-                  C96.7,84.3,98.3,86,98.3,88z"/>
-                <path id="XMLID_289_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M90.7,88.3c0-2,1.6-3.7,3.7-3.7"/>
-                <path id="XMLID_288_" class="u-fill-white" d="M83.3,90.3c0,2.3-3.3,4.2-7.3,4.2c-4,0-7.3-1.9-7.3-4.2c0-2.3,3.3-4.2,7.3-4.2
-                  C80,86.1,83.3,88,83.3,90.3z"/>
-                <path id="XMLID_434_" class="u-fill-white" d="M125.6,73.3c0,2.7-4.6,10-4.6,6.6c0-2.7-4.9-2.2-4.9-4.9s2.2-4.9,4.9-4.9
-                  C123.7,70.1,125.6,70.6,125.6,73.3z"/>
-                <path id="XMLID_287_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M119.1,70.5c0.6-0.3,1.3-0.4,2-0.4c2,0,3.7,1.2,4.5,2.9"/>
-                <path id="XMLID_282_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M101.7,83c-1.9-1.9-3.1-4.6-3.1-7.6c0-3,1.2-5.6,3.1-7.6c1.9-1.9,4.6-3.1,7.6-3.1
-                  c3,0,5.6,1.2,7.6,3.1c1.9,1.9,3.1,4.6,3.1,7.6"/>
-                <g id="XMLID_281_">
-                  <rect id="XMLID_449_" x="76.7" y="45.6" class="u-fill-white" width="12.4" height="5.2"/>
-                  <rect id="XMLID_710_" x="76.7" y="45.6" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" width="12.4" height="5.2"/>
-                  <path id="XMLID_516_" class="u-fill-primary" opacity=".7" d="M63.8,45.6h11.8V20l-4.3,5.9c-1.3,1.7-2.7,3.2-4.2,4.7c-2,2-3.2,4.7-3.2,7.6V45.6z"/>
-                  <polygon id="XMLID_714_" class="u-fill-primary" opacity=".5" points="71.8,25.1 71.8,45.6 75.6,45.6 75.6,20    "/>
-                  <path id="XMLID_513_" class="u-fill-primary" opacity=".7" d="M101.5,46.1H89.7V20.5l4.3,5.9c1.3,1.7,2.7,3.2,4.2,4.7c2,2,3.2,4.7,3.2,7.6V46.1z"/>
-                  <polygon id="XMLID_712_" class="u-fill-primary" opacity=".5" points="93.8,24.7 93.8,45.2 90,45.2 90,19.6    "/>
-                  <path id="XMLID_549_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M63.8,45.6h11.8V20l-4.3,5.9c-1.3,1.7-2.7,3.2-4.2,4.7c-2,2-3.2,4.7-3.2,7.6V45.6z"/>
-                  <path id="XMLID_548_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M101.5,45.6H89.7V20l4.3,5.9c1.3,1.7,2.7,3.2,4.2,4.7c2,2,3.2,4.7,3.2,7.6V45.6z"/>
-                  <path id="XMLID_511_" class="u-fill-white" d="M90.8,48.2H74.6V14.6c0-3.9,1.8-7.6,4.9-10L81,3.5c1-0.8,2.5-0.8,3.5,0l1.6,1.2
-                    c3,2.3,4.8,5.9,4.8,9.7V48.2z"/>
-                  <path id="XMLID_509_" class="u-fill-primary" d="M78.6,5.6l1.9-1.5c1.4-1.1,3.3-1.1,4.6,0l2.1,1.6L78.6,5.6z"/>
-                  <path id="XMLID_715_" class="u-fill-primary" opacity=".25" d="M83.1,4.6l1.4-1.1l0,0c-1-0.8-2.5-0.8-3.5,0l-1.4,1.1c-3.1,2.4-4.9,6.1-4.9,10v33.6h3.6V14.6
-                    C78.2,10.7,80,7,83.1,4.6z"/>
-                  <path id="XMLID_465_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M78.6,21.6c0-2.3,1.8-4.1,4.1-4.1c2.3,0,4.1,1.8,4.1,4.1"/>
-                  <path id="XMLID_517_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M90.8,48.2H74.6V14.6c0-3.9,1.8-7.6,4.9-10L81,3.5c1-0.8,2.5-0.8,3.5,0l1.6,1.2
-                    c3,2.3,4.8,5.9,4.8,9.7V48.2z"/>
-                </g>
-                <path id="XMLID_440_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M100.1,88.8c-3.5,0-6.3-2.8-6.3-6.3c0-2.9,2-5.4,4.7-6.1"/>
-                <path id="XMLID_279_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M46.4,75.9c0-6.5,5.3-11.7,11.7-11.7s11.7,5.3,11.7,11.7c0,4.4-2.4,8.2-5.9,10.2"/>
-                <path id="XMLID_383_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M43.2,73.6c0.7-0.3,1.4-0.5,2.2-0.5c0.5,0,0.9,0.1,1.4,0.2"/>
-                <path id="XMLID_277_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M68.7,81.4c2.1,0,3.9,1.7,3.9,3.9c0,2.1-1.7,3.9-3.9,3.9"/>
-                <path id="XMLID_276_" class="u-fill-white" d="M98.3,94.3H70.6l8-9V51.9h8.6l-0.4,30.4c0,1.8,0.8,3.6,2.2,4.7L98.3,94.3z"/>
-                <path id="XMLID_514_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M87,51.9v31.7c0,1.8,1.5,3.3,3.3,3.4h0.9"/>
-                <path id="XMLID_512_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M72.5,86.2h3c1.7,0,3-1.4,3-3V51.9"/>
-                <path id="XMLID_275_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M74.8,100.6c0-0.6,0.1-1.3,0.3-1.9c0.2-0.6,0.6-1.1,1-1.6c0.4-0.5,1-0.9,1.6-1.1
-                  c0.6-0.3,1.3-0.4,1.9-0.4c0.6,0,1.3,0.1,1.9,0.3c0.6,0.2,1.1,0.6,1.6,1"/>
-                <path id="XMLID_274_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M50,88.6c0-0.6,0.1-1.3,0.3-1.9c0.2-0.6,0.6-1.1,1-1.6c0.4-0.5,1-0.9,1.6-1.1
-                  c0.6-0.3,1.3-0.4,1.9-0.4c0.6,0,1.3,0.1,1.9,0.3c0.6,0.2,1.1,0.6,1.6,1"/>
-                <path id="XMLID_273_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M106.4,79.4c0.6-0.3,1.2-0.4,1.9-0.4c0.6,0,1.3,0.1,1.9,0.3c0.6,0.2,1.2,0.6,1.7,1
-                  c0.5,0.5,0.9,1,1.1,1.6c0.3,0.6,0.4,1.2,0.4,1.9c0,0.6-0.1,1.3-0.3,1.9"/>
-                <path id="XMLID_272_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M80.5,95.7c0.1-0.6,0.3-1.3,0.7-1.9c0.4-0.6,0.8-1.1,1.3-1.5c0.5-0.4,1.1-0.7,1.7-0.8
-                  c0.6-0.2,1.3-0.2,1.9-0.1"/>
-                <path id="XMLID_286_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M113.4,96.8c0.1-0.6,0.3-1.3,0.7-1.9c0.4-0.6,0.8-1.1,1.3-1.5c0.5-0.4,1.1-0.7,1.7-0.8
-                  c0.6-0.2,1.3-0.2,1.9-0.1"/>
-                <path id="XMLID_271_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M97.3,102.3c-0.6-0.2-1.2-0.5-1.7-1c-0.5-0.5-0.9-1-1.2-1.6c-0.3-0.6-0.4-1.2-0.5-1.8
-                  c0-0.6,0-1.3,0.2-1.9"/>
-                <path id="XMLID_230_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M36,87.8c-1.2-1.2-2-3-2-4.8c0-3.8,3.1-6.9,6.9-6.9c1.7,0,3.2,0.6,4.3,1.6"/>
-                <path id="XMLID_263_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M123.1,73.3c0.8-0.2,1.5-0.3,2.4-0.3c5.5,0,10.5,4.5,10,10c-0.4,4-2.5,7.4-5.8,9"/>
-                <path id="XMLID_268_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M132.4,90.3c0.3,1,0.4,2,0.3,3.1c-0.5,5.3-4.3,9.6-9.6,9.6"/>
-              </g>
-              <g id="XMLID_382_">
-                <path id="XMLID_432_" class="u-fill-primary" opacity=".7" d="M43.1,80.7H16.2c-0.8,0-1.4,0.6-1.4,1.4V103h26.9c1.6,0,2.9-1.3,2.9-2.9V82.2
-                  C44.6,81.4,43.9,80.7,43.1,80.7z"/>
-                <path id="XMLID_431_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M33.5,80.7H16c-0.6,0-1.2,0.5-1.2,1.2V103h27.4c1.3,0,2.3-1,2.3-2.3V81.9
-                  c0-0.7-0.5-1.2-1.2-1.2h-1.8"/>
-                <g id="XMLID_422_">
-                  <path id="XMLID_430_" class="u-fill-white" d="M33.9,72.4l5.9,5.9V99c0,0.9-0.8,1.7-1.7,1.7H20.4c-0.9,0-1.7-0.8-1.7-1.7V74.1
-                    c0-0.9,0.8-1.7,1.7-1.7H33.9z"/>
-                  <polygon id="XMLID_426_" class="u-fill-primary" opacity=".7" points="33.9,78.3 33.9,72.4 39.8,78.3    "/>
-                  <path id="XMLID_425_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M39.8,78.3h-5.3c-0.3,0-0.6-0.3-0.6-0.6v-5.3"/>
-                  <path id="XMLID_423_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M18.8,82v-8c0-0.9,0.8-1.7,1.7-1.7h13.5l5.9,5.9V99c0,0.9-0.8,1.7-1.7,1.7H20.4"/>
-                </g>
-                <g id="XMLID_405_">
-                  <path id="XMLID_421_" class="u-fill-primary-lighter" opacity=".2" d="M37.4,70.6l5.9,5.9v20.7c0,0.9-0.8,1.7-1.7,1.7H23.9c-0.9,0-1.7-0.8-1.7-1.7V72.3
-                    c0-0.9,0.8-1.7,1.7-1.7H37.4z"/>
-                  <polygon id="XMLID_420_" class="u-fill-primary" opacity=".7" points="37.4,76.6 37.4,70.6 43.3,76.6    "/>
-                  <path id="XMLID_419_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M43.3,76.6h-5.3c-0.3,0-0.6-0.3-0.6-0.6v-5.3"/>
-                  <line id="XMLID_418_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="40.4" y1="79.5" x2="25.4" y2="79.5"/>
-                  <line id="XMLID_417_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="40.4" y1="82.8" x2="25.4" y2="82.8"/>
-                  <line id="XMLID_416_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="40.4" y1="86.2" x2="25.4" y2="86.2"/>
-                  <line id="XMLID_415_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="40.4" y1="89.5" x2="25.4" y2="89.5"/>
-                  <path id="XMLID_407_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M22.2,84.3v-12c0-0.9,0.8-1.7,1.7-1.7h13.5l5.9,5.9v20.7c0,0.9-0.8,1.7-1.7,1.7h-0.8"/>
-                </g>
-                <g id="XMLID_386_">
-                  <path id="XMLID_401_" class="u-fill-white" d="M40.8,73.2l5.9,5.9v20.7c0,0.9-0.8,1.7-1.7,1.7H27.3c-0.9,0-1.7-0.8-1.7-1.7V74.9
-                    c0-0.9,0.8-1.7,1.7-1.7H40.8z"/>
-                  <polygon id="XMLID_400_" class="u-fill-primary" opacity=".7" points="40.8,79.2 40.8,73.2 46.7,79.2    "/>
-                  <path id="XMLID_393_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M46.7,79.2h-5.3c-0.3,0-0.6-0.3-0.6-0.6v-5.3"/>
-                  <line id="XMLID_392_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="43.9" y1="82" x2="28.8" y2="82"/>
-                  <line id="XMLID_390_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="43.9" y1="85.4" x2="28.8" y2="85.4"/>
-                  <line id="XMLID_389_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="43.9" y1="88.8" x2="28.8" y2="88.8"/>
-                  <line id="XMLID_388_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="43.9" y1="92.1" x2="28.8" y2="92.1"/>
-                  <path id="XMLID_387_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M25.7,84.3v-9.4c0-0.9,0.8-1.7,1.7-1.7h13.5l5.9,5.9v20.7c0,0.9-0.8,1.7-1.7,1.7h-3"/>
-                </g>
-                <path id="XMLID_385_" class="u-fill-white" d="M42.2,103H13.8c-0.7,0-1.2-0.6-1.2-1.2V84.2c0-0.6,0.5-1,1-1h4.8c0.4,0,0.7,0.2,0.9,0.5l1.3,2
-                  h18c0.7,0,1.2,0.5,1.2,1.2v13.8C39.8,101.8,40.6,103,42.2,103z"/>
-                <path id="XMLID_384_" class="u-fill-primary-lighter" opacity=".4" d="M39.8,100.6v-2H12.6v3.2c0,0.7,0.6,1.2,1.2,1.2h28.4C40.6,103,39.8,101.8,39.8,100.6z"/>
-                <path id="XMLID_433_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" d="M12.6,102.9V84.2c0-0.6,0.5-1,1-1h4.8c0.4,0,0.7,0.2,0.9,0.5l1.3,2h18c0.7,0,1.2,0.5,1.2,1.2
-                  v13.8c0,1.1,0.8,2.4,2.4,2.4"/>
-              </g>
-              <g id="XMLID_318_">
-                <line id="XMLID_322_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="4.6" y1="103" x2="168.4" y2="103"/>
-                <line id="XMLID_321_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="0" y1="103" x2="2.7" y2="103"/>
-                <line id="XMLID_320_" class="u-fill-none u-stroke-primary" stroke-width="1.5" stroke-miterlimit="10" x1="169.9" y1="103" x2="176" y2="103"/>
-              </g>
-            </svg>
-          </figure>
+          <div id="SVGeasyStart" class="svg-preloader d-none d-lg-block">
+            <figure class="ie-subscribe-2">
+              <img class="js-svg-injector" src="../../assets/svg/flat-icons/easy-start.svg" alt="Image Description"
+                   data-parent="#SVGeasyStart">
+            </figure>
+          </div>
           <!-- End SVG Icon -->
         </div>
       </div>
@@ -1056,49 +673,48 @@
 
           <!-- Form -->
           <form class="js-validate">
-            <div class="row mx-gutters-2 mb-3">
-              <div class="col-6 col-sm-4 mb-2 mb-md-0">
-                <!-- Input -->
+            <div class="form-row">
+              <div class="col-6 col-sm-4 mb-2">
                 <div class="js-form-message">
-                  <div class="js-focus-state input-group u-form">
-                    <input type="text" class="form-control u-form__input" name="username" required
-                           placeholder="Your name"
-                           aria-label="Your name"
-                           data-msg="Name must contain only letters.">
+                  <label class="sr-only" for="signupSrName">Your name</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" name="name" id="signupSrName" placeholder="Your name" aria-label="Your name" required
+                           data-msg="Name must contain only letters."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
                   </div>
                 </div>
-                <!-- End Input -->
               </div>
 
-              <div class="col-6 col-sm-4 mb-2 mb-md-0">
-                <!-- Input -->
+              <div class="col-6 col-sm-4 mb-2">
                 <div class="js-form-message">
-                  <div class="js-focus-state input-group u-form">
-                    <input type="email" class="form-control u-form__input" name="username" required
-                           placeholder="Your email"
-                           aria-label="Your email"
-                           data-msg="Please enter a valid email address.">
+                  <label class="sr-only" for="signupSrEmail">Your email</label>
+                  <div class="input-group">
+                    <input type="email" class="form-control" name="email" id="signupSrEmail" placeholder="Your email" aria-label="Your email" required
+                           data-msg="Please enter a valid email address."
+                           data-error-class="u-has-error"
+                           data-success-class="u-has-success">
                   </div>
                 </div>
-                <!-- End Input -->
               </div>
 
-              <div class="col-sm-3 mb-2 mb-md-0">
-                <!-- Input -->
-                <button type="submit" class="btn btn-primary u-btn-primary u-btn-wide transition-3d-hover">Get Started</button>
-                <!-- End Input -->
+              <div class="col-sm-4 mb-2">
+                <button type="submit" class="btn btn-primary btn-wide transition-3d-hover">Get Started</button>
               </div>
             </div>
 
             <!-- Checkbox -->
-            <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
-              <input type="checkbox" class="custom-control-input" id="termsCheckbox">
-              <label class="custom-control-label" for="termsCheckbox">
-                <small>
-                  I agree to the
-                  <a class="u-link-muted" href="../pages/terms.html">Terms and Conditions</a>
-                </small>
-              </label>
+            <div class="js-form-message">
+              <div class="custom-control custom-checkbox d-flex align-items-center text-muted">
+                <input type="checkbox" class="custom-control-input" id="termsCheckbox" name="termsCheckbox" required
+                       data-msg="Please accept our Terms and Conditions.">
+                <label class="custom-control-label" for="termsCheckbox">
+                  <small>
+                    I agree to the
+                    <a class="link-muted" href="../pages/terms.html">Terms and Conditions</a>
+                  </small>
+                </label>
+              </div>
             </div>
             <!-- End Checkbox -->
           </form>
@@ -1111,8 +727,8 @@
     <hr>
 
     <!-- Mockup Blocks Section -->
-    <div class="position-relative u-space-3">
-      <div class="container u-space-3--lg">
+    <div class="position-relative space-2 space-md-3">
+      <div class="container space-lg-3">
         <div class="row justify-content-lg-end mb-7 mb-lg-0">
           <div class="col-lg-5 mb-7 mb-lg-0">
             <!-- Info -->
@@ -1121,62 +737,41 @@
               <h2 class="h4">Grab your<br>Ready-to-use solutions</h2>
               <p>Easy and fast adjustments of elements are possible with Front template. Find out more about our all-in-one programmatic template.</p>
             </div>
-            <a class="btn u-btn-primary--air u-btn-wide transition-3d-hover" href="#">Learn More</a>
+            <a class="btn btn-soft-primary btn-wide transition-3d-hover" href="#">Learn More</a>
             <!-- End Info -->
           </div>
         </div>
       </div>
 
       <!-- SVG Image Gradient -->
-      <div class="col-lg-6 u-content-centered-y--lg">
-        <figure class="w-100">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               viewBox="0 0 855 665" style="enable-background:new 0 0 855 665;" xml:space="preserve">
-            <!-- Apply your (855px width to 665px height) image here -->
-            <image style="overflow:visible;" width="855" height="665" xlink:href="../../assets/img/855x665/img2.jpg"></image>
-            <radialGradient id="gradientMockupID1" cx="427.5" cy="332.5" r="382.9572" gradientUnits="userSpaceOnUse">
-              <stop class="u-stop-color-white" offset="1.953869e-07" stop-opacity="0"/>
-              <stop class="u-stop-color-white" offset="4.778082e-02" stop-opacity="4.778063e-02"/>
-              <stop class="u-stop-color-white" offset="1"/>
-            </radialGradient>
-            <rect fill="url(#gradientMockupID1)" width="855" height="665"/>
-          </svg>
+      <div id="SVGcolorGradient" class="col-lg-6 svg-preloader content-centered-y--lg">
+        <figure class="ie-color-gradient">
+          <img class="js-svg-injector" src="../../assets/svg/illustrations/color-gradient.svg" alt="Image Description"
+               data-img-paths='[
+                 {"targetId": "#SVGcolorGradientImg1", "newPath": "../../assets/img/855x665/img2.jpg"}
+               ]'
+               data-parent="#SVGcolorGradient">
         </figure>
         <!-- End SVG Image Gradient -->
 
         <!-- SVG Phone Mockup -->
-        <figure class="u-devices-v3">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               viewBox="0 0 317.5 665" style="enable-background:new 0 0 317.5 665;" xml:space="preserve">
-            <path class="u-fill-white" d="M263,666H54c-29.7,0-54-24.3-54-54V55C0,25.3,24.3,1,54,1h209c29.7,0,54,24.3,54,54v557
-              C317,641.7,292.7,666,263,666z"/>
-            <circle class="u-fill-gray-75" cx="159.5" cy="619.5" r="25.5"/>
-            <path class="u-fill-gray-75" fill-rule="evenodd" clip-rule="evenodd" d="M180,52h-42c-2.2,0-4-1.8-4-4v0c0-2.2,1.8-4,4-4h42c2.2,0,4,1.8,4,4v0C184,50.2,182.2,52,180,52z"/>
-            <g>
-              <defs>
-                <rect id="phoneFrameID1" x="19.4" y="81.3" width="280" height="500"/>
-              </defs>
-              <clipPath id="phoneFrameID2">
-                <use xlink:href="#phoneFrameID1"  style="overflow:visible;"/>
-              </clipPath>
-              <g style="clip-path:url(#phoneFrameID2);">
-                <!-- Apply your (282px width to 500px height) image here -->
-                <image style="overflow:visible;" width="282" height="500" xlink:href="../../assets/img/282x500/img5.jpg" transform="matrix(1 0 0 1 18 81)"></image>
-              </g>
-              <use class="u-fill-none u-stroke-light-blue-125" xlink:href="#phoneFrameID1" stroke-miterlimit="10" style="overflow: visible;"/>
-            </g>
-          </svg>
+        <figure class="u-devices-v3 ie-devices-v3-iphone">
+          <img class="js-svg-injector" src="../../assets/svg/components/iphone.svg" alt="Image Description"
+               data-img-paths='[
+                 {"targetId": "#SVGiphoneImg1", "newPath": "../../assets/img/282x500/img5.jpg"}
+               ]'
+               data-parent="#SVGcolorGradient">
         </figure>
         <!-- End SVG Phone Mockup -->
       </div>
     </div>
     <!-- End Mockup Blocks Section -->
 
-    <!-- Facts & Figures Section -->
-    <div class="container u-space-3-bottom">
+    <!-- Stats Section -->
+    <div class="container space-bottom-2 space-bottom-md-3">
       <div class="row justify-content-center">
         <div class="col-sm-4 col-lg-3 mb-7 mb-sm-0">
-          <!-- Facts & Figures -->
+          <!-- Stats -->
           <div class="text-center">
             <div class="position-relative">
               <div class="u-indicator-dots">
@@ -1185,11 +780,11 @@
             </div>
             <p class="mb-0">Top rated<br>agency companies</p>
           </div>
-          <!-- End Facts & Figures -->
+          <!-- End Stats -->
         </div>
 
         <div class="col-sm-4 col-lg-3 mb-7 mb-sm-0">
-          <!-- Facts & Figures -->
+          <!-- Stats -->
           <div class="text-center">
             <div class="position-relative">
               <div class="u-indicator-dots">
@@ -1198,11 +793,11 @@
             </div>
             <p class="mb-0">Historical earnings<br>per click</p>
           </div>
-          <!-- End Facts & Figures -->
+          <!-- End Stats -->
         </div>
 
         <div class="col-sm-4 col-lg-3 mb-7 mb-sm-0">
-          <!-- Facts & Figures -->
+          <!-- Stats -->
           <div class="text-center">
             <div class="position-relative">
               <h4 class="display-4 text-primary mb-0">50%</h4>
@@ -1211,14 +806,14 @@
           </div>
         </div>
       </div>
-      <!-- End Facts & Figures -->
+      <!-- End Stats -->
     </div>
-    <!-- End Facts & Figures Section -->
+    <!-- End Stats Section -->
 
     <!-- Video Content Section -->
-    <div class="position-relative">
+    <div id="SVGwave2Shape" class="svg-preloader position-relative">
       <!-- Video Content -->
-      <div class="u-bg-img-hero text-center u-space-4" style="background-image: url(../../assets/img/1920x800/img4.jpg);">
+      <div class="bg-img-hero text-center space-4" style="background-image: url(../../assets/img/1920x800/img4.jpg);">
         <!-- Fancybox -->
         <a class="js-fancybox u-media-player mb-4" href="javascript:;"
            data-src="//vimeo.com/167434033"
@@ -1227,7 +822,7 @@
            data-animate-out="zoomOut"
            data-caption="Front - Responsive Website Template">
           <span class="u-media-player__icon u-media-player__icon--lg">
-            <span class="fa fa-play u-media-player__icon-inner"></span>
+            <span class="fas fa-play u-media-player__icon-inner"></span>
           </span>
         </a>
         <!-- End Fancybox -->
@@ -1237,30 +832,26 @@
       <!-- End Video Content Section -->
 
       <!-- SVG Top Shape -->
-      <figure class="w-100 position-absolute-top-0">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 1920 125.7" style="margin-top: -8px; margin-bottom: 0; enable-background:new 0 0 1920 125.7;" xml:space="preserve">
-          <path class="u-fill-white" d="M1920,0v44.2c0,0-451,63.8-960,6.3S0,125.7,0,125.7L0,0L1920,0z"/>
-        </svg>
+      <figure class="position-absolute top-0 right-0 left-0">
+        <img class="js-svg-injector" src="../../assets/svg/components/wave-2-top.svg" alt="Image Description"
+             data-parent="#SVGwave2Shape">
       </figure>
       <!-- End SVG Top Shape -->
 
       <!-- SVG Bottom Shape -->
-      <figure class="w-100 position-absolute-bottom-0">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             viewBox="0 0 1920.5 248.5" style="margin-bottom: -8px; enable-background:new 0 0 1920.5 248.5;" xml:space="preserve">
-          <path class="u-fill-white" d="M0.5,248.5v-44.2c0,0,451-63.8,960-6.3s960-75.1,960-75.1v125.7H0.5z"/>
-        </svg>
+      <figure class="position-absolute right-0 bottom-0 left-0">
+        <img class="js-svg-injector" src="../../assets/svg/components/wave-2-bottom.svg" alt="Image Description"
+             data-parent="#SVGwave2Shape">
       </figure>
       <!-- End SVG Bottom Shape -->
     </div>
     <!-- Video Content Section -->
 
     <!-- Portfolio Section -->
-    <div class="container u-space-3-top u-space-2-bottom">
+    <div class="container space-top-2 space-top-md-3 space-bottom-2">
       <!-- Title -->
-      <div class="w-md-80 w-lg-50 text-center mx-auto mb-4">
-        <h2 class="text-primary">Our <span class="font-weight-bold">branding</span> works</h2>
+      <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-4">
+        <h2 class="text-primary">Our <span class="font-weight-semi-bold">branding</span> works</h2>
       </div>
       <!-- End Title -->
 
@@ -1299,7 +890,7 @@
                 <div class="cbp-l-caption-alignCenter">
                   <div class="cbp-l-caption-body">
                     <h4 class="h6 text-white mb-0">Remind Me More</h4>
-                    <p class="small u-text-light mb-0">
+                    <p class="small text-white-70 mb-0">
                       by Tiberiu Neamu
                     </p>
                   </div>
@@ -1319,7 +910,7 @@
                 <div class="cbp-l-caption-alignCenter">
                   <div class="cbp-l-caption-body">
                     <h4 class="h6 text-white mb-0">Workout Buddy</h4>
-                    <p class="small u-text-light mb-0">
+                    <p class="small text-white-70 mb-0">
                       by Tiberiu Neamu
                     </p>
                   </div>
@@ -1339,7 +930,7 @@
                 <div class="cbp-l-caption-alignCenter">
                   <div class="cbp-l-caption-body">
                     <h4 class="h6 text-white mb-0">Easy Note</h4>
-                    <p class="small u-text-light mb-0">
+                    <p class="small text-white-70 mb-0">
                       by Cosmin Capitanu
                     </p>
                   </div>
@@ -1359,7 +950,7 @@
                 <div class="cbp-l-caption-alignCenter">
                   <div class="cbp-l-caption-body">
                     <h4 class="h6 text-white mb-0">Tiger</h4>
-                    <p class="small u-text-light mb-0">
+                    <p class="small text-white-70 mb-0">
                       by Cosmin Capitanu
                     </p>
                   </div>
@@ -1379,7 +970,7 @@
                 <div class="cbp-l-caption-alignCenter">
                   <div class="cbp-l-caption-body">
                     <h4 class="h6 text-white mb-0">Tiger</h4>
-                    <p class="small u-text-light mb-0">
+                    <p class="small text-white-70 mb-0">
                       by Cosmin Capitanu
                     </p>
                   </div>
@@ -1399,7 +990,7 @@
                 <div class="cbp-l-caption-alignCenter">
                   <div class="cbp-l-caption-body">
                     <h4 class="h6 text-white mb-0">Tiger</h4>
-                    <p class="small u-text-light mb-0">
+                    <p class="small text-white-70 mb-0">
                       by Cosmin Capitanu
                     </p>
                   </div>
@@ -1419,7 +1010,7 @@
                 <div class="cbp-l-caption-alignCenter">
                   <div class="cbp-l-caption-body">
                     <h4 class="h6 text-white mb-0">Tiger</h4>
-                    <p class="small u-text-light mb-0">
+                    <p class="small text-white-70 mb-0">
                       by Cosmin Capitanu
                     </p>
                   </div>
@@ -1436,9 +1027,9 @@
     <!-- End Portfolio Section -->
 
     <!-- Clients Section -->
-    <div class="container text-center u-space-3-bottom">
+    <div class="container text-center space-bottom-2 space-bottom-md-3">
       <h4 class="h6 text-muted mb-3">Front partners</h4>
-      <div class="d-flex justify-content-center">
+      <div class="d-inline-flex justify-content-center">
         <div class="mx-4">
           <img class="u-clients" src="../../assets/svg/clients-logo/slack.svg" alt="Image Description">
         </div>
@@ -1454,11 +1045,11 @@
 
     <!-- CTA Section -->
     <div class="bg-primary text-white text-center">
-      <div class="container u-space-1">
+      <div class="container space-1">
         <span class="h6 d-block d-lg-inline-block font-weight-light mb-lg-0">
-          <span class="font-weight-bold">Front Template</span> – the simplest and fastest way to build sites.
+          <span class="font-weight-semi-bold">Front Template</span> – the simplest and fastest way to build sites.
         </span>
-        <a class="btn btn-sm u-btn-white transition-3d-hover font-weight-normal ml-2" href="#">Start Enterprise Trial</a>
+        <a class="btn btn-sm btn-white transition-3d-hover font-weight-normal ml-2" href="#">Start Enterprise Trial</a>
       </div>
     </div>
     <!-- End CTA Section -->
@@ -1467,108 +1058,87 @@
 
   <!-- ========== FOOTER ========== -->
   <footer class="bg-dark">
-    <div class="container u-space-2-top">
+    <div class="container space-top-2">
       <div class="row justify-content-lg-between mb-7">
         <div class="col-6 col-md-4 col-lg-2 mb-7 mb-lg-0">
-          <!-- Title -->
-          <h3 class="h6 u-text-light">
-            <strong>About</strong>
-          </h3>
-          <!-- End Title -->
+          <h4 class="h6 text-white">About</h4>
 
-          <!-- List -->
-          <ul class="list-unstyled u-list">
-            <li><a class="u-list__link" href="../pages/about-agency.html">About</a></li>
-            <li><a class="u-list__link" href="../pages/services-agency.html">Services</a></li>
-            <li><a class="u-list__link" href="../pages/careers-listing.html">Careers</a></li>
+          <!-- List Group -->
+          <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+            <li><a class="list-group-item list-group-item-action" href="../pages/about-agency.html">About</a></li>
+            <li><a class="list-group-item list-group-item-action" href="../pages/services-agency.html">Services</a></li>
+            <li><a class="list-group-item list-group-item-action" href="../pages/careers.html">Careers</a></li>
           </ul>
-          <!-- End List -->
+          <!-- End List Group -->
         </div>
 
         <div class="col-6 col-md-4 col-lg-2 mb-7 mb-lg-0">
-          <!-- Title -->
-          <h3 class="h6 u-text-light">
-            <strong>Account</strong>
-          </h3>
-          <!-- End Title -->
+          <h4 class="h6 text-white">Account</h4>
 
-          <!-- List -->
-          <ul class="list-unstyled u-list">
-            <li><a class="u-list__link" href="#">Profile</a></li>
-            <li><a class="u-list__link" href="#">Profile User Contacts</a></li>
-            <li><a class="u-list__link" href="#">Profile Projects</a></li>
-            <li><a class="u-list__link" href="#">Profile Settings</a></li>
+          <!-- List Group -->
+          <ul class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+            <li><a class="list-group-item list-group-item-action" href="../account/dashboard.html">Account</a></li>
+            <li><a class="list-group-item list-group-item-action" href="../account/my-tasks.html">My tasks</a></li>
+            <li><a class="list-group-item list-group-item-action" href="../account/projects.html">Projects</a></li>
+            <li><a class="list-group-item list-group-item-action" href="../account/invite-friends.html">Invite friends</a></li>
           </ul>
-          <!-- End List -->
+          <!-- End List Group -->
         </div>
 
         <div class="col-6 col-md-4 col-lg-2 mb-7 mb-lg-0">
-          <!-- Title -->
-          <h3 class="h6 u-text-light">
-            <strong>Contacts</strong>
-          </h3>
-          <!-- End Title -->
+          <h4 class="h6 text-white">Contacts</h4>
 
           <!-- Address -->
-          <address class="u-list">
-            <a class="u-list__link" href="#">+1 (062) 109-9222</a>
-            <a class="u-list__link" href="mailto:support@htmlstream.com">support@htmlstream.com</a>
-            <a class="u-list__link" href="#">153 Williamson Plaza, Maggieberg, MT 09514</a>
+          <address class="list-group list-group-transparent list-group-white list-group-flush list-group-borderless mb-0">
+            <a class="list-group-item list-group-item-action" href="#">+1 (062) 109-9222</a>
+            <a class="list-group-item list-group-item-action" href="mailto:support@htmlstream.com">support@htmlstream.com</a>
+            <a class="list-group-item list-group-item-action" href="#">153 Williamson Plaza, Maggieberg, MT 09514</a>
           </address>
           <!-- End Address -->
         </div>
 
         <div class="col-sm-6 col-md-5 col-lg-3 col-lg-3">
           <div class="mb-4">
-            <!-- Title -->
-            <h3 class="h6 u-text-light mb-3">
-              <strong>Subscribe</strong>
-            </h3>
-            <!-- End Title -->
+            <h4 class="h6 text-white mb-3">Subscribe</h4>
 
-            <!-- Input -->
+            <!-- Subscribe Form -->
             <form class="js-validate js-form-message">
-              <div class="js-focus-state input-group input-group-sm u-form u-form--sm">
-                <input type="email" class="form-control u-form__input" name="email" required
-                       placeholder="Email address"
-                       aria-label="Enter your email address"
+              <label class="sr-only" for="subscribeSrEmail">Your email</label>
+              <div class="input-group">
+                <input type="email" class="form-control" name="email" id="subscribeSrEmail" placeholder="Your email" aria-label="Your email" aria-describedby="subscribeButton" required
                        data-msg="Please enter a valid email address.">
-                <div class="input-group-append u-form__append">
-                  <button type="button" class="btn btn-primary">
-                    <i class="fas fa-paper-plane"></i>
+                <div class="input-group-append">
+                  <button class="btn btn-primary" type="button" id="subscribeButton">
+                    <span class="fas fa-paper-plane"></span>
                   </button>
                 </div>
               </div>
             </form>
-            <!-- End Input -->
+            <!-- End Subscribe Form -->
           </div>
 
-          <!-- Title -->
-          <h3 class="h6 u-text-light mb-3">
-            <strong>Stay in touch</strong>
-          </h3>
-          <!-- End Title -->
+          <h4 class="h6 text-white-70 mb-3">Stay in touch</h4>
 
           <!-- Social Networks -->
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
-              <a class="u-icon u-icon--sm u-icon-secondary--air" href="#">
-                <span class="fab fa-facebook-f u-icon__inner"></span>
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                <span class="fab fa-facebook-f btn-icon__inner"></span>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="u-icon u-icon--sm u-icon-secondary--air" href="#">
-                <span class="fab fa-google u-icon__inner"></span>
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                <span class="fab fa-google btn-icon__inner"></span>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="u-icon u-icon--sm u-icon-secondary--air" href="#">
-                <span class="fab fa-twitter u-icon__inner"></span>
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                <span class="fab fa-twitter btn-icon__inner"></span>
               </a>
             </li>
             <li class="list-inline-item">
-              <a class="u-icon u-icon--sm u-icon-secondary--air" href="#">
-                <span class="fab fa-github u-icon__inner"></span>
+              <a class="btn btn-sm btn-icon btn-soft-secondary" href="#">
+                <span class="fab fa-github btn-icon__inner"></span>
               </a>
             </li>
           </ul>
@@ -1576,11 +1146,17 @@
         </div>
       </div>
 
-      <div class="row justify-content-between align-items-center u-space-1">
+      <div class="row justify-content-between align-items-center space-1">
         <div class="col-5">
           <!-- Logo -->
-          <a class="d-inline-block mb-lg-auto mb-3" href="index.html" aria-label="Front">
-            <img src="../../assets/svg/logos/logo-white.svg" alt="Logo" style="width: 120px;">
+          <a class="d-inline-flex align-items-center mb-3" href="../home/index.html" aria-label="Front">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="36px" height="36px" viewBox="0 0 46 46" xml:space="preserve" style="margin-bottom: 0;">
+              <path fill="#E1E4EA" opacity=".65" d="M23,41.1L23,41.1c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C41,33,32.9,41.1,23,41.1z"/>
+              <path class="fill-white" opacity=".5" d="M28,36L28,36c-9.9,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3C43,0.1,46,3.1,46,6.7v11.4C46,28,38,36,28,36z"/>
+              <path class="fill-white" opacity=".7" d="M18,46.1L18,46.1c-10,0-18-8-18-18l0,0c0-9.9,8-18,18-18h11.3c3.7,0,6.6,3,6.6,6.6v11.4C35.9,38.1,27.9,46.1,18,46.1z"/>
+              <path class="fill-primary" d="M17.4,34.1V18.4h10.2v2.9h-6.4v3.4H26v2.9h-4.8v6.5H17.4z"/>
+            </svg>
+            <span class="brand brand-light">Front</span>
           </a>
           <!-- End Logo -->
         </div>
@@ -1601,7 +1177,7 @@
     data-compensation="#header"
     data-show-effect="slideInUp"
     data-hide-effect="slideOutDown">
-    <span class="fa fa-arrow-up u-go-to__inner"></span>
+    <span class="fas fa-arrow-up u-go-to__inner"></span>
   </a>
   <!-- End Go to Top -->
 
@@ -1613,6 +1189,7 @@
 
   <!-- JS Implementing Plugins -->
   <script src="../../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
   <script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"></script>
   <script src="../../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
   <script src="../../assets/vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
@@ -1622,9 +1199,9 @@
   <script src="../../assets/js/components/hs.header.js"></script>
   <script src="../../assets/js/components/hs.unfold.js"></script>
   <script src="../../assets/js/components/hs.validation.js"></script>
-  <script src="../../assets/js/helpers/hs.focus-state.js"></script>
   <script src="../../assets/js/components/hs.fancybox.js"></script>
   <script src="../../assets/js/components/hs.cubeportfolio.js"></script>
+  <script src="../../assets/js/components/hs.svg-injector.js"></script>
   <script src="../../assets/js/components/hs.go-to.js"></script>
 
   <!-- JS Plugins Init. -->
@@ -1634,9 +1211,12 @@
       $('.js-mega-menu').HSMegaMenu({
         event: 'hover',
         pageContainer: $('.container'),
-        breakpoint: 767,
+        breakpoint: 767.98,
         hideTimeOut: 0
       });
+
+      // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
     });
 
     $(document).on('ready', function () {
@@ -1648,9 +1228,6 @@
 
       // initialization of form validation
       $.HSCore.components.HSValidation.init('.js-validate');
-
-      // initialization of forms
-      $.HSCore.helpers.HSFocusState.init();
 
       // initialization of fancybox
       $.HSCore.components.HSFancyBox.init('.js-fancybox');
