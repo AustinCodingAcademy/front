@@ -197,6 +197,10 @@
     "url": "plugins/parallax.html"
   },{
     "category": "Plugins",
+    "label": "Password strength",
+    "url": "plugins/password-strength.html"
+  },{
+    "category": "Plugins",
     "label": "Scroll effect",
     "url": "plugins/scroll-effect.html"
   },{
@@ -1631,6 +1635,26 @@
     "url": "plugins/circles.html#methods"
   },{
     "category": "Plugins",
+    "section": "Clipboard",
+    "label": "Clipboard - How to use",
+    "url": "plugins/countdown.html#how-to-use"
+  },{
+    "category": "Plugins",
+    "section": "Clipboard",
+    "label": "Clipboard - Basic examples",
+    "url": "plugins/countdown.html#basic-examples"
+  },{
+    "category": "Plugins",
+    "section": "Clipboard",
+    "label": "Clipboard - JavaScript behavior",
+    "url": "plugins/countdown.html#js-behavior"
+  },{
+    "category": "Plugins",
+    "section": "Clipboard",
+    "label": "Clipboard - Methods",
+    "url": "plugins/countdown.html#methods"
+  },{
+    "category": "Plugins",
     "section": "Countdown",
     "label": "Countdown - How to use",
     "url": "plugins/countdown.html#how-to-use"
@@ -2304,6 +2328,26 @@
     "section": "Parallax",
     "label": "Parallax - Basic example",
     "url": "plugins/parallax.html#basic-example"
+  },{
+    "category": "Plugins",
+    "section": "Password strength",
+    "label": "Password strength - How to use",
+    "url": "plugins/password-strength.html#how-to-use"
+  },{
+    "category": "Plugins",
+    "section": "Password strength",
+    "label": "Password strength - Basic example",
+    "url": "plugins/password-strength.html#basic-example"
+  },{
+    "category": "Plugins",
+    "section": "Password strength",
+    "label": "Password strength - JavaScript behavior",
+    "url": "plugins/password-strength.html#js-behavior"
+  },{
+    "category": "Plugins",
+    "section": "Password strength",
+    "label": "Password strength - Methods",
+    "url": "plugins/password-strength.html#methods"
   },{
     "category": "Plugins",
     "section": "Range Slider",

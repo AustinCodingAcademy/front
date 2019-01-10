@@ -106,7 +106,8 @@
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1">v2.1</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1_1">Latest (v2.1.x)</a></li>
+                  <li class="dropdown-divider"></li>
                   <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
                   <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
@@ -5268,7 +5269,7 @@
         <!-- Tab Content -->
         <div class="tab-content" id="pills-tabContent-16">
           <div class="tab-pane p-4 fade show active" id="pills-result-16" role="tabpanel" aria-labelledby="pills-result-tab-16">
-            <form class="js-validate">
+            <form id="changePasswordForm" class="js-validate">
               <!-- Input -->
               <div class="js-form-message mb-6">
                 <label class="form-label">
@@ -5292,10 +5293,14 @@
                   </label>
 
                   <div class="form-group">
-                    <input type="password" class="form-control" name="newPassword" placeholder="Enter your password" aria-label="Enter your password" required
+                    <input id="newPassword" type="password" class="form-control" name="newPassword" placeholder="Enter your password" aria-label="Enter your password" required
                            data-msg="Please enter your password."
                            data-error-class="u-has-error"
-                           data-success-class="u-has-success">
+                           data-success-class="u-has-success"
+                           data-pwstrength-container="#changePasswordForm"
+                           data-pwstrength-progress="#passwordStrengthProgress"
+                           data-pwstrength-verdict="#passwordStrengthVerdict"
+                           data-pwstrength-progress-extra-classes="bg-white height-4">
                   </div>
                 </div>
               </div>
@@ -5321,11 +5326,11 @@
                 <div class="mb-6">
                   <div class="d-flex justify-content-between mb-2">
                     <h3 class="h6">Password strength:</h3>
-                    <span>Medium</span>
+                    <span id="passwordStrengthVerdict"></span>
                   </div>
-                  <div class="progress bg-white mb-2" style="height: 4px;">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                  </div>
+
+                  <div id="passwordStrengthProgress" class="mb-2"></div>
+
                   <p class="small">New password must be 8-20 characters long. Tip: Make it hard to guess (wrong: password123).</p>
                 </div>
                 <!-- End Password Strength -->
@@ -5340,7 +5345,7 @@
           <div class="tab-pane fade" id="pills-html-16" role="tabpanel" aria-labelledby="pills-html-tab-16">
             <pre>
               <code class="language-html" data-lang="html">
-                &lt;form class="js-validate"&gt;
+                &lt;form id="changePasswordForm" class="js-validate"&gt;
                   &lt;!-- Input --&gt;
                   &lt;div class="js-form-message mb-6"&gt;
                     &lt;label class="form-label"&gt;
@@ -5364,10 +5369,14 @@
                       &lt;/label&gt;
 
                       &lt;div class="form-group"&gt;
-                        &lt;input type="password" class="form-control" name="newPassword" placeholder="Enter your password" aria-label="Enter your password" required
-                               data-msg="Please enter your password."
-                               data-error-class="u-has-error"
-                               data-success-class="u-has-success"&gt;
+                        &lt;input id="newPassword" type="password" class="form-control" name="newPassword" placeholder="Enter your password" aria-label="Enter your password" required
+                             data-msg="Please enter your password."
+                             data-error-class="u-has-error"
+                             data-success-class="u-has-success"
+                             data-pwstrength-container="#changePasswordForm"
+                             data-pwstrength-progress="#passwordStrengthProgress"
+                             data-pwstrength-verdict="#passwordStrengthVerdict"
+                             data-pwstrength-progress-extra-classes="bg-white height-4"&gt;
                       &lt;/div&gt;
                     &lt;/div&gt;
                   &lt;/div&gt;
@@ -5393,11 +5402,11 @@
                     &lt;div class="mb-6"&gt;
                       &lt;div class="d-flex justify-content-between mb-2"&gt;
                         &lt;h3 class="h6"&gt;Password strength:&lt;/h3&gt;
-                        &lt;span&gt;Medium&lt;/span&gt;
+                        &lt;span id="passwordStrengthVerdict"&gt;&lt;/span&gt;
                       &lt;/div&gt;
-                      &lt;div class="progress bg-white mb-2" style="height: 4px;"&gt;
-                        &lt;div class="progress-bar bg-warning" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
-                      &lt;/div&gt;
+
+                      &lt;div id="passwordStrengthProgress" class="mb-2"&gt;&lt;/div&gt;
+
                       &lt;p class="small"&gt;New password must be 8-20 characters long. Tip: Make it hard to guess (wrong: password123).&lt;/p&gt;
                     &lt;/div&gt;
                     &lt;!-- End Password Strength --&gt;
@@ -5414,14 +5423,21 @@
           <div class="tab-pane fade" id="pills-js-16" role="tabpanel" aria-labelledby="pills-js-tab-16">
             <pre>
               <code class="language-html" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/vendor/pwstrength-bootstrap/dist/pwstrength-bootstrap.min.js"&gt;&lt;/script&gt;
+
                 &lt;!-- JS Front --&gt;
                 &lt;script src="../../assets/js/components/hs.focus-state.js"&gt;&lt;/script&gt;
+                &lt;script src="../../assets/js/components/hs.password-strength.js"&gt;&lt;/script&gt;
 
                 &lt;!-- JS Plugins Init. --&gt;
                 &lt;script&gt;
                   $(document).on('ready', function () {
                     // initialization of forms
                     $.HSCore.components.HSFocusState.init();
+
+                    // initialization of password strength module
+                    $.HSCore.components.HSPasswordStrength.init('#newPassword');
                   });
                 &lt;/script&gt;
               </code>
@@ -6053,6 +6069,7 @@
   <script src="../assets/vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.min.js"></script>
   <script src="../assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
   <script src="../assets/vendor/clipboard/dist/clipboard.min.js"></script>
+  <script src="../assets/vendor/pwstrength-bootstrap/dist/pwstrength-bootstrap.min.js"></script>
   <script src="../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
   <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
   <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
@@ -6073,6 +6090,7 @@
   <script src="../assets/js/components/hs.toggle-state.js"></script>
   <script src="../assets/js/components/hs.clipboard.js"></script>
   <script src="../assets/js/components/hs.show-animation.js"></script>
+  <script src="../assets/js/components/hs.password-strength.js"></script>
   <script src="../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
 
   <!-- JS Plugins Init. -->
@@ -6118,6 +6136,9 @@
 
       // initialization of clipboard
       $.HSCore.components.HSClipboard.init('.js-clipboard');
+
+      // initialization of password strength module
+      $.HSCore.components.HSPasswordStrength.init('#newPassword');
     });
 
     $(window).on('load', function () {

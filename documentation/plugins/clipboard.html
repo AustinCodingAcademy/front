@@ -103,9 +103,9 @@
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_1">v2.1</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_1_1">Latest (v2.1.x)</a></li>
                   <li class="dropdown-divider"></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
                   <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
@@ -210,6 +210,7 @@
           <li><a href="malihu-scrollbar.html">Malihu scrollbar</a></li>
           <li><a href="modal-window.html">Modal window</a></li>
           <li><a href="parallax.html">Parallax</a></li>
+          <li><a href="password-strength.html">Password strength</a></li>
           <li><a href="range-slider.html">Range slider</a></li>
           <li><a href="scroll-effect.html">Scroll effect</a></li>
           <li><a href="scroll-nav.html">Scroll nav</a></li>
@@ -252,7 +253,7 @@
       <div class="col-xl-2 order-xl-2 d-none d-xl-inline-block">
         <ul class="js-scroll-nav hd-doc-section-nav">
           <li class="hd-doc-section-nav-item active"><a href="#how-to-use">How to use?</a></li>
-          <li class="hd-doc-section-nav-item"><a href="#basic-example">Basic example</a></li>
+          <li class="hd-doc-section-nav-item"><a href="#basic-examples">Basic examples</a></li>
           <li class="hd-doc-section-nav-item">
             <a href="#js-behavior">JavaScript behavior</a>
             <ul>
@@ -306,8 +307,8 @@
           </pre>
         </div>
 
-        <div id="basic-example" class="mb-9">
-          <h2 class="h4">Basic example <a class="anchorjs-link" href="#basic-example" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+        <div id="basic-examples" class="mb-9">
+          <h2 class="h4">Basic examples <a class="anchorjs-link" href="#basic-examples" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
 
           <div class="mb-3">
             <!-- Nav Classic -->
@@ -323,12 +324,26 @@
 
             <!-- Tab Content -->
             <div class="tab-content bg-light" id="pills-tabContent-1">
-              <div class="tab-pane fade p-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
-                <div class="js-focus-state input-group mb-2">
-                  <input id="referralLink" type="text" class="form-control" value="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/">
+              <div class="tab-pane fade py-7 px-4 show active" id="pills-result-1" role="tabpanel" aria-labelledby="pills-result-tab-1">
+                <div class="js-focus-state input-group mb-4">
+                  <input id="tooltipExample" type="text" class="form-control" value="I am a tooltip example">
+                  <div class="input-group-append">
+                      <a class="js-clipboard input-group-text" href="javascript:;"
+                         data-toggle="tooltip"
+                         title="Copy to clipboard!"
+                         data-type="tooltip"
+                         data-success-text="Copied!"
+                         data-content-target="#tooltipExample">
+                        <span class="fas fa-clone"></span>
+                      </a>
+                  </div>
+                </div>
+
+                <div class="js-focus-state input-group mb-4">
+                  <input id="iconExample" type="text" class="form-control" value="I am a icon example">
                   <div class="input-group-append">
                     <a class="js-clipboard input-group-text" href="javascript:;"
-                       data-content-target="#referralLink"
+                       data-content-target="#iconExample"
                        data-class-change-target="#linkIcon"
                        data-default-class="fas fa-clone"
                        data-success-class="fas fa-check">
@@ -336,22 +351,20 @@
                     </a>
                   </div>
                 </div>
+
+                <div class="js-focus-state input-group">
+                  <input id="textExample" type="text" class="form-control" value="I am a text example">
+                  <div class="input-group-append">
+                    <a class="js-clipboard input-group-text" href="javascript:;"
+                       data-content-target="#textExample"
+                       data-success-text="Copied!">Copy to Clipboard!</a>
+                  </div>
+                </div>
               </div>
               <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
                 <pre>
                   <code class="language-markup" data-lang="html">
-                    &lt;div class="js-focus-state input-group mb-2"&gt;
-                      &lt;input id="referralLink" type="text" class="form-control" value="https://themes.getbootstrap.com/product/front-multipurpose-responsive-template/"&gt;
-                      &lt;div class="input-group-append"&gt;
-                        &lt;a class="js-clipboard input-group-text" href="javascript:;"
-                           data-content-target="#referralLink"
-                           data-class-change-target="#linkIcon"
-                           data-default-class="fas fa-clone"
-                           data-success-class="fas fa-check"&gt;
-                          &lt;span id="linkIcon" class="fas fa-clone"&gt;&lt;/span&gt;
-                        &lt;/a&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
+
                   </code>
                 </pre>
               </div>
