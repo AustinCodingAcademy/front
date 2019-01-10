@@ -102,15 +102,13 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.0
+                  v2.1
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0">v2.0</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.3</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_2">v1.2</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_1">v1.1</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#initial-release">v1.0</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1">v2.1</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
               <!-- End Changelog -->
@@ -179,6 +177,7 @@
         <li><a href="pagination.html">Pagination</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="products.html">Products</a></li>
+        <li><a href="sidebar-examples.html">Sidebar examples</a></li>
         <li><a href="stats.html">Stats</a></li>
         <li><a href="svg-blocks.html">SVG blocks</a></li>
         <li><a href="tabs.html">Tabs</a></li>
@@ -1773,7 +1772,7 @@
                   <div id="applyForJob">
                     <!-- Title -->
                     <div class="text-center mb-7">
-                      <span class="u-label u-label--sm u-label--white mb-2">Join Front</span>
+                      <span class="btn btn-xs btn-soft-white btn-pill mb-2">Join Front</span>
                       <h2 class="h3 text-white font-weight-normal">Apply for this Job</h2>
                     </div>
                     <!-- End Title -->
@@ -1901,7 +1900,7 @@
                       &lt;div id="applyForJob"&gt;
                         &lt;!-- Title --&gt;
                         &lt;div class="text-center mb-7"&gt;
-                          &lt;span class="u-label u-label--sm u-label--white mb-2"&gt;Join Front&lt;/span&gt;
+                          &lt;span class="btn btn-xs btn-soft-white btn-pill mb-2"&gt;Join Front&lt;/span&gt;
                           &lt;h2 class="h3 text-white font-weight-normal"&gt;Apply for this Job&lt;/h2&gt;
                         &lt;/div&gt;
                         &lt;!-- End Title --&gt;
@@ -2034,12 +2033,13 @@
 
                 &lt;!-- JS Plugins Init. --&gt;
                 &lt;script&gt;
+                  $(window).on('load', function () {
+                    $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+                  });
+
                   $(document).on('ready', function () {
                     // initialization of form validation
                     $.HSCore.components.HSValidation.init('.js-validate');
-
-                    // initialization of svg injector module
-                    $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
                   });
                 &lt;/script&gt;
               </code>
@@ -5815,6 +5815,203 @@
                   $(document).on('ready', function () {
                     // initialization of clipboard
                     $.HSCore.components.HSClipboard.init('.js-clipboard');
+                  });
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Tab Wrapper -->
+    </div>
+    <!-- End Component Block -->
+
+    <!-- Component Block -->
+    <div id="search-form-1" class="mb-9">
+      <h2 class="h4 mb-4">Search form #1 <a class="anchorjs-link" href="#search-form-1" data-anchorjs-icon="#"></a></h2>
+
+      <!-- Tab Wrapper -->
+      <div class="tab-wrapper">
+        <!-- Nav Classic -->
+        <ul class="nav nav-classic" id="pills-tab-20" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-result-tab-20" data-toggle="pill" href="#pills-result-20" role="tab" aria-controls="pills-result-20" aria-selected="true">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-html-tab-20" data-toggle="pill" href="#pills-html-20" role="tab" aria-controls="pills-html-20" aria-selected="false">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-js-tab-20" data-toggle="pill" href="#pills-js-20" role="tab" aria-controls="pills-js-20" aria-selected="false">JS</a>
+          </li>
+        </ul>
+        <!-- End Nav Classic -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent-20">
+          <div class="tab-pane fade show active" id="pills-result-20" role="tabpanel" aria-labelledby="pills-result-tab-20">
+            <!-- Hero Section -->
+            <div id="SVGfiles" class="svg-preloader bg-light position-relative z-index-2">
+              <div class="container space-2">
+                <!-- Title -->
+                <div class="mb-7">
+                  <span class="d-block text-secondary">Get access to millions of company reviews</span>
+                  <h1 class="text-primary font-weight-semi-bold">Find great places to work</h1>
+                </div>
+                <!-- End Title -->
+
+                <!-- Search Jobs Form -->
+                <form class="row mb-2">
+                  <div class="col-lg-5 mb-4 mb-lg-0">
+                    <!-- Input -->
+                    <label class="d-block">
+                      <span class="h6 d-block text-dark font-weight-semi-bold mb-0">Company name or job title</span>
+                    </label>
+                    <div class="js-focus-state">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Company or title" aria-label="Company or title" aria-describedby="keywordInputAddon">
+                        <div class="input-group-append">
+                          <span class="input-group-text">
+                            <span class="fas fa-search" id="keywordInputAddon"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Input -->
+                  </div>
+
+                  <div class="col-lg-5 mb-4 mb-lg-0">
+                    <!-- Input -->
+                    <label class="d-block">
+                      <span class="h6 d-block text-dark font-weight-semi-bold mb-0">City, state, or zip</span>
+                    </label>
+                    <div class="js-focus-state">
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="City, state, or zip" aria-label="City, state, or zip" aria-describedby="locationInputAddon">
+                        <div class="input-group-append">
+                          <span class="input-group-text">
+                            <span class="fas fa-map-marker-alt" id="locationInputAddon"></span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Input -->
+                  </div>
+
+                  <div class="col-lg-2 align-self-lg-end">
+                    <button type="submit" class="btn btn-block btn-primary transition-3d-hover">Search</button>
+                  </div>
+                  <!-- End Checkbox -->
+                </form>
+                <!-- End Search Jobs Form -->
+              </div>
+
+              <!-- SVG Icon -->
+              <div class="d-none d-lg-block w-100 position-absolute bottom-0 right-0 z-index-n1 max-width-27">
+                <figure class="ie-files">
+                  <img class="js-svg-injector" src="../assets/svg/illustrations/files.svg" alt="Image Description"
+                       data-parent="#SVGfiles">
+                </figure>
+              </div>
+              <!-- End SVG Icon -->
+            </div>
+            <!-- End Hero Section -->
+          </div>
+          <div class="tab-pane fade" id="pills-html-20" role="tabpanel" aria-labelledby="pills-html-tab-20">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- Hero Section --&gt;
+                &lt;div id="SVGfiles" class="svg-preloader bg-light position-relative z-index-2"&gt;
+                  &lt;div class="container space-2"&gt;
+                    &lt;!-- Title --&gt;
+                    &lt;div class="mb-7"&gt;
+                      &lt;span class="d-block text-secondary"&gt;Get access to millions of company reviews&lt;/span&gt;
+                      &lt;h1 class="text-primary font-weight-semi-bold"&gt;Find great places to work&lt;/h1&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Title --&gt;
+
+                    &lt;!-- Search Jobs Form --&gt;
+                    &lt;form class="row mb-2"&gt;
+                      &lt;div class="col-lg-5 mb-4 mb-lg-0"&gt;
+                        &lt;!-- Input --&gt;
+                        &lt;label class="d-block"&gt;
+                          &lt;span class="h6 d-block text-dark font-weight-semi-bold mb-0"&gt;Company name or job title&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;div class="js-focus-state"&gt;
+                          &lt;div class="input-group"&gt;
+                            &lt;input type="text" class="form-control" placeholder="Company or title" aria-label="Company or title" aria-describedby="keywordInputAddon"&gt;
+                            &lt;div class="input-group-append"&gt;
+                              &lt;span class="input-group-text"&gt;
+                                &lt;span class="fas fa-search" id="keywordInputAddon"&gt;&lt;/span&gt;
+                              &lt;/span&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Input --&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="col-lg-5 mb-4 mb-lg-0"&gt;
+                        &lt;!-- Input --&gt;
+                        &lt;label class="d-block"&gt;
+                          &lt;span class="h6 d-block text-dark font-weight-semi-bold mb-0"&gt;City, state, or zip&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;div class="js-focus-state"&gt;
+                          &lt;div class="input-group"&gt;
+                            &lt;input type="text" class="form-control" placeholder="City, state, or zip" aria-label="City, state, or zip" aria-describedby="locationInputAddon"&gt;
+                            &lt;div class="input-group-append"&gt;
+                              &lt;span class="input-group-text"&gt;
+                                &lt;span class="fas fa-map-marker-alt" id="locationInputAddon"&gt;&lt;/span&gt;
+                              &lt;/span&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Input --&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="col-lg-2 align-self-lg-end"&gt;
+                        &lt;button type="submit" class="btn btn-block btn-primary transition-3d-hover"&gt;Search&lt;/button&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Checkbox --&gt;
+                    &lt;/form&gt;
+                    &lt;!-- End Search Jobs Form --&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- SVG Icon --&gt;
+                  &lt;div class="d-none d-lg-block w-100 position-absolute bottom-0 right-0 z-index-n1 max-width-27"&gt;
+                    &lt;figure class="ie-files"&gt;
+                      &lt;img class="js-svg-injector" src="../../assets/svg/illustrations/files.svg" alt="Image Description"
+                           data-parent="#SVGfiles"&gt;
+                    &lt;/figure&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End SVG Icon --&gt;
+                &lt;/div&gt;
+                &lt;!-- End Hero Section --&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-js-20" role="tabpanel" aria-labelledby="pills-js-tab-20">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Front --&gt;
+                &lt;script src="../../assets/js/components/hs.focus-state.js"&gt;&lt;/script&gt;
+                &lt;script src="../../assets/js/components/hs.svg-injector.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  $(document).on('ready', function () {
+                    // initialization of forms
+                    $.HSCore.components.HSFocusState.init();
+                  });
+                &lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  $(document).on('load', function () {
+                    // initialization of svg injector module
+                    $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
                   });
                 &lt;/script&gt;
               </code>

@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="../assets/vendor/animate.css/animate.min.css">
   <link rel="stylesheet" href="../assets/vendor/hs-megamenu/src/hs.megamenu.css">
   <link rel="stylesheet" href="../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
   <link rel="stylesheet" href="../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
   <link rel="stylesheet" href="../documentation/assets/vendor/prism/prism.css">
 
@@ -99,15 +100,13 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.0
+                  v2.1
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0">v2.0</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.3</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_2">v1.2</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_1">v1.1</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#initial-release">v1.0</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1">v2.1</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
               <!-- End Changelog -->
@@ -176,6 +175,7 @@
         <li><a href="pagination.html">Pagination</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="products.html">Products</a></li>
+        <li><a href="sidebar-examples.html">Sidebar examples</a></li>
         <li><a href="stats.html">Stats</a></li>
         <li><a href="svg-blocks.html">SVG blocks</a></li>
         <li><a href="tabs.html">Tabs</a></li>
@@ -752,6 +752,380 @@
       <!-- End Tab Wrapper -->
     </div>
     <!-- End Component Block -->
+
+    <!-- Component Block -->
+    <div id="media-objects-3" class="mb-9">
+      <h2 class="h4 mb-4">Media objects #3 <a class="anchorjs-link" href="#media-objects-3" data-anchorjs-icon="#"></a></h2>
+
+      <!-- Tab Wrapper -->
+      <div class="tab-wrapper">
+        <!-- Nav Classic -->
+        <ul class="nav nav-classic" id="pills-tab-3" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-result-tab-3" data-toggle="pill" href="#pills-result-3" role="tab" aria-controls="pills-result-3" aria-selected="true">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-html-tab-3" data-toggle="pill" href="#pills-html-3" role="tab" aria-controls="pills-html-3" aria-selected="false">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-css-tab-3" data-toggle="pill" href="#pills-css-3" role="tab" aria-controls="pills-css-3" aria-selected="false">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-js-tab-3" data-toggle="pill" href="#pills-js-3" role="tab" aria-controls="pills-js-3" aria-selected="false">JS</a>
+          </li>
+        </ul>
+        <!-- End Nav Classic -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent-3">
+          <div class="tab-pane fade p-4 show active" id="pills-result-3" role="tabpanel" aria-labelledby="pills-result-tab-3">
+            <div class="d-sm-flex justify-content-sm-between align-items-sm-center border-bottom pb-5 mb-5">
+              <div class="d-flex align-items-center mb-2 mb-sm-0">
+                <h4 class="h5 mb-0">Reviews</h4>
+
+                <!-- Review -->
+                <div class="text-warning ml-3">
+                  <small class="fas fa-star"></small>
+                  <span class="font-weight-semi-bold align-middle">4.7</span>
+                  <span class="text-muted align-middle">(39 reviews)</span>
+                </div>
+                <!-- End Review -->
+              </div>
+
+              <!-- Select -->
+              <select class="js-select selectpicker dropdown-select"
+                      data-width="fit"
+                      data-style="btn-soft-secondary btn-xs">
+                <option value="showCategoryByFilterSelect1" selected>Newest first</option>
+                <option value="showCategoryByFilterSelect2">Highest rated</option>
+                <option value="showCategoryByFilterSelect3">Lowest rated</option>
+              </select>
+              <!-- End Select -->
+            </div>
+
+            <div class="border-bottom pb-5 mb-5">
+              <div class="row">
+                <!-- Review -->
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="text-warning">
+                    <small class="fas fa-star"></small>
+                    <span class="font-weight-semi-bold align-middle">4.6</span>
+                  </div>
+                  <h5 class="small text-secondary mb-0">Communication level</h5>
+                </div>
+                <!-- End Review -->
+
+                <!-- Review -->
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                  <div class="text-warning">
+                    <small class="fas fa-star"></small>
+                    <span class="font-weight-semi-bold align-middle">4.8</span>
+                  </div>
+                  <h5 class="small text-secondary mb-0">Recommend to a friend</h5>
+                </div>
+                <!-- End Review -->
+
+                <!-- Review -->
+                <div class="col-sm-4">
+                  <div class="text-warning">
+                    <small class="fas fa-star"></small>
+                    <span class="font-weight-semi-bold align-middle">5.0</span>
+                  </div>
+                  <h5 class="small text-secondary mb-0">Service as described</h5>
+                </div>
+                <!-- End Review -->
+              </div>
+            </div>
+
+            <div class="border-bottom pb-5 mb-5">
+              <!-- Testimonial -->
+              <div class="mb-4">
+                <h4 class="h6">I need a front-end developer for a project.</h4>
+                <p>Jorge delivered on all fronts. Superb developer, he goes over and above in most cases to make sure the job is done and done well. He has the right skill set for a developer and more importantly he aligns himself with the vision of the product and provides great insights on how to build a product the right way. Will look forward to work with him on more projects. Thanks Jorge.</p>
+              </div>
+
+              <div class="media">
+                <div class="u-avatar mr-3">
+                  <img class="img-fluid rounded-circle" src="../assets/img/100x100/img1.jpg" alt="Image Description">
+                </div>
+                <div class="media-body">
+                  <h4 class="h6 mb-1">Maria Muszynska</h4>
+                  <!-- Review -->
+                  <div class="small mb-4">
+                    <span class="text-warning">
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                    </span>
+                    <span class="font-weight-semi-bold ml-2">5.0</span>
+                    <span class="text-muted">June 2018 - Aug 2018</span>
+                  </div>
+                  <!-- End Review -->
+                </div>
+              </div>
+              <!-- End Testimonial -->
+            </div>
+
+            <div class="border-bottom pb-5 mb-5">
+              <!-- Testimonial -->
+              <div class="mb-4">
+                <h4 class="h6">E-commerce app development.</h4>
+                <p>Jorge was a joy to work with. Excellent results and all-around attitude.</p>
+              </div>
+
+              <div class="media">
+                <div class="u-avatar mr-3">
+                  <img class="img-fluid rounded-circle" src="../assets/img/100x100/img4.jpg" alt="Image Description">
+                </div>
+                <div class="media-body">
+                  <h4 class="h6 mb-1">Brus V.</h4>
+                  <!-- Review -->
+                  <div class="small mb-3">
+                    <span class="text-warning">
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                    </span>
+                    <span class="font-weight-semi-bold ml-2">5.0</span>
+                    <span class="text-muted">Nov 2018</span>
+                  </div>
+                  <!-- End Review -->
+                </div>
+              </div>
+              <!-- End Testimonial -->
+            </div>
+
+            <div class="border-bottom pb-5 mb-5">
+              <!-- Testimonial -->
+              <div class="mb-3">
+                <h4 class="h6">Building a personal website!</h4>
+                <p>Elite front-end developer. One of the best I have worked with so far.</p>
+              </div>
+
+              <div class="media">
+                <div class="u-avatar mr-3">
+                  <img class="img-fluid rounded-circle" src="../assets/img/100x100/img10.jpg" alt="Image Description">
+                </div>
+                <div class="media-body">
+                  <h4 class="h6 mb-1">Gradiella Mayer</h4>
+                  <!-- Review -->
+                  <div class="small mb-3">
+                    <span class="text-warning">
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                      <span class="fas fa-star"></span>
+                    </span>
+                    <span class="font-weight-semi-bold ml-2">5.0</span>
+                    <span class="text-muted">Dec 2018</span>
+                  </div>
+                  <!-- End Review -->
+                </div>
+              </div>
+              <!-- End Testimonial -->
+            </div>
+
+            <button type="button" class="btn btn-block btn-soft-primary transition-3d-hover">Load More</button>
+          </div>
+          <div class="tab-pane fade" id="pills-html-3" role="tabpanel" aria-labelledby="pills-html-tab-3">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;div class="d-sm-flex justify-content-sm-between align-items-sm-center border-bottom pb-5 mb-5"&gt;
+                  &lt;div class="d-flex align-items-center mb-2 mb-sm-0"&gt;
+                    &lt;h4 class="h5 mb-0"&gt;Reviews&lt;/h4&gt;
+
+                    &lt;!-- Review --&gt;
+                    &lt;div class="text-warning ml-3"&gt;
+                      &lt;small class="fas fa-star"&gt;&lt;/small&gt;
+                      &lt;span class="font-weight-semi-bold align-middle"&gt;4.7&lt;/span&gt;
+                      &lt;span class="text-muted align-middle"&gt;(39 reviews)&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Review --&gt;
+                  &lt;/div&gt;
+
+                  &lt;!-- Select --&gt;
+                  &lt;select class="js-select selectpicker dropdown-select"
+                          data-width="fit"
+                          data-style="btn-soft-secondary btn-xs"&gt;
+                    &lt;option value="showCategoryByFilterSelect1" selected&gt;Newest first&lt;/option&gt;
+                    &lt;option value="showCategoryByFilterSelect2"&gt;Highest rated&lt;/option&gt;
+                    &lt;option value="showCategoryByFilterSelect3"&gt;Lowest rated&lt;/option&gt;
+                  &lt;/select&gt;
+                  &lt;!-- End Select --&gt;
+                &lt;/div&gt;
+
+                &lt;div class="border-bottom pb-5 mb-5"&gt;
+                  &lt;div class="row"&gt;
+                    &lt;!-- Review --&gt;
+                    &lt;div class="col-sm-4 mb-3 mb-sm-0"&gt;
+                      &lt;div class="text-warning"&gt;
+                        &lt;small class="fas fa-star"&gt;&lt;/small&gt;
+                        &lt;span class="font-weight-semi-bold align-middle"&gt;4.6&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;h5 class="small text-secondary mb-0"&gt;Communication level&lt;/h5&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Review --&gt;
+
+                    &lt;!-- Review --&gt;
+                    &lt;div class="col-sm-4 mb-3 mb-sm-0"&gt;
+                      &lt;div class="text-warning"&gt;
+                        &lt;small class="fas fa-star"&gt;&lt;/small&gt;
+                        &lt;span class="font-weight-semi-bold align-middle"&gt;4.8&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;h5 class="small text-secondary mb-0"&gt;Recommend to a friend&lt;/h5&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Review --&gt;
+
+                    &lt;!-- Review --&gt;
+                    &lt;div class="col-sm-4"&gt;
+                      &lt;div class="text-warning"&gt;
+                        &lt;small class="fas fa-star"&gt;&lt;/small&gt;
+                        &lt;span class="font-weight-semi-bold align-middle"&gt;5.0&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;h5 class="small text-secondary mb-0"&gt;Service as described&lt;/h5&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Review --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class="border-bottom pb-5 mb-5"&gt;
+                  &lt;!-- Testimonial --&gt;
+                  &lt;div class="mb-4"&gt;
+                    &lt;h4 class="h6"&gt;I need a front-end developer for a project.&lt;/h4&gt;
+                    &lt;p&gt;Jorge delivered on all fronts. Superb developer, he goes over and above in most cases to make sure the job is done and done well. He has the right skill set for a developer and more importantly he aligns himself with the vision of the product and provides great insights on how to build a product the right way. Will look forward to work with him on more projects. Thanks Jorge.&lt;/p&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="media"&gt;
+                    &lt;div class="u-avatar mr-3"&gt;
+                      &lt;img class="img-fluid rounded-circle" src="../../assets/img/100x100/img1.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="media-body"&gt;
+                      &lt;h4 class="h6 mb-1"&gt;Maria Muszynska&lt;/h4&gt;
+                      &lt;!-- Review --&gt;
+                      &lt;div class="small mb-4"&gt;
+                        &lt;span class="text-warning"&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                        &lt;/span&gt;
+                        &lt;span class="font-weight-semi-bold ml-2"&gt;5.0&lt;/span&gt;
+                        &lt;span class="text-muted"&gt;June 2018 - Aug 2018&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Review --&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Testimonial --&gt;
+                &lt;/div&gt;
+
+                &lt;div class="border-bottom pb-5 mb-5"&gt;
+                  &lt;!-- Testimonial --&gt;
+                  &lt;div class="mb-4"&gt;
+                    &lt;h4 class="h6"&gt;E-commerce app development.&lt;/h4&gt;
+                    &lt;p&gt;Jorge was a joy to work with. Excellent results and all-around attitude.&lt;/p&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="media"&gt;
+                    &lt;div class="u-avatar mr-3"&gt;
+                      &lt;img class="img-fluid rounded-circle" src="../../assets/img/100x100/img4.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="media-body"&gt;
+                      &lt;h4 class="h6 mb-1"&gt;Brus V.&lt;/h4&gt;
+                      &lt;!-- Review --&gt;
+                      &lt;div class="small mb-3"&gt;
+                        &lt;span class="text-warning"&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                        &lt;/span&gt;
+                        &lt;span class="font-weight-semi-bold ml-2"&gt;5.0&lt;/span&gt;
+                        &lt;span class="text-muted"&gt;Nov 2018&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Review --&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Testimonial --&gt;
+                &lt;/div&gt;
+
+                &lt;div class="border-bottom pb-5 mb-5"&gt;
+                  &lt;!-- Testimonial --&gt;
+                  &lt;div class="mb-3"&gt;
+                    &lt;h4 class="h6"&gt;Building a personal website!&lt;/h4&gt;
+                    &lt;p&gt;Elite front-end developer. One of the best I have worked with so far.&lt;/p&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="media"&gt;
+                    &lt;div class="u-avatar mr-3"&gt;
+                      &lt;img class="img-fluid rounded-circle" src="../../assets/img/100x100/img10.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="media-body"&gt;
+                      &lt;h4 class="h6 mb-1"&gt;Gradiella Mayer&lt;/h4&gt;
+                      &lt;!-- Review --&gt;
+                      &lt;div class="small mb-3"&gt;
+                        &lt;span class="text-warning"&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                          &lt;span class="fas fa-star"&gt;&lt;/span&gt;
+                        &lt;/span&gt;
+                        &lt;span class="font-weight-semi-bold ml-2"&gt;5.0&lt;/span&gt;
+                        &lt;span class="text-muted"&gt;Dec 2018&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Review --&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Testimonial --&gt;
+                &lt;/div&gt;
+
+                &lt;button type="button" class="btn btn-block btn-soft-primary transition-3d-hover"&gt;Load More&lt;/button&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-css-3" role="tabpanel" aria-labelledby="pills-css-tab-3">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;link rel="stylesheet" href="../../assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css"&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-js-3" role="tabpanel" aria-labelledby="pills-js-tab-3">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"&gt;&lt;/script&gt;
+                &lt;script src="../../assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Front --&gt;
+                &lt;script src="../../assets/js/components/hs.svg-injector.js"&gt;&lt;/script&gt;
+                &lt;script src="../../assets/js/components/hs.selectpicker.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  $(window).on('load', function () {
+                    $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+
+                    // initialization of select picker
+                    $.HSCore.components.HSSelectPicker.init('.js-select');
+                  });
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Tab Wrapper -->
+    </div>
+    <!-- End Component Block -->
   </main>
   <!-- ========== END MAIN ========== -->
 
@@ -777,6 +1151,7 @@
   <script src="../assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
   <script src="../assets/vendor/svg-injector/dist/svg-injector.min.js"></script>
   <script src="../assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
   <script src="../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
   <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
   <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
@@ -790,6 +1165,7 @@
   <script src="../assets/js/components/hs.go-to.js"></script>
   <script src="../assets/js/components/hs.malihu-scrollbar.js"></script>
   <script src="../assets/js/components/hs.svg-injector.js"></script>
+  <script src="../assets/js/components/hs.selectpicker.js"></script>
   <script src="../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
 
   <!-- JS Plugins Init. -->
@@ -808,6 +1184,9 @@
       var $scrollbar = $('.js-scrollbar');
       $.HSCore.components.HSMalihuScrollBar.init($scrollbar);
       $($scrollbar).mCustomScrollbar('scrollTo', '#components li a.active');
+
+      // initialization of select picker
+      $.HSCore.components.HSSelectPicker.init('.js-select');
     });
 
     $(window).on('load', function () {

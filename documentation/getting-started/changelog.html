@@ -99,15 +99,14 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.0
+                  v2.1
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_0">v2.0</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version1_3">v1.3</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version1_2">v1.2</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version1_1">v1.1</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#initial-release">v1.0</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_1">v2.1</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
               <!-- End Changelog -->
@@ -177,8 +176,6 @@
           <li><a href="../components/collapse.html">Collapse</a></li>
           <li><a href="../components/dividers.html">Dividers</a></li>
           <li><a href="../components/forms.html">Forms</a></li>
-          <li><a href="../components/icons.html">Icons</a></li>
-          <li><a href="../components/label.html">Label</a></li>
           <li><a href="../components/list-group.html">List group</a></li>
           <li><a href="../components/navs.html">Navs</a></li>
           <li><a href="../components/pagination.html">Pagination</a></li>
@@ -267,52 +264,86 @@
           <p class="alert-text mb-0">Do <span class="font-weight-semi-bold">not</span> forget to <span class="font-weight-semi-bold">backup</span> your files and <span class="font-weight-semi-bold">read the changelog</span> before updating your Front copy. If you come across with any problems with Front template during the update and development processes, feel free to contact our support group at <a href="mailto:support@htmlstream.com">support@htmlstream.com</a> and our team will assist you within a short time.</p>
         </div>
 
-        <div id="version2_0_1" class="border-bottom pb-5 mb-9">
-          <h3 class="h4"><code class="highlighter-rouge">2.0.1</code> - 14 November, 2018 <a class="anchorjs-link" href="#version2_0_1" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+        <div id="version2_1" class="border-bottom pb-5 mb-9">
+          <h3 class="h4"><code class="highlighter-rouge">2.1</code> - 18 December, 2018 <a class="anchorjs-link" href="#version2_1" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
 
-          <p><span class="u-label u-label--xs u-label--warning font-weight-semi-bold rounded mr-2">Updated</span> <code class="highlighter-rouge">hs.sticky-block.js</code> file completely rewritten and updated from v1.0 to v2.0.</p>
-          <p><span class="u-label u-label--xs u-label--warning font-weight-semi-bold rounded mr-2">Updated</span> Sticky blocks where used.</p>
-          <p><span class="u-label u-label--xs u-label--success font-weight-semi-bold rounded mr-2">Enhanced</span> Documentation.</p>
-          <p><span class="u-label u-label--xs u-label--success font-weight-semi-bold rounded mr-2">Enhanced</span> <code class="highlighter-rouge">hs.scroll-nav.js</code> file.</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> Anchor offset issue in the Documentation pages.</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">home/onepage-saas.html</code> Pricing block's SVG component (.ie-abstract-shapes-11) in IE browser.</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Jobs inner pages.</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Header layout</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Utility classes</p>
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> Documentation.</p>
+
+          <div id="version2_1-breaking-changes" class="my-5">
+            <h4 class="h5 font-weight-medium">Breaking changes <a class="anchorjs-link" href="#version2_0-breaking-changes" aria-label="Anchor" data-anchorjs-icon="#"></a></h4>
+
+            <ul>
+              <li class="py-1">Dropped <code class="highlighter-rouge">.u-label</code> styles in favor of <code class="highlighter-rouge">.btn</code> classes.</li>
+            </ul>
+          </div>
+
+          <div class="alert alert-info mb-5" role="alert">
+            <h2 class="h6 font-weight-bold">Please Note!</h2>
+            <p class="alert-text mb-0">If you do not want to integrate the breaking changes, you may keep the labels SASS file in your folder and use the old classes.</p>
+          </div>
+        </div>
+
+        <div id="version2_0_2" class="border-bottom pb-5 mb-9">
+          <h3 class="h4"><code class="highlighter-rouge">2.0.2</code> - 4 December, 2018 <a class="anchorjs-link" href="#version2_0_2" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> Documentation.</p>
+          <p><span class="btn btn-xs btn-soft-warning font-weight-semi-bold rounded mr-2">Updated</span> FontAwesome from v5.2 to v5.5</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">hs.megamenu.js</code> issue on iPad devices.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Conflicting Bootstrap Select plugin with <code class="highlighter-rouge">hs.unfold.js</code>.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Bootstrap active button style on checkbox and radio buttons.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Bootstrap select copy-code snippet wrong class naming.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Some linking issues.</p>
+        </div>
+
+        <div id="version2_0_1" class="border-bottom pb-5 mb-9">
+          <h3 class="h4"><code class="highlighter-rouge">2.0.1</code> - 15 November, 2018 <a class="anchorjs-link" href="#version2_0_1" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
+
+          <p><span class="btn btn-xs btn-soft-warning font-weight-semi-bold rounded mr-2">Updated</span> <code class="highlighter-rouge">hs.sticky-block.js</code> file completely rewritten and updated from v1.0 to v2.0.</p>
+          <p><span class="btn btn-xs btn-soft-warning font-weight-semi-bold rounded mr-2">Updated</span> Sticky blocks where used.</p>
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> Documentation.</p>
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> <code class="highlighter-rouge">hs.scroll-nav.js</code> file.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Anchor offset issue in the Documentation pages.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">home/onepage-saas.html</code> Pricing block's SVG component (.ie-abstract-shapes-11) in IE browser.</p>
         </div>
 
         <div id="version2_0" class="border-bottom pb-5 mb-9">
           <h3 class="h4"><code class="highlighter-rouge">2.0</code> - 07 November, 2018 <a class="anchorjs-link" href="#version2_0" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
 
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> 3 home pages</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Invoice page</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> FAQ pages</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> IE supported now</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Utility classes</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> List group</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Header gradient option</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Toggle topbar Header option</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Set of new SVG Icons</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Login pages</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Player.js plugin</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> SVG-injector plugin</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Range Slider plugin</p>
-          <p><span class="u-label u-label--xs u-label--warning font-weight-semi-bold rounded mr-2">Updated</span> Animate.css</p>
-          <p><span class="u-label u-label--xs u-label--warning font-weight-semi-bold rounded mr-2">Updated</span> Popper.js</p>
-          <p><span class="u-label u-label--xs u-label--warning font-weight-semi-bold rounded mr-2">Updated</span> Bootstrap-select</p>
-          <p><span class="u-label u-label--xs u-label--warning font-weight-semi-bold rounded mr-2">Updated</span> Typed.js</p>
-          <p><span class="u-label u-label--xs u-label--success font-weight-semi-bold rounded mr-2">Enhanced</span> unfold.js (Dropdown) accessibility</p>
-          <p><span class="u-label u-label--xs u-label--success font-weight-semi-bold rounded mr-2">Enhanced</span> <code class="highlighter-rouge">hs.video-player.js</code></p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> Google Map degradation issue.</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> Bootstrap select style issue on page load</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> mega-menu.js click function</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> header-collapse not collapsing issue</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">hs.datatables.js</code> pagination issue with <code class="highlighter-rouge">.active</code> state</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> Font size rendering</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> Font awesome prefix classing where <code class="highlighter-rouge">fa-</code> classes changed to <code class="highlighter-rouge">fas-</code></p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> hs.go-to.js plugin disappearing issue on scroll</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">pages/contacts-agency.html</code> horizontal scrollbar issue on icon blocks.</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">home/classic-crypto.html</code> <strong>Blog news</strong>'s image alignment issue fixed with <code class="highlighter-rouge">.w-100</code> class to the parent.</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">custombox</code> visibility issue in IE.</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">pages/services-start-up.html</code> pricing pagination issue.</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> horizontal scrolling issue in Subscribe forms.</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> 3 home pages</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Invoice page</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> FAQ pages</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> IE supported now</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Utility classes</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> List group</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Header gradient option</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Toggle topbar Header option</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Set of new SVG Icons</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Login pages</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Player.js plugin</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> SVG-injector plugin</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Range Slider plugin</p>
+          <p><span class="btn btn-xs btn-soft-warning font-weight-semi-bold rounded mr-2">Updated</span> Animate.css</p>
+          <p><span class="btn btn-xs btn-soft-warning font-weight-semi-bold rounded mr-2">Updated</span> Popper.js</p>
+          <p><span class="btn btn-xs btn-soft-warning font-weight-semi-bold rounded mr-2">Updated</span> Bootstrap-select</p>
+          <p><span class="btn btn-xs btn-soft-warning font-weight-semi-bold rounded mr-2">Updated</span> Typed.js</p>
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> unfold.js (Dropdown) accessibility</p>
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> <code class="highlighter-rouge">hs.video-player.js</code></p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Google Map degradation issue.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Bootstrap select style issue on page load</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> mega-menu.js click function</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> header-collapse not collapsing issue</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">hs.datatables.js</code> pagination issue with <code class="highlighter-rouge">.active</code> state</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Font size rendering</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Font awesome prefix classing where <code class="highlighter-rouge">fa-</code> classes changed to <code class="highlighter-rouge">fas-</code></p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> hs.go-to.js plugin disappearing issue on scroll</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">pages/contacts-agency.html</code> horizontal scrollbar issue on icon blocks.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">home/classic-crypto.html</code> <strong>Blog news</strong>'s image alignment issue fixed with <code class="highlighter-rouge">.w-100</code> class to the parent.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">custombox</code> visibility issue in IE.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">pages/services-start-up.html</code> pricing pagination issue.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> horizontal scrolling issue in Subscribe forms.</p>
 
           <div id="version2_0-migrating-to-v2" class="my-5">
             <h3 class="h4 font-weight-medium">Migrating to v2 <a class="anchorjs-link" href="#version2_0-migrating-to-v2" aria-label="Anchor" data-anchorjs-icon="#"></a></h3>
@@ -892,23 +923,23 @@
         <div id="version1_3" class="border-bottom pb-9 mb-9">
           <h2 class="h4"><code class="highlighter-rouge">1.3</code> - 05 August, 2018 <a class="anchorjs-link" href="#version1_3" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
 
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Account pages added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Circles (Pie Charts) added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Datatables added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Flatpickr added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Bootstrap Select added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Bootstrap Tagsinput added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Summernote WYSIWYG Editor added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Toggle state added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Utility classes</p>
-          <p><span class="u-label u-label--xs u-label--warning font-weight-semi-bold rounded mr-2">Updated</span> Bootstrap updated from <code class="highlighter-rouge">4.1.1</code> to <code class="highlighter-rouge">4.1.3</code></p>
-          <p><span class="u-label u-label--xs u-label--warning font-weight-semi-bold rounded mr-2">Updated</span> FontAwesome Icon Package updated from <code class="highlighter-rouge">5.0.13</code> to <code class="highlighter-rouge">5.4.1</code></p>
-          <p><span class="u-label u-label--xs u-label--warning font-weight-semi-bold rounded mr-2">Updated</span> Cubeportfolio updated from <code class="highlighter-rouge">4.3.4</code> to <code class="highlighter-rouge">4.4.0</code></p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Removed</span> <code class="highlighter-rouge">&lt;meta http-equiv="x-ua-compatible" content="ie=edge"&gt;</code> in all HTML files.</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> Instagram Image resolution</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> Header Nav Link icon rotation</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Account pages added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Circles (Pie Charts) added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Datatables added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Flatpickr added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Bootstrap Select added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Bootstrap Tagsinput added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Summernote WYSIWYG Editor added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Toggle state added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Utility classes</p>
+          <p><span class="btn btn-xs btn-soft-warning font-weight-semi-bold rounded mr-2">Updated</span> Bootstrap updated from <code class="highlighter-rouge">4.1.1</code> to <code class="highlighter-rouge">4.1.3</code></p>
+          <p><span class="btn btn-xs btn-soft-warning font-weight-semi-bold rounded mr-2">Updated</span> FontAwesome Icon Package updated from <code class="highlighter-rouge">5.0.13</code> to <code class="highlighter-rouge">5.4.1</code></p>
+          <p><span class="btn btn-xs btn-soft-warning font-weight-semi-bold rounded mr-2">Updated</span> Cubeportfolio updated from <code class="highlighter-rouge">4.3.4</code> to <code class="highlighter-rouge">4.4.0</code></p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Removed</span> <code class="highlighter-rouge">&lt;meta http-equiv="x-ua-compatible" content="ie=edge"&gt;</code> in all HTML files.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Instagram Image resolution</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Header Nav Link icon rotation</p>
           <p>
-            <span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span>
+            <span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span>
             <code class="highlighter-rouge">.info-v2</code> changed to <code class="highlighter-rouge">.u-info-v2</code> at the following pages:
           </p>
           <ol>
@@ -918,7 +949,7 @@
             <li>home/corporate business.html</li>
           </ol>
           <p>
-            <span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span>
+            <span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span>
             Logo alignment issue at the following pages:
           </p>
           <ol>
@@ -927,7 +958,7 @@
             <li>starter/headers/header-default-one-page-navigation-with-dropdown-links.html</li>
           </ol>
           <p>
-            <span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span>
+            <span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span>
             Scrollbar issue at the following pages:
           </p>
           <ol>
@@ -936,44 +967,44 @@
             <li>starter/headers/header-default-absolute-bottom.html</li>
           </ol>
           <p>
-            <span class="u-label u-label--xs u-label--success font-weight-semi-bold rounded mr-2">Enhanced</span>
+            <span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span>
             Scrollbar optimization stylesheets
           </p>
           <ol>
             <li><code class="highlighter-rouge">_header-floating.scss</code></li>
             <li><code class="highlighter-rouge">_header-absolute-position.scss</code></li>
           </ol>
-          <p><span class="u-label u-label--xs u-label--success font-weight-semi-bold rounded mr-2">Enhanced</span> <code class="highlighter-rouge">vertical-align: baseline;</code> added to our <code class="highlighter-rouge">SVG</code> styles.</p>
-          <p><span class="u-label u-label--xs u-label--success font-weight-semi-bold rounded mr-2">Enhanced</span> Bordered Badge colors in _badge-style.scss updated</p>
-          <p><span class="u-label u-label--xs u-label--success font-weight-semi-bold rounded mr-2">Enhanced</span> Vertical progress bar</p>
-          <p><span class="u-label u-label--xs u-label--success font-weight-semi-bold rounded mr-2">Enhanced</span> Bootstrap Popover enabled</p>
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> <code class="highlighter-rouge">vertical-align: baseline;</code> added to our <code class="highlighter-rouge">SVG</code> styles.</p>
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> Bordered Badge colors in _badge-style.scss updated</p>
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> Vertical progress bar</p>
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> Bootstrap Popover enabled</p>
         </div>
 
         <div id="version1_2" class="border-bottom pb-9 mb-9">
           <h2 class="h4"><code class="highlighter-rouge">1.2</code> - 5 June, 2018 <a class="anchorjs-link" href="#version1_2" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
 
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Landing House Home page added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Landing Job Home page added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Corporate Business Home page added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Tables documentation page added</p>
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Utility classes added</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">starter/headers/header-sidebar-right.html</code> menu links fixed.</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> "Dark-to-white on scroll" wrong linking issue fixed on <code class="highlighter-rouge">starter/header-layouts.html</code>.</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">confirm_password</code> init function changed to <code class="highlighter-rouge">confirmPassword</code>.</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> Search Classic visibility issue fixed</p>
-          <p><span class="u-label u-label--xs u-label--success font-weight-semi-bold rounded mr-2">Enhanced</span> hs.go-to.js - Now you can use it as a link</p>
-          <p><span class="u-label u-label--xs u-label--success font-weight-semi-bold rounded mr-2">Enhanced</span> Documentation</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Landing House Home page added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Landing Job Home page added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Corporate Business Home page added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Tables documentation page added</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Utility classes added</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">starter/headers/header-sidebar-right.html</code> menu links fixed.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> "Dark-to-white on scroll" wrong linking issue fixed on <code class="highlighter-rouge">starter/header-layouts.html</code>.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">confirm_password</code> init function changed to <code class="highlighter-rouge">confirmPassword</code>.</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Search Classic visibility issue fixed</p>
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> hs.go-to.js - Now you can use it as a link</p>
+          <p><span class="btn btn-xs btn-soft-success font-weight-semi-bold rounded mr-2">Enhanced</span> Documentation</p>
         </div>
 
         <div id="version1_1" class="border-bottom pb-9 mb-9">
           <h2 class="h4"><code class="highlighter-rouge">1.1</code> - 13 May, 2018 <a class="anchorjs-link" href="#version1_1" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
 
-          <p><span class="u-label u-label--xs u-label--primary font-weight-semi-bold rounded mr-2">New</span> Sketch version added</p>
-          <p><span class="u-label u-label--xs u-label--warning font-weight-semi-bold rounded mr-2">Updated</span> FontAwesome Icon Package updated from <code class="highlighter-rouge">5.0.6</code> to <code class="highlighter-rouge">5.0.13</code></p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">scss/dropdown/</code> folders and its <code class="highlighter-rouge">_dropdown.scss</code> along with <code class="highlighter-rouge">_dropdown-country.scss</code> files changed to <code class="highlighter-rouge">unfold</code></p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">slick-carousel-preloader-black.svg</code> file name renamed to <code class="highlighter-rouge">slick-carousel-preloader-primary.svg</code></p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> Instagram API invalid token issue fixed</p>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> Wrong spelling of the <code class="highlighter-rouge">.text-lu-left</code> and <code class="highlighter-rouge">.text-lu-right</code> classes fixed at the following pages:</p>
+          <p><span class="btn btn-xs btn-soft-primary font-weight-semi-bold rounded mr-2">New</span> Sketch version added</p>
+          <p><span class="btn btn-xs btn-soft-warning font-weight-semi-bold rounded mr-2">Updated</span> FontAwesome Icon Package updated from <code class="highlighter-rouge">5.0.6</code> to <code class="highlighter-rouge">5.0.13</code></p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">scss/dropdown/</code> folders and its <code class="highlighter-rouge">_dropdown.scss</code> along with <code class="highlighter-rouge">_dropdown-country.scss</code> files changed to <code class="highlighter-rouge">unfold</code></p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">slick-carousel-preloader-black.svg</code> file name renamed to <code class="highlighter-rouge">slick-carousel-preloader-primary.svg</code></p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Instagram API invalid token issue fixed</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> Wrong spelling of the <code class="highlighter-rouge">.text-lu-left</code> and <code class="highlighter-rouge">.text-lu-right</code> classes fixed at the following pages:</p>
           <ol>
             <li>home/blog-agency.html</li>
             <li>pages/careers.html</li>
@@ -981,7 +1012,7 @@
             <li>starter/hero/hero-12.html</li>
             <li>starter/form-layouts.html pages</li>
           </ol>
-          <p><span class="u-label u-label--xs u-label--danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">data-compensation="#header"</code> attribute removed from content "go-to" markups at the following pages:</p>
+          <p><span class="btn btn-xs btn-soft-danger font-weight-semi-bold rounded mr-2">Fixed</span> <code class="highlighter-rouge">data-compensation="#header"</code> attribute removed from content "go-to" markups at the following pages:</p>
           <ol>
             <li>home/careers.html</li>
             <li>home/crypto.html</li>

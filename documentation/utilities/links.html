@@ -99,15 +99,14 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.0
+                  v2.1
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_0">v2.0</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_3">v1.3</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_2">v1.2</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_1">v1.1</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#initial-release">v1.0</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_1">v2.1</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
               <!-- End Changelog -->
@@ -177,8 +176,6 @@
           <li><a href="../components/collapse.html">Collapse</a></li>
           <li><a href="../components/dividers.html">Dividers</a></li>
           <li><a href="../components/forms.html">Forms</a></li>
-          <li><a href="../components/icons.html">Icons</a></li>
-          <li><a href="../components/label.html">Label</a></li>
           <li><a href="../components/list-group.html">List group</a></li>
           <li><a href="../components/pagination.html">Pagination</a></li>
           <li><a href="../components/progress.html">Progress</a></li>
@@ -297,6 +294,18 @@
                     </span>
                   </a>
                 </p>
+                <div>
+                  <p>Some content</p>
+
+                  <div class="collapse" id="collapseLinkExample">
+                    <p>collapsed more content</p>
+                  </div>
+
+                  <a class="link-collapse" data-toggle="collapse" href="#collapseLinkExample" role="button" aria-expanded="false" aria-controls="collapseLinkExample">
+                    <span class="link-collapse__default">View More</span>
+                    <span class="link-collapse__active">View Less</span>
+                  </a>
+                </div>
               </div>
               <div class="tab-pane fade" id="pills-html-1" role="tabpanel" aria-labelledby="pills-html-tab-1">
                 <pre>
@@ -318,6 +327,18 @@
                         &lt;/span&gt;
                       &lt;/a&gt;
                     &lt;/p&gt;
+                    &lt;div&gt;
+                      &lt;p&gt;Some content&lt;/p&gt;
+
+                      &lt;div class="collapse" id="collapseLinkExample"&gt;
+                        &lt;p&gt;collapsed more content&lt;/p&gt;
+                      &lt;/div&gt;
+
+                      &lt;a class="link-collapse" data-toggle="collapse" href="#collapseLinkExample" role="button" aria-expanded="false" aria-controls="collapseLinkExample"&gt;
+                        &lt;span class="link-collapse__default"&gt;View More&lt;/span&gt;
+                        &lt;span class="link-collapse__active"&gt;View Less&lt;/span&gt;
+                      &lt;/a&gt;
+                    &lt;/div&gt;
                   </code>
                 </pre>
               </div>

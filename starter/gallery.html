@@ -102,15 +102,13 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.0
+                  v2.1
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0">v2.0</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.3</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_2">v1.2</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_1">v1.1</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#initial-release">v1.0</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1">v2.1</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
               <!-- End Changelog -->
@@ -179,6 +177,7 @@
         <li><a href="pagination.html">Pagination</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="products.html">Products</a></li>
+        <li><a href="sidebar-examples.html">Sidebar examples</a></li>
         <li><a href="stats.html">Stats</a></li>
         <li><a href="svg-blocks.html">SVG blocks</a></li>
         <li><a href="tabs.html">Tabs</a></li>
@@ -232,7 +231,7 @@
                     <div class="pr-md-4">
                       <!-- Title -->
                       <div class="mb-7">
-                        <span class="u-label u-label--sm u-label--success mb-2">About</span>
+                        <span class="btn btn-xs btn-soft-success btn-pill mb-2">About</span>
                         <h2 class="text-primary">Front in <span class="font-weight-semi-bold">frames</span></h2>
                         <p>Enhance your brand with easy-to-use powerful customization features.</p>
                         <p>The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
@@ -345,7 +344,7 @@
                         &lt;div class="pr-md-4"&gt;
                           &lt;!-- Title --&gt;
                           &lt;div class="mb-7"&gt;
-                            &lt;span class="u-label u-label--sm u-label--success mb-2"&gt;About&lt;/span&gt;
+                            &lt;span class="btn btn-xs btn-soft-success btn-pill mb-2"&gt;About&lt;/span&gt;
                             &lt;h2 class="text-primary"&gt;Front in &lt;span class="font-weight-semi-bold"&gt;frames&lt;/span&gt;&lt;/h2&gt;
                             &lt;p&gt;Enhance your brand with easy-to-use powerful customization features.&lt;/p&gt;
                             &lt;p&gt;The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.&lt;/p&gt;
@@ -1259,6 +1258,274 @@
                   $(document).on('ready', function () {
                     // initialization of slick carousel
                     $.HSCore.components.HSSlickCarousel.init('.js-slick-carousel');
+                  });
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Tab Wrapper -->
+    </div>
+    <!-- End Component Block -->
+
+    <!-- Component Block -->
+    <div id="gallery-6" class="mb-9">
+      <h2 class="h4 mb-4">Gallery #6 <a class="anchorjs-link" href="#gallery-6" data-anchorjs-icon="#"></a></h2>
+
+      <!-- Tab Wrapper -->
+      <div class="tab-wrapper">
+        <!-- Nav Classic -->
+        <ul class="nav nav-classic" id="pills-tab-6" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-result-tab-6" data-toggle="pill" href="#pills-result-6" role="tab" aria-controls="pills-result-6" aria-selected="true">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-html-tab-6" data-toggle="pill" href="#pills-html-6" role="tab" aria-controls="pills-html-6" aria-selected="false">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-css-tab-6" data-toggle="pill" href="#pills-css-6" role="tab" aria-controls="pills-css-6" aria-selected="false">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-js-tab-6" data-toggle="pill" href="#pills-js-6" role="tab" aria-controls="pills-js-6" aria-selected="false">JS</a>
+          </li>
+        </ul>
+        <!-- End Nav Classic -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent-6">
+          <div class="tab-pane fade p-4 show active" id="pills-result-6" role="tabpanel" aria-labelledby="pills-result-tab-6">
+            <!-- Gallery -->
+            <div class="row mx-gutters-2 mb-6">
+              <div class="col-5 col-sm-3">
+                <!-- Gallery -->
+                <a class="js-fancybox u-media-viewer" href="javascript:;"
+                   data-src="../assets/img/1920x1080/img7.jpg"
+                   data-fancybox="fancyboxGallery6"
+                   data-caption="Front in frames - image #01"
+                   data-speed="700"
+                   data-is-infinite="true">
+                  <img class="img-fluid rounded" src="../assets/img/380x360/img8.jpg" alt="Image Description">
+
+                  <span class="u-media-viewer__container">
+                    <span class="u-media-viewer__icon">
+                      <span class="fas fa-plus u-media-viewer__icon-inner"></span>
+                    </span>
+                  </span>
+                </a>
+                <!-- End Gallery -->
+              </div>
+
+              <div class="col-5 col-sm-3 d-none d-sm-inline-block">
+                <!-- Gallery -->
+                <a class="js-fancybox u-media-viewer" href="javascript:;"
+                   data-src="../assets/img/1920x1080/img21.jpg"
+                   data-fancybox="fancyboxGallery6"
+                   data-caption="Front in frames - image #02"
+                   data-speed="700"
+                   data-is-infinite="true">
+                  <img class="img-fluid rounded" src="../assets/img/380x360/img22.jpg" alt="Image Description">
+
+                  <span class="u-media-viewer__container">
+                    <span class="u-media-viewer__icon">
+                      <span class="fas fa-plus u-media-viewer__icon-inner"></span>
+                    </span>
+                  </span>
+                </a>
+                <!-- End Gallery -->
+              </div>
+
+              <div class="col-5 col-sm-3 d-none d-sm-inline-block">
+                <!-- Gallery -->
+                <a class="js-fancybox u-media-viewer" href="javascript:;"
+                   data-src="../assets/img/1920x1080/img34.jpg"
+                   data-fancybox="fancyboxGallery6"
+                   data-caption="Front in frames - image #03"
+                   data-speed="700"
+                   data-is-infinite="true">
+                  <img class="img-fluid rounded" src="../assets/img/380x360/img27.jpg" alt="Image Description">
+
+                  <span class="u-media-viewer__container">
+                    <span class="u-media-viewer__icon">
+                      <span class="fas fa-plus u-media-viewer__icon-inner"></span>
+                    </span>
+                  </span>
+                </a>
+                <!-- End Gallery -->
+              </div>
+
+              <div class="col-5 col-sm-3">
+                <!-- Gallery -->
+                <a class="js-fancybox u-media-viewer" href="javascript:;"
+                   data-src="../assets/img/1920x1080/img35.jpg"
+                   data-fancybox="fancyboxGallery6"
+                   data-caption="Front in frames - image #04"
+                   data-speed="700"
+                   data-is-infinite="true">
+                  <img class="img-fluid rounded" src="../assets/img/380x360/img31.jpg" alt="Image Description">
+
+                  <span class="u-media-viewer__container">
+                    <span class="d-none d-sm-inline-block u-media-viewer__icon u-media-viewer__icon--active">
+                      <span class="u-media-viewer__icon-inner font-weight-medium">+3</span>
+                    </span>
+                    <span class="d-sm-none u-media-viewer__icon u-media-viewer__icon--active">
+                      <span class="u-media-viewer__icon-inner font-weight-medium">+5</span>
+                    </span>
+                  </span>
+                </a>
+                <!-- End Gallery -->
+
+                <img class="js-fancybox d-none" alt="Image Description"
+                     data-fancybox="fancyboxGallery6"
+                     data-src="../assets/img/1920x1080/img2.jpg"
+                     data-caption="Front in frames - image #05"
+                     data-speed="700"
+                     data-is-infinite="true">
+                <img class="js-fancybox d-none" alt="Image Description"
+                     data-caption="Front in frames - image #06"
+                     data-src="../assets/img/1920x1080/img29.jpg"
+                     data-fancybox="fancyboxGallery6"
+                     data-speed="700"
+                     data-is-infinite="true">
+                <img class="js-fancybox d-none" alt="Image Description"
+                     data-fancybox="fancyboxGallery6"
+                     data-src="../assets/img/1920x1080/img24.jpg"
+                     data-caption="Front in frames - image #07"
+                     data-speed="700"
+                     data-is-infinite="true">
+              </div>
+            </div>
+            <!-- End Gallery -->
+          </div>
+          <div class="tab-pane fade" id="pills-html-6" role="tabpanel" aria-labelledby="pills-html-tab-6">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- Gallery --&gt;
+                &lt;div class="row mx-gutters-2 mb-6"&gt;
+                  &lt;div class="col-5 col-sm-3"&gt;
+                    &lt;!-- Gallery --&gt;
+                    &lt;a class="js-fancybox u-media-viewer" href="javascript:;"
+                       data-src="../../assets/img/1920x1080/img7.jpg"
+                       data-fancybox="fancyboxGallery6"
+                       data-caption="Front in frames - image #01"
+                       data-speed="700"
+                       data-is-infinite="true"&gt;
+                      &lt;img class="img-fluid rounded" src="../../assets/img/380x360/img8.jpg" alt="Image Description"&gt;
+
+                      &lt;span class="u-media-viewer__container"&gt;
+                        &lt;span class="u-media-viewer__icon"&gt;
+                          &lt;span class="fas fa-plus u-media-viewer__icon-inner"&gt;&lt;/span&gt;
+                        &lt;/span&gt;
+                      &lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Gallery --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-5 col-sm-3 d-none d-sm-inline-block"&gt;
+                    &lt;!-- Gallery --&gt;
+                    &lt;a class="js-fancybox u-media-viewer" href="javascript:;"
+                       data-src="../../assets/img/1920x1080/img21.jpg"
+                       data-fancybox="fancyboxGallery6"
+                       data-caption="Front in frames - image #02"
+                       data-speed="700"
+                       data-is-infinite="true"&gt;
+                      &lt;img class="img-fluid rounded" src="../../assets/img/380x360/img22.jpg" alt="Image Description"&gt;
+
+                      &lt;span class="u-media-viewer__container"&gt;
+                        &lt;span class="u-media-viewer__icon"&gt;
+                          &lt;span class="fas fa-plus u-media-viewer__icon-inner"&gt;&lt;/span&gt;
+                        &lt;/span&gt;
+                      &lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Gallery --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-5 col-sm-3 d-none d-sm-inline-block"&gt;
+                    &lt;!-- Gallery --&gt;
+                    &lt;a class="js-fancybox u-media-viewer" href="javascript:;"
+                       data-src="../../assets/img/1920x1080/img34.jpg"
+                       data-fancybox="fancyboxGallery6"
+                       data-caption="Front in frames - image #03"
+                       data-speed="700"
+                       data-is-infinite="true"&gt;
+                      &lt;img class="img-fluid rounded" src="../../assets/img/380x360/img27.jpg" alt="Image Description"&gt;
+
+                      &lt;span class="u-media-viewer__container"&gt;
+                        &lt;span class="u-media-viewer__icon"&gt;
+                          &lt;span class="fas fa-plus u-media-viewer__icon-inner"&gt;&lt;/span&gt;
+                        &lt;/span&gt;
+                      &lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Gallery --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-5 col-sm-3"&gt;
+                    &lt;!-- Gallery --&gt;
+                    &lt;a class="js-fancybox u-media-viewer" href="javascript:;"
+                       data-src="../../assets/img/1920x1080/img35.jpg"
+                       data-fancybox="fancyboxGallery6"
+                       data-caption="Front in frames - image #04"
+                       data-speed="700"
+                       data-is-infinite="true"&gt;
+                      &lt;img class="img-fluid rounded" src="../../assets/img/380x360/img31.jpg" alt="Image Description"&gt;
+
+                      &lt;span class="u-media-viewer__container"&gt;
+                        &lt;span class="d-none d-sm-inline-block u-media-viewer__icon u-media-viewer__icon--active"&gt;
+                          &lt;span class="u-media-viewer__icon-inner font-weight-medium"&gt;+3&lt;/span&gt;
+                        &lt;/span&gt;
+                        &lt;span class="d-sm-none u-media-viewer__icon u-media-viewer__icon--active"&gt;
+                          &lt;span class="u-media-viewer__icon-inner font-weight-medium"&gt;+5&lt;/span&gt;
+                        &lt;/span&gt;
+                      &lt;/span&gt;
+                    &lt;/a&gt;
+                    &lt;!-- End Gallery --&gt;
+
+                    &lt;img class="js-fancybox d-none" alt="Image Description"
+                         data-fancybox="fancyboxGallery6"
+                         data-src="../../assets/img/1920x1080/img2.jpg"
+                         data-caption="Front in frames - image #05"
+                         data-speed="700"
+                         data-is-infinite="true"&gt;
+                    &lt;img class="js-fancybox d-none" alt="Image Description"
+                         data-caption="Front in frames - image #06"
+                         data-src="../../assets/img/1920x1080/img29.jpg"
+                         data-fancybox="fancyboxGallery6"
+                         data-speed="700"
+                         data-is-infinite="true"&gt;
+                    &lt;img class="js-fancybox d-none" alt="Image Description"
+                         data-fancybox="fancyboxGallery6"
+                         data-src="../../assets/img/1920x1080/img24.jpg"
+                         data-caption="Front in frames - image #07"
+                         data-speed="700"
+                         data-is-infinite="true"&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Gallery --&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-css-6" role="tabpanel" aria-labelledby="pills-css-tab-6">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;link rel="stylesheet" href="../../assets/vendor/fancybox/jquery.fancybox.css"&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-js-6" role="tabpanel" aria-labelledby="pills-js-tab-6">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/js/components/hs.fancybox.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  $(document).on('ready', function () {
+                    // initialization of popups
+                    $.HSCore.components.HSPopup.init('.js-fancybox');
                   });
                 &lt;/script&gt;
               </code>

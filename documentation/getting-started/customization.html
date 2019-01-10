@@ -99,15 +99,14 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.0
+                  v2.1
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_0">v2.0</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_3">v1.3</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_2">v1.2</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_1">v1.1</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#initial-release">v1.0</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_1">v2.1</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
               <!-- End Changelog -->
@@ -177,8 +176,6 @@
           <li><a href="../components/collapse.html">Collapse</a></li>
           <li><a href="../components/dividers.html">Dividers</a></li>
           <li><a href="../components/forms.html">Forms</a></li>
-          <li><a href="../components/icons.html">Icons</a></li>
-          <li><a href="../components/label.html">Label</a></li>
           <li><a href="../components/list-group.html">List group</a></li>
           <li><a href="../components/navs.html">Navs</a></li>
           <li><a href="../components/pagination.html">Pagination</a></li>
@@ -299,7 +296,7 @@
 
           <ol>
             <li>
-              Use the <code class="highlighter-rouge">$font-family-base</code> attribute as our typographic base applied to the <code class="highlighter-rouge">&lt;body&gt;</code> in <code class="highlighter-rouge">_theme-variables.scss</code> file to change the current font family variable with yours.
+              Use the <code class="highlighter-rouge">$font-family-base</code> attribute as our typographic base applied to the <code class="highlighter-rouge">&lt;body&gt;</code> in <code class="highlighter-rouge">_variables.scss</code> file to change the current font family variable with yours.
 
               <pre>
                 <code class="language-scss" data-lang="scss">
@@ -359,10 +356,8 @@
           <p>To avoid file loss, overrides of your custom styles or any other conflicts during the upgrade process, create or modify your styles with these 4 files <code class="highlighter-rouge">assets/scss/custom/custom/</code>:</p>
 
           <ul>
-            <li><code class="highlighter-rouge">_custom-variables.scss</code> - Variables file for customizing or overriding Bootstrap core and Front elements/components that have been tied to variables.</li>
-            <li><code class="highlighter-rouge">_custom-styles.scss</code> - Create a new style in here.</li>
-            <li><code class="highlighter-rouge">_custom-mixins.scss</code> - Mixins file to include custom <code class="highlighter-rouge">mixins</code>.</li>
-            <li><code class="highlighter-rouge">_custom-functions.scss</code> - Functions file to include custom <code class="highlighter-rouge">functions</code>.</li>
+            <li><code class="highlighter-rouge">_user-variables.scss</code> - Variables file for customizing or overriding Bootstrap core and Front elements/components that have been tied to variables.</li>
+            <li><code class="highlighter-rouge">_user.scss</code> - Create a new style in here.</li>
           </ul>
 
           <div class="alert alert-success mb-5" role="alert">
@@ -375,7 +370,7 @@
           <h2 class="h4">Variable defaults <a class="anchorjs-link" href="#variable-defaults" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
           <p>Every SASS variable in Front includes the <code class="highlighter-rouge">!default</code> flag allowing you to override the variable's default value in your own SASS without modifying either Bootstrap or Front's source code. Copy and paste variables as needed, modify their values, and remove the <code class="highlighter-rouge">!default</code> flag. If a variable has already been assigned, then it won't be re-assigned by the default values in Front.</p>
 
-          <p>You will find the complete list of Front's variables in <code class="highlighter-rouge">assets/include/scss/_theme-variables.scss</code>.</p>
+          <p>You will find the complete list of Front's variables in <code class="highlighter-rouge">assets/include/scss/_variables.scss</code>.</p>
 
           <p>Variable overrides within the same SASS file can come before or after the default variables. However, when overriding across SASS files, your overrides must come before you import Front's SASS files.</p>
 
@@ -426,7 +421,7 @@
           <h2 class="h4">SASS options <a class="anchorjs-link" href="#sass-options" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
           <p>Customize Front with our built-in custom variables file and easily toggle global CSS preferences with <code class="highlighter-rouge">$enable-*</code> SASS variables. Override a variable's value and recompile with <code class="highlighter-rouge">npm run test</code> as needed.</p>
 
-          <p>You can find and customize these variables for key global options in Front's <code class="highlighter-rouge">scss/_theme-variables.scss</code> file.</p>
+          <p>You can find and customize these variables for key global options in Front's <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
 
           <table class="table table-bordered">
             <thead>
@@ -473,7 +468,7 @@
 
         <div id="all-colors" class="mb-9">
           <h2 class="h4">All colors <a class="anchorjs-link" href="#all-colors" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-          <p>All colors available in Front, are available as SASS variables and a SASS map in <code class="highlighter-rouge">scss/_theme-variables.scss</code> file.</p>
+          <p>All colors available in Front, are available as SASS variables and a SASS map in <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
 
           <div class="row">
             <div class="col-md-4">
@@ -558,7 +553,7 @@
 
         <div id="theme-colors" class="mb-9">
           <h2 class="h4">Theme colors <a class="anchorjs-link" href="#theme-colors" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-          <p>We use a subset of all Bootstrap colors to create a smaller color palette for generating color schemes, also available as SASS variables and a SASS map in Front's <code class="highlighter-rouge">scss/_theme-variables.scss</code> file.</p>
+          <p>We use a subset of all Bootstrap colors to create a smaller color palette for generating color schemes, also available as SASS variables and a SASS map in Front's <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
 
           <div class="row">
             <div class="col-md-4">
@@ -596,7 +591,7 @@
 
         <div id="grays" class="mb-9">
           <h2 class="h4">Grays <a class="anchorjs-link" href="#grays" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-          <p>An expansive set of gray variables and a SASS map in <code class="highlighter-rouge">scss/_theme-variables.scss</code> for consistent shades of gray across your project.</p>
+          <p>An expansive set of gray variables and a SASS map in <code class="highlighter-rouge">scss/_variables.scss</code> for consistent shades of gray across your project.</p>
 
           <div class="row">
             <div class="col-md-4">

@@ -936,21 +936,6 @@
     "url": "components/forms.html#input-group-sizing"
   },{
     "category": "Components",
-    "section": "Label",
-    "label": "Label - Contextual variations",
-    "url": "components/label.html#contextual-variations"
-  },{
-    "category": "Components",
-    "section": "Label",
-    "label": "Label - Links",
-    "url": "components/label.html#links"
-  },{
-    "category": "Components",
-    "section": "Label",
-    "label": "Label - Sizes",
-    "url": "components/label.html#sizes"
-  },{
-    "category": "Components",
     "section": "Navs",
     "label": "Navs - Basic example",
     "url": "components/list-group.html#basic-example"

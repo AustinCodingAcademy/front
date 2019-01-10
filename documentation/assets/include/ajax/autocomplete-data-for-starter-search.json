@@ -100,6 +100,10 @@
     "category": "Components",
     "url": "pricing.html"
   },{
+    "label": "Sidebar examples",
+    "category": "Components",
+    "url": "sidebar-examples.html"
+  },{
     "label": "Statistics",
     "category": "Components",
     "url": "stats.html"

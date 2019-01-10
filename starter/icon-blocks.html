@@ -100,15 +100,13 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.0
+                  v2.1
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0">v2.0</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.3</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_2">v1.2</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_1">v1.1</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#initial-release">v1.0</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1">v2.1</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
               <!-- End Changelog -->
@@ -177,6 +175,7 @@
         <li><a href="pagination.html">Pagination</a></li>
         <li><a href="pricing.html">Pricing</a></li>
         <li><a href="products.html">Products</a></li>
+        <li><a href="sidebar-examples.html">Sidebar examples</a></li>
         <li><a href="stats.html">Stats</a></li>
         <li><a href="svg-blocks.html">SVG blocks</a></li>
         <li><a href="tabs.html">Tabs</a></li>
@@ -1860,6 +1859,9 @@
           <li class="nav-item">
             <a class="nav-link" id="pills-html-tab-10" data-toggle="pill" href="#pills-html-10" role="tab" aria-controls="pills-html-10" aria-selected="false">HTML</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-js-tab-10" data-toggle="pill" href="#pills-js-10" role="tab" aria-controls="pills-js-10" aria-selected="false">JS</a>
+          </li>
         </ul>
         <!-- End Nav Classic -->
 
@@ -2012,6 +2014,25 @@
                   &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;!-- End Icon Blocks Section --&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-js-10" role="tabpanel" aria-labelledby="pills-js-tab-10">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Front --&gt;
+                &lt;script src="../../assets/js/components/hs.svg-injector.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  $(window).on('load', function () {
+                    // initialization of svg injector module
+                    $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+                  });
+                &lt;/script&gt;
               </code>
             </pre>
           </div>
@@ -2172,6 +2193,428 @@
                   &lt;/div&gt;
                 &lt;/div&gt;
                 &lt;!-- End What We Do Section --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Tab Wrapper -->
+    </div>
+    <!-- End Component Block -->
+
+    <!-- Component Block -->
+    <div id="icon-blocks-12" class="mb-9">
+      <h2 class="h4 mb-4">Icon blocks #12 <a class="anchorjs-link" href="#icon-blocks-12" data-anchorjs-icon="#"></a></h2>
+
+      <!-- Tab Wrapper -->
+      <div class="tab-wrapper">
+        <!-- Nav Classic -->
+        <ul class="nav nav-classic" id="pills-tab-12" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-result-tab-12" data-toggle="pill" href="#pills-result-12" role="tab" aria-controls="pills-result-12" aria-selected="true">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-html-tab-12" data-toggle="pill" href="#pills-html-12" role="tab" aria-controls="pills-html-12" aria-selected="false">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-js-tab-12" data-toggle="pill" href="#pills-js-12" role="tab" aria-controls="pills-js-12" aria-selected="false">JS</a>
+          </li>
+        </ul>
+        <!-- End Nav Classic -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent-12">
+          <div class="tab-pane fade p-4 show active" id="pills-result-12" role="tabpanel" aria-labelledby="pills-result-tab-12">
+            <!-- Sidebar Info -->
+            <div class="card w-md-50 w-lg-40 border-0 shadow-sm mb-3">
+              <!-- Header -->
+              <header id="SVGwave1BottomShapeID1" class="svg-preloader card-header border-bottom-0 bg-primary text-white p-0">
+                <div class="pt-5 px-5">
+                  <h3 class="h5">Job Summary</h3>
+                </div>
+
+                <figure class="ie-wave-1-bottom mt-n5">
+                  <img class="js-svg-injector" src="../assets/svg/components/wave-1-bottom.svg" alt="Image Description"
+                       data-parent="#SVGwave1BottomShapeID1">
+                </figure>
+              </header>
+              <!-- End Header -->
+
+              <!-- Content -->
+              <div class="card-body pt-1 px-5 pb-5">
+                <!-- Icon Block -->
+                <div class="media mb-3">
+                  <div class="min-width-4 text-center text-primary mt-1 mr-3">
+                    <span class="fas fa-globe"></span>
+                  </div>
+                  <div class="media-body">
+                    <a class="font-weight-medium" href="#">www.slack.com</a>
+                    <small class="d-block text-secondary">Website</small>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+
+                <!-- Icon Block -->
+                <div class="media mb-3">
+                  <div class="min-width-4 text-center text-primary mt-1 mr-3">
+                    <span class="fas fa-map-marked-alt"></span>
+                  </div>
+                  <div class="media-body">
+                    <span class="d-block font-weight-medium">London, UK</span>
+                    <small class="d-block text-secondary">Location</small>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+
+                <!-- Icon Block -->
+                <div class="media mb-3">
+                  <div class="min-width-4 text-center text-primary mt-1 mr-3">
+                    <span class="fas fa-clock"></span>
+                  </div>
+                  <div class="media-body">
+                    <span class="d-block font-weight-medium">Full time</span>
+                    <small class="d-block text-secondary">Job type</small>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+
+                <!-- Icon Block -->
+                <div class="media mb-3">
+                  <div class="min-width-4 text-center text-primary mt-1 mr-3">
+                    <span class="fas fa-business-time"></span>
+                  </div>
+                  <div class="media-body">
+                    <span class="d-block font-weight-medium">1 to 3 months</span>
+                    <small class="d-block text-secondary">Project length</small>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+
+                <!-- Icon Block -->
+                <div class="media mb-3">
+                  <div class="min-width-4 text-center text-primary mt-1 mr-3">
+                    <span class="fas fa-money-bill-alt"></span>
+                  </div>
+                  <div class="media-body">
+                    <span class="d-block font-weight-medium">Salary</span>
+                    <small class="d-block text-secondary">$28k - $32k</small>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+
+                <!-- Icon Block -->
+                <div class="media mb-3">
+                  <div class="min-width-4 text-center text-primary mt-1 mr-3">
+                    <span class="fas fa-briefcase"></span>
+                  </div>
+                  <div class="media-body">
+                    <span class="d-block font-weight-medium">Entry level</span>
+                    <small class="d-block text-secondary">We are looking for freelancers with the lowest rates.</small>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+              </div>
+              <!-- End Content -->
+            </div>
+            <!-- End Sidebar Info -->
+          </div>
+          <div class="tab-pane fade" id="pills-html-12" role="tabpanel" aria-labelledby="pills-html-tab-12">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- Sidebar Info --&gt;
+                &lt;div class="card border-0 shadow-sm mb-3"&gt;
+                  &lt;!-- Header --&gt;
+                  &lt;header id="SVGwave1BottomShapeID1" class="svg-preloader card-header border-bottom-0 bg-primary text-white p-0"&gt;
+                    &lt;div class="pt-5 px-5"&gt;
+                      &lt;h3 class="h5"&gt;Job Summary&lt;/h3&gt;
+                    &lt;/div&gt;
+
+                    &lt;figure class="ie-wave-1-bottom mt-n5"&gt;
+                      &lt;img class="js-svg-injector" src="../../assets/svg/components/wave-1-bottom.svg" alt="Image Description"
+                           data-parent="#SVGwave1BottomShapeID1"&gt;
+                    &lt;/figure&gt;
+                  &lt;/header&gt;
+                  &lt;!-- End Header --&gt;
+
+                  &lt;!-- Content --&gt;
+                  &lt;div class="card-body pt-1 px-5 pb-5"&gt;
+                    &lt;!-- Icon Block --&gt;
+                    &lt;div class="media mb-3"&gt;
+                      &lt;div class="min-width-4 text-center text-primary mt-1 mr-3"&gt;
+                        &lt;span class="fas fa-globe"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="media-body"&gt;
+                        &lt;a class="font-weight-medium" href="#"&gt;www.slack.com&lt;/a&gt;
+                        &lt;small class="d-block text-secondary"&gt;Website&lt;/small&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Icon Block --&gt;
+
+                    &lt;!-- Icon Block --&gt;
+                    &lt;div class="media mb-3"&gt;
+                      &lt;div class="min-width-4 text-center text-primary mt-1 mr-3"&gt;
+                        &lt;span class="fas fa-map-marked-alt"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="media-body"&gt;
+                        &lt;span class="d-block font-weight-medium"&gt;London, UK&lt;/span&gt;
+                        &lt;small class="d-block text-secondary"&gt;Location&lt;/small&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Icon Block --&gt;
+
+                    &lt;!-- Icon Block --&gt;
+                    &lt;div class="media mb-3"&gt;
+                      &lt;div class="min-width-4 text-center text-primary mt-1 mr-3"&gt;
+                        &lt;span class="fas fa-clock"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="media-body"&gt;
+                        &lt;span class="d-block font-weight-medium"&gt;Full time&lt;/span&gt;
+                        &lt;small class="d-block text-secondary"&gt;Job type&lt;/small&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Icon Block --&gt;
+
+                    &lt;!-- Icon Block --&gt;
+                    &lt;div class="media mb-3"&gt;
+                      &lt;div class="min-width-4 text-center text-primary mt-1 mr-3"&gt;
+                        &lt;span class="fas fa-business-time"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="media-body"&gt;
+                        &lt;span class="d-block font-weight-medium"&gt;1 to 3 months&lt;/span&gt;
+                        &lt;small class="d-block text-secondary"&gt;Project length&lt;/small&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Icon Block --&gt;
+
+                    &lt;!-- Icon Block --&gt;
+                    &lt;div class="media mb-3"&gt;
+                      &lt;div class="min-width-4 text-center text-primary mt-1 mr-3"&gt;
+                        &lt;span class="fas fa-money-bill-alt"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="media-body"&gt;
+                        &lt;span class="d-block font-weight-medium"&gt;Salary&lt;/span&gt;
+                        &lt;small class="d-block text-secondary"&gt;$28k - $32k&lt;/small&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Icon Block --&gt;
+
+                    &lt;!-- Icon Block --&gt;
+                    &lt;div class="media mb-3"&gt;
+                      &lt;div class="min-width-4 text-center text-primary mt-1 mr-3"&gt;
+                        &lt;span class="fas fa-briefcase"&gt;&lt;/span&gt;
+                      &lt;/div&gt;
+                      &lt;div class="media-body"&gt;
+                        &lt;span class="d-block font-weight-medium"&gt;Entry level&lt;/span&gt;
+                        &lt;small class="d-block text-secondary"&gt;We are looking for freelancers with the lowest rates.&lt;/small&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Icon Block --&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Content --&gt;
+                &lt;/div&gt;
+                &lt;!-- End Sidebar Info --&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-js-12" role="tabpanel" aria-labelledby="pills-js-tab-12">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Front --&gt;
+                &lt;script src="../../assets/js/components/hs.svg-injector.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  $(window).on('load', function () {
+                    // initialization of svg injector module
+                    $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+                  });
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Tab Wrapper -->
+    </div>
+    <!-- End Component Block -->
+
+    <!-- Component Block -->
+    <div id="icon-blocks-13" class="mb-9">
+      <h2 class="h4 mb-4">Icon blocks #13 <a class="anchorjs-link" href="#icon-blocks-13" data-anchorjs-icon="#"></a></h2>
+
+      <!-- Tab Wrapper -->
+      <div class="tab-wrapper">
+        <!-- Nav Classic -->
+        <ul class="nav nav-classic" id="pills-tab-13" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-result-tab-13" data-toggle="pill" href="#pills-result-13" role="tab" aria-controls="pills-result-13" aria-selected="true">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-html-tab-13" data-toggle="pill" href="#pills-html-13" role="tab" aria-controls="pills-html-13" aria-selected="false">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-js-tab-13" data-toggle="pill" href="#pills-js-13" role="tab" aria-controls="pills-js-13" aria-selected="false">JS</a>
+          </li>
+        </ul>
+        <!-- End Nav Classic -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent-13">
+          <div class="tab-pane fade p-4 show active" id="pills-result-13" role="tabpanel" aria-labelledby="pills-result-tab-13">
+            <div class="row">
+              <div class="col-sm-6 mb-5">
+                <!-- Icon Block -->
+                <div class="media">
+                  <figure id="iconExample21" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
+                    <img class="js-svg-injector" src="../assets/svg/illustrations/medal.svg" alt="SVG"
+                         data-parent="#iconExample21">
+                  </figure>
+                  <div class="media-body">
+                    <h3 class="h6 mb-1">Veteran Hiring Commitment</h3>
+                    <p>Committed to helping America's military veterans find work.</p>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+              </div>
+
+              <div class="col-sm-6 mb-5">
+                <!-- Icon Block -->
+                <div class="media">
+                  <figure id="iconExample25" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
+                    <img class="js-svg-injector" src="../assets/svg/illustrations/social-responsibility.svg" alt="SVG"
+                         data-parent="#iconExample25">
+                  </figure>
+                  <div class="media-body">
+                    <h4 class="h6 mb-1">Social Responsibility Pledge</h4>
+                    <p>Formal programs or foundation to give back to communities.</p>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+              </div>
+
+              <div class="w-100"></div>
+
+              <div class="col-sm-6 mb-5 mb-sm-0">
+                <!-- Icon Block -->
+                <div class="media">
+                  <figure id="iconExample7" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
+                    <img class="js-svg-injector" src="../assets/svg/illustrations/diversity.svg" alt="SVG"
+                         data-parent="#iconExample7">
+                  </figure>
+                  <div class="media-body">
+                    <h4 class="h6 mb-1">Diversity Commitment</h4>
+                    <p>Has programs that support a diverse and inclusive workforce.</p>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+              </div>
+
+              <div class="col-sm-6">
+                <!-- Icon Block -->
+                <div class="media">
+                  <figure id="iconExample29" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4">
+                    <img class="js-svg-injector" src="../assets/svg/illustrations/growth.svg" alt="SVG"
+                         data-parent="#iconExample29">
+                  </figure>
+                  <div class="media-body">
+                    <h4 class="h6 mb-1">Pledge to Thrive</h4>
+                    <p>Taking steps to prioritize employee well-being.</p>
+                  </div>
+                </div>
+                <!-- End Icon Block -->
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-html-13" role="tabpanel" aria-labelledby="pills-html-tab-13">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;div class="row"&gt;
+                  &lt;div class="col-sm-6 mb-5"&gt;
+                    &lt;!-- Icon Block --&gt;
+                    &lt;div class="media"&gt;
+                      &lt;figure id="iconExample21" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4"&gt;
+                        &lt;img class="js-svg-injector" src="../../assets/svg/illustrations/medal.svg" alt="SVG"
+                             data-parent="#iconExample21"&gt;
+                      &lt;/figure&gt;
+                      &lt;div class="media-body"&gt;
+                        &lt;h3 class="h6 mb-1"&gt;Veteran Hiring Commitment&lt;/h3&gt;
+                        &lt;p&gt;Committed to helping America's military veterans find work.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Icon Block --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm-6 mb-5"&gt;
+                    &lt;!-- Icon Block --&gt;
+                    &lt;div class="media"&gt;
+                      &lt;figure id="iconExample25" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4"&gt;
+                        &lt;img class="js-svg-injector" src="../../assets/svg/illustrations/social-responsibility.svg" alt="SVG"
+                             data-parent="#iconExample25"&gt;
+                      &lt;/figure&gt;
+                      &lt;div class="media-body"&gt;
+                        &lt;h4 class="h6 mb-1"&gt;Social Responsibility Pledge&lt;/h4&gt;
+                        &lt;p&gt;Formal programs or foundation to give back to communities.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Icon Block --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="w-100"&gt;&lt;/div&gt;
+
+                  &lt;div class="col-sm-6 mb-5 mb-sm-0"&gt;
+                    &lt;!-- Icon Block --&gt;
+                    &lt;div class="media"&gt;
+                      &lt;figure id="iconExample7" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4"&gt;
+                        &lt;img class="js-svg-injector" src="../../assets/svg/illustrations/diversity.svg" alt="SVG"
+                             data-parent="#iconExample7"&gt;
+                      &lt;/figure&gt;
+                      &lt;div class="media-body"&gt;
+                        &lt;h4 class="h6 mb-1"&gt;Diversity Commitment&lt;/h4&gt;
+                        &lt;p&gt;Has programs that support a diverse and inclusive workforce.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Icon Block --&gt;
+                  &lt;/div&gt;
+
+                  &lt;div class="col-sm-6"&gt;
+                    &lt;!-- Icon Block --&gt;
+                    &lt;div class="media"&gt;
+                      &lt;figure id="iconExample29" class="svg-preloader ie-height-56 w-100 max-width-8 mr-4"&gt;
+                        &lt;img class="js-svg-injector" src="../../assets/svg/illustrations/growth.svg" alt="SVG"
+                             data-parent="#iconExample29"&gt;
+                      &lt;/figure&gt;
+                      &lt;div class="media-body"&gt;
+                        &lt;h4 class="h6 mb-1"&gt;Pledge to Thrive&lt;/h4&gt;
+                        &lt;p&gt;Taking steps to prioritize employee well-being.&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Icon Block --&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-js-13" role="tabpanel" aria-labelledby="pills-js-tab-13">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/vendor/svg-injector/dist/svg-injector.min.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Front --&gt;
+                &lt;script src="../../assets/js/components/hs.svg-injector.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  $(window).on('load', function () {
+                    // initialization of svg injector module
+                    $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+                  });
+                &lt;/script&gt;
               </code>
             </pre>
           </div>

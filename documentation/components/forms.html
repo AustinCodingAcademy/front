@@ -99,15 +99,14 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.0
+                  v2.1
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_0">v2.0</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_3">v1.3</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_2">v1.2</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_1">v1.1</a></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#initial-release">v1.0</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_1">v2.1</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li class="dropdown-divider"></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
               <!-- End Changelog -->
@@ -177,7 +176,6 @@
           <li><a href="collapse.html">Collapse</a></li>
           <li><a href="dividers.html">Dividers</a></li>
           <li><a class="active" href="forms.html">Forms</a></li>
-          <li><a href="label.html">Label</a></li>
           <li><a href="list-group.html">List group</a></li>
           <li><a href="navs.html">Navs</a></li>
           <li><a href="pagination.html">Pagination</a></li>
@@ -255,6 +253,7 @@
         <ul class="js-scroll-nav hd-doc-section-nav">
           <li class="hd-doc-section-nav-item active"><a href="#overview">Overview</a></li>
           <li class="hd-doc-section-nav-item"><a href="#form-controls">Form controls</a></li>
+          <li class="hd-doc-section-nav-item"><a href="#file-attachments">File attachments</a></li>
           <li class="hd-doc-section-nav-item"><a href="#sizing">Sizing</a></li>
           <li class="hd-doc-section-nav-item">
             <a href="#custom-form">Custom form</a>
@@ -272,6 +271,7 @@
               <li class="hd-doc-section-nav-item"><a href="#inline-custom-checkbox">Inline custom checkbox</a></li>
             </ul>
           </li>
+          <li class="hd-doc-section-nav-item"><a href="#toggle-state">Toggle state</a></li>
           <li class="hd-doc-section-nav-item">
             <a href="#input-group">Input group</a>
             <ul>
@@ -490,6 +490,99 @@
           </div>
         </div>
 
+        <div id="file-attachments" class="mb-9">
+          <h2 class="h4">File attachments <a class="anchorjs-link" href="#file-attachments" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+          <p>File attachments customized to modern button look</p>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-21" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-21" data-toggle="pill" href="#pills-result-21" role="tab" aria-controls="pills-result-21" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-21" data-toggle="pill" href="#pills-html-21" role="tab" aria-controls="pills-html-21" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-21">
+              <div class="tab-pane fade p-4 show active" id="pills-result-21" role="tabpanel" aria-labelledby="pills-result-tab-21">
+                <form>
+                  <!-- File Attachment Button -->
+                  <label class="btn btn-sm btn-primary transition-3d-hover file-attachment-btn" for="fileAttachmentBtn">
+                    Choose file to upload
+                    <input id="fileAttachmentBtn" name="file-attachment" type="file" class="file-attachment-btn__label">
+                  </label>
+                  <!-- End File Attachment Button -->
+                </form>
+              </div>
+              <div class="tab-pane fade" id="pills-html-21" role="tabpanel" aria-labelledby="pills-html-tab-21">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;form&gt;
+                      &lt;!-- File Attachment Button --&gt;
+                      &lt;label class="btn btn-sm btn-primary transition-3d-hover file-attachment-btn" for="fileAttachmentBtn"&gt;
+                        Choose file to upload
+                        &lt;input id="fileAttachmentBtn" name="file-attachment" type="file" class="file-attachment-btn__label"&gt;
+                      &lt;/label&gt;
+                      &lt;!-- End File Attachment Button --&gt;
+                    &lt;/form&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+
+          <p>or this one</p>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-22" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-22" data-toggle="pill" href="#pills-result-22" role="tab" aria-controls="pills-result-22" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-22" data-toggle="pill" href="#pills-html-22" role="tab" aria-controls="pills-html-22" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-22">
+              <div class="tab-pane fade p-4 show active" id="pills-result-22" role="tabpanel" aria-labelledby="pills-result-tab-22">
+                <form>
+                  <!-- File Attachment Input -->
+                  <label class="file-attachment-input" for="fileAttachmentInput">
+                    Browse your device and upload documents
+                    <small class="d-block text-muted">Maximum file size 10MB</small>
+                    <input id="fileAttachmentInput" name="file-attachment" type="file" class="file-attachment-input__label">
+                  </label>
+                  <!-- End File Attachment Input -->
+                </form>
+              </div>
+              <div class="tab-pane fade" id="pills-html-22" role="tabpanel" aria-labelledby="pills-html-tab-22">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;form&gt;
+                      &lt;!-- File Attachment Input --&gt;
+                      &lt;label class="file-attachment-input" for="fileAttachmentInput"&gt;
+                        Browse your device and upload documents
+                        &lt;small class="d-block text-muted"&gt;Maximum file size 10MB&lt;/small&gt;
+                        &lt;input id="fileAttachmentInput" name="file-attachment" type="file" class="file-attachment-input__label"&gt;
+                      &lt;/label&gt;
+                      &lt;!-- End File Attachment Input --&gt;
+                    &lt;/form&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+
         <div id="sizing" class="mb-9">
           <h2 class="h4">Sizing <a class="anchorjs-link" href="#sizing" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
           <p>Set heights using classes like <code class="highlighter-rouge">.form-control-lg</code> and <code class="highlighter-rouge">.form-control-sm</code>.</p>
@@ -691,6 +784,111 @@
                 </pre>
               </div>
               <div class="tab-pane fade" id="pills-js-6" role="tabpanel" aria-labelledby="pills-js-tab-6">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;!-- JS Implementing Plugins --&gt;
+                    &lt;script src="../../assets/js/components/hs.focus-state.js"&gt;&lt;/script&gt;
+
+                    &lt;!-- JS Plugins Init. --&gt;
+                    &lt;script&gt;
+                      $(document).on('ready', function () {
+                        // initialization of forms
+                        $.HSCore.components.HSFocusState.init();
+                      });
+                    &lt;/script&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-20" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-20" data-toggle="pill" href="#pills-result-20" role="tab" aria-controls="pills-result-20" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-20" data-toggle="pill" href="#pills-html-20" role="tab" aria-controls="pills-html-20" aria-selected="false">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-js-tab-20" data-toggle="pill" href="#pills-js-20" role="tab" aria-controls="pills-js-20" aria-selected="false">JS</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-20">
+              <div class="tab-pane fade p-4 show active" id="pills-result-20" role="tabpanel" aria-labelledby="pills-result-tab-20">
+                <div class="row">
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <!-- Subscribe Form -->
+                    <form class="js-focus-state">
+                      <label class="sr-only" for="subscribeSrEmailExample1">Your email address</label>
+                      <div class="input-group">
+                        <input type="email" class="form-control" name="email" id="subscribeSrEmailExample1" placeholder="Your email address" aria-label="Your email address" aria-describedby="subscribeButtonExample2" required>
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button" id="subscribeButtonExample2">Subscribe</button>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- End Subscribe Form -->
+                  </div>
+                  <div class="col-md-6 mb-3 mb-md-0">
+                    <!-- Subscribe Form -->
+                    <form class="js-focus-state">
+                      <label class="sr-only" for="searchSrEmailExample1">Search</label>
+                      <div class="input-group">
+                        <input type="email" class="form-control" name="email" id="searchSrEmailExample1" placeholder="Your email address" aria-label="Your email address" aria-describedby="searchButtonExample2" required>
+                        <div class="input-group-append">
+                          <button class="btn btn-primary" type="button" id="searchButtonExample2">
+                            <span class="fas fa-search"></span>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- End Subscribe Form -->
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-html-20" role="tabpanel" aria-labelledby="pills-html-tab-20">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;div class="row"&gt;
+                      &lt;div class="col-md-6 mb-3 mb-md-0"&gt;
+                        &lt;!-- Subscribe Form --&gt;
+                        &lt;form class="js-focus-state"&gt;
+                          &lt;label class="sr-only" for="subscribeSrEmailExample1"&gt;Your email address&lt;/label&gt;
+                          &lt;div class="input-group"&gt;
+                            &lt;input type="email" class="form-control" name="email" id="subscribeSrEmailExample1" placeholder="Your email address" aria-label="Your email address" aria-describedby="subscribeButtonExample2" required&gt;
+                            &lt;div class="input-group-append"&gt;
+                              &lt;button class="btn btn-primary" type="button" id="subscribeButtonExample2"&gt;Subscribe&lt;/button&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/form&gt;
+                        &lt;!-- End Subscribe Form --&gt;
+                      &lt;/div&gt;
+                      &lt;div class="col-md-6 mb-3 mb-md-0"&gt;
+                        &lt;!-- Subscribe Form --&gt;
+                        &lt;form class="js-focus-state"&gt;
+                          &lt;label class="sr-only" for="searchSrEmailExample1"&gt;Search&lt;/label&gt;
+                          &lt;div class="input-group"&gt;
+                            &lt;input type="email" class="form-control" name="email" id="searchSrEmailExample1" placeholder="Your email address" aria-label="Your email address" aria-describedby="searchButtonExample2" required&gt;
+                            &lt;div class="input-group-append"&gt;
+                              &lt;button class="btn btn-primary" type="button" id="searchButtonExample2"&gt;
+                                &lt;span class="fas fa-search"&gt;&lt;/span&gt;
+                              &lt;/button&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/form&gt;
+                        &lt;!-- End Subscribe Form --&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+              <div class="tab-pane fade" id="pills-js-20" role="tabpanel" aria-labelledby="pills-js-tab-20">
                 <pre>
                   <code class="language-markup" data-lang="html">
                     &lt;!-- JS Implementing Plugins --&gt;
@@ -1290,6 +1488,86 @@
                       &lt;input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input"&gt;
                       &lt;label class="custom-control-label" for="customRadioInline2"&gt;Or toggle this other custom radio&lt;/label&gt;
                     &lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            <!-- End Tab Content -->
+          </div>
+        </div>
+
+        <div id="toggle-state" class="mb-9">
+          <h2 class="h4">Toggle state <a class="anchorjs-link" href="#toggle-state" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
+
+          <div class="mb-3">
+            <!-- Nav Classic -->
+            <ul class="nav nav-classic nav-borderless" id="pills-tab-19" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-result-tab-19" data-toggle="pill" href="#pills-result-19" role="tab" aria-controls="pills-result-19" aria-selected="true">Result</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-html-tab-19" data-toggle="pill" href="#pills-html-19" role="tab" aria-controls="pills-html-19" aria-selected="false">HTML</a>
+              </li>
+            </ul>
+            <!-- End Nav Classic -->
+
+            <!-- Tab Content -->
+            <div class="tab-content bg-light" id="pills-tabContent-19">
+              <div class="tab-pane fade p-4 show active" id="pills-result-19" role="tabpanel" aria-labelledby="pills-result-tab-19">
+                <!-- Checkbox Switch -->
+                <div class="media align-items-center mb-3">
+                  <label class="checkbox-switch mr-3">
+                    <input type="checkbox" class="checkbox-switch__input" id="checkboxSwitch1">
+                    <span class="checkbox-switch__slider"></span>
+                  </label>
+                  <label class="media-body text-muted mb-0" for="checkboxSwitch1">
+                    <span class="d-block text-dark">Unchecked</span>
+                    <small class="d-block">A weekly email featuring shots from designers you follow</small>
+                  </label>
+                </div>
+                <!-- End Checkbox Switch -->
+
+                <!-- Checkbox Switch -->
+                <div class="media align-items-center">
+                  <label class="checkbox-switch mr-3">
+                    <input type="checkbox" class="checkbox-switch__input" id="checkboxSwitch2" checked>
+                    <span class="checkbox-switch__slider"></span>
+                  </label>
+                  <label class="media-body text-muted mb-0" for="checkboxSwitch2">
+                    <span class="d-block text-dark">Checked</span>
+                    <small class="d-block">Get important notifications about you or activity you've missed</small>
+                  </label>
+                </div>
+                <!-- End Checkbox Switch -->
+              </div>
+              <div class="tab-pane fade" id="pills-html-19" role="tabpanel" aria-labelledby="pills-html-tab-19">
+                <pre>
+                  <code class="language-markup" data-lang="html">
+                    &lt;!-- Checkbox Switch --&gt;
+                    &lt;div class="media align-items-center"&gt;
+                      &lt;label class="checkbox-switch mr-3"&gt;
+                        &lt;input type="checkbox" class="checkbox-switch__input" id="checkboxSwitch1"&gt;
+                        &lt;span class="checkbox-switch__slider"&gt;&lt;/span&gt;
+                      &lt;/label&gt;
+                      &lt;label class="media-body text-muted mb-0" for="checkboxSwitch1"&gt;
+                        &lt;span class="d-block text-dark"&gt;Unchecked&lt;/span&gt;
+                        &lt;small class="d-block"&gt;A weekly email featuring shots from designers you follow&lt;/small&gt;
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Checkbox Switch --&gt;
+
+                    &lt;!-- Checkbox Switch --&gt;
+                    &lt;div class="media align-items-center"&gt;
+                      &lt;label class="checkbox-switch mr-3"&gt;
+                        &lt;input type="checkbox" class="checkbox-switch__input" id="checkboxSwitch2" checked&gt;
+                        &lt;span class="checkbox-switch__slider"&gt;&lt;/span&gt;
+                      &lt;/label&gt;
+                      &lt;label class="media-body text-muted mb-0" for="checkboxSwitch2"&gt;
+                        &lt;span class="d-block text-dark"&gt;Checked&lt;/span&gt;
+                        &lt;small class="d-block"&gt;Get important notifications about you or activity you've missed&lt;/small&gt;
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                    &lt;!-- End Checkbox Switch --&gt;
                   </code>
                 </pre>
               </div>
