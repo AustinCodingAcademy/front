@@ -2,6 +2,11 @@
   Animate.css
 ------------------------------------*/
 
+.animated {
+  // bug-fix on iOS
+  animation-delay: .1s;
+}
+
 @keyframes fadeInUp {
   from {
   	opacity: 0;

@@ -26,12 +26,9 @@
       unfoldHideOnBlur: false,
       unfoldDelay: 350,
       unfoldOpenedElement: 'init',
-      afterOpen: function (invoker) {
-      },
-      beforeClose: function (invoker) {
-      },
-      afterClose: function (invoker) {
-      }
+      afterOpen: function (invoker) {},
+      beforeClose: function (invoker) {},
+      afterClose: function (invoker) {}
     },
 
     /**
@@ -294,7 +291,7 @@
           var $target = $($invoker.data('unfold-target')),
             $targetItems = $target.children();
 
-          $targetItems.on('click', function() {
+          $targetItems.on('click', function () {
 
             $invoker.data('HSUnfold').toggle();
 
@@ -529,6 +526,8 @@
    */
   UnfoldCSSAnimation.prototype.show = function () {
 
+    var self = this;
+
     var activeEls = $(this)[0].config.unfoldTarget;
 
     $('[data-unfold-target="' + activeEls + '"]').addClass('active');
@@ -538,6 +537,8 @@
     this.target.removeClass('u-unfold--hidden')
       .removeClass(this.config.unfoldAnimationOut)
       .addClass(this.config.unfoldAnimationIn);
+
+    self.config.afterOpen.call(self.target, self.element);
 
   };
 

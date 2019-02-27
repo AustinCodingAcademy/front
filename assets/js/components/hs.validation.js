@@ -91,9 +91,13 @@ var isEmpty = function isEmpty(f) {
           unhighlight: isEmpty(config['unhighlight']) == true ? $self.unHighlight : config['unhighlight']
         });
 
-        $('select').change(function () {
-          $(this).valid();
-        });
+        if($this.find('select').length) {
+
+          $('select').change(function () {
+            $(this).valid();
+          });
+
+        }
 
         //Actions
         collection = collection.add($this);

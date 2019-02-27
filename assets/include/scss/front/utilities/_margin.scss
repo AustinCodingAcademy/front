@@ -10,6 +10,10 @@
   margin-left: -1rem;
 }
 
+.mr-n2 {
+  margin-right: -.5rem;
+}
+
 .mt-n1 {
   margin-top: -.25rem;
 }
@@ -39,6 +43,17 @@
 }
 
 /* Gutters X */
+.mx-gutters-1 {
+  margin-right: -.25rem;
+  margin-left: -.25rem;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: .25rem;
+    padding-left: .25rem;
+  }
+}
+
 .mx-gutters-2 {
   margin-right: -.5rem;
   margin-left: -.5rem;

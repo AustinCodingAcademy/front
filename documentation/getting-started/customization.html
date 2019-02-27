@@ -99,13 +99,13 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.1
+                  v2.2
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_1_1">Latest (v2.1.x)</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_2_1">Latest (v2.2.1)</a></li>
                   <li class="dropdown-divider"></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version2_1_1">v2.1.x</a></li>
                   <li><a class="nav-link u-header__sub-menu-nav-link" href="changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
@@ -199,6 +199,7 @@
           <li><a href="../plugins/datatables.html">Datatables</a></li>
           <li><a href="../plugins/unfold.html">Unfold (Dropdown and others)</a></li>
           <li><a href="../plugins/fancybox.html">Fancybox</a></li>
+          <li><a href="../plugins/file-attach.html">File attach</a></li>
           <li><a href="../plugins/flatpickr.html">Flatpickr</a></li>
           <li><a href="../plugins/google-map.html">Google Map</a></li>
           <li><a href="../plugins/go-to.html">Go-to</a></li>
@@ -297,7 +298,7 @@
 
           <ol>
             <li>
-              Use the <code class="highlighter-rouge">$font-family-base</code> attribute as our typographic base applied to the <code class="highlighter-rouge">&lt;body&gt;</code> in <code class="highlighter-rouge">_variables.scss</code> file to change the current font family variable with yours.
+              Use the <code class="highlighter-rouge">$font-family-base</code> attribute as our typographic base applied to the <code class="highlighter-rouge">&lt;body&gt;</code> in <code class="highlighter-rouge">_user-variables.scss</code> file to change the current font family variable with yours.
 
               <pre>
                 <code class="language-scss" data-lang="scss">
@@ -354,7 +355,7 @@
 
         <div id="customizing-sass" class="mb-5">
           <h2 class="h4">Customizing SASS <a class="anchorjs-link" href="#customizing-sass" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-          <p>To avoid file loss, overrides of your custom styles or any other conflicts during the upgrade process, create or modify your styles with these 4 files <code class="highlighter-rouge">assets/scss/custom/custom/</code>:</p>
+          <p>To avoid file loss, overrides of your custom styles or any other conflicts during the upgrade process, create or modify your styles with these 2 files <code class="highlighter-rouge">assets/include/scss/</code>:</p>
 
           <ul>
             <li><code class="highlighter-rouge">_user-variables.scss</code> - Variables file for customizing or overriding Bootstrap core and Front elements/components that have been tied to variables.</li>
@@ -420,7 +421,7 @@
 
         <div id="sass-options" class="mb-9">
           <h2 class="h4">SASS options <a class="anchorjs-link" href="#sass-options" aria-label="Anchor" data-anchorjs-icon="#"></a></h2>
-          <p>Customize Front with our built-in custom variables file and easily toggle global CSS preferences with <code class="highlighter-rouge">$enable-*</code> SASS variables. Override a variable's value and recompile with <code class="highlighter-rouge">npm run test</code> as needed.</p>
+          <p>Customize Front with our built-in custom variables file and easily toggle global CSS preferences with <code class="highlighter-rouge">$enable-*</code> SASS variables.</p>
 
           <p>You can find and customize these variables for key global options in Front's <code class="highlighter-rouge">scss/_variables.scss</code> file.</p>
 

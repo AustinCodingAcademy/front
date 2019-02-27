@@ -102,13 +102,13 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.1
+                  v2.2
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1_1">Latest (v2.1.x)</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_2_1">Latest (v2.2.1)</a></li>
                   <li class="dropdown-divider"></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1_1">v2.1.x</a></li>
                   <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
@@ -1514,6 +1514,272 @@
             </pre>
           </div>
           <div class="tab-pane fade" id="pills-js-6" role="tabpanel" aria-labelledby="pills-js-tab-6">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/vendor/fancybox/jquery.fancybox.min.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/js/components/hs.fancybox.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  $(document).on('ready', function () {
+                    // initialization of popups
+                    $.HSCore.components.HSPopup.init('.js-fancybox');
+                  });
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Tab Wrapper -->
+    </div>
+    <!-- End Component Block -->
+
+    <!-- Component Block -->
+    <div id="gallery-7" class="mb-9">
+      <h2 class="h4 mb-4">Gallery #7 <a class="anchorjs-link" href="#gallery-7" data-anchorjs-icon="#"></a></h2>
+
+      <!-- Tab Wrapper -->
+      <div class="tab-wrapper">
+        <!-- Nav Classic -->
+        <ul class="nav nav-classic" id="pills-tab-7" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-result-tab-7" data-toggle="pill" href="#pills-result-7" role="tab" aria-controls="pills-result-7" aria-selected="true">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-html-tab-7" data-toggle="pill" href="#pills-html-7" role="tab" aria-controls="pills-html-7" aria-selected="false">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-css-tab-7" data-toggle="pill" href="#pills-css-7" role="tab" aria-controls="pills-css-7" aria-selected="false">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-js-tab-7" data-toggle="pill" href="#pills-js-7" role="tab" aria-controls="pills-js-7" aria-selected="false">JS</a>
+          </li>
+        </ul>
+        <!-- End Nav Classic -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent-7">
+          <div class="tab-pane fade p-4 show active" id="pills-result-7" role="tabpanel" aria-labelledby="pills-result-tab-7">
+            <!-- Gallery Section -->
+            <div class="container-fluid position-relative p-2 mb-3">
+              <div class="row mx-gutters-1">
+                <div class="col-md-8 col-lg-6">
+                  <!-- Gallery -->
+                  <a class="js-fancybox u-media-viewer" href="javascript:;"
+                     data-src="../assets/img/1920x1080/img36.jpg"
+                     data-fancybox="fancyboxGallery6"
+                     data-caption="Front in frames - image #01"
+                     data-speed="700"
+                     data-is-infinite="true">
+                    <img class="img-fluid" src="../assets/img/900x455/img1.jpg" alt="Image Description">
+
+                    <div class="position-absolute bottom-0 right-0 pb-3 pr-3">
+                      <span class="d-md-none btn btn-sm btn-white">
+                        <span class="fas fa-expand mr-2"></span>
+                        View Photos
+                      </span>
+                    </div>
+                  </a>
+                  <!-- End Gallery -->
+                </div>
+
+                <div class="col-md-4 col-lg-3 d-none d-md-inline-block">
+                  <!-- Gallery -->
+                  <a class="js-fancybox u-media-viewer mb-2" href="javascript:;"
+                     data-src="../assets/img/1920x1080/img37.jpg"
+                     data-fancybox="fancyboxGallery6"
+                     data-caption="Front in frames - image #02"
+                     data-speed="700"
+                     data-is-infinite="true">
+                    <img class="img-fluid" src="../assets/img/450x225/img1.jpg" alt="Image Description">
+                  </a>
+                  <!-- End Gallery -->
+
+                  <!-- Gallery -->
+                  <a class="js-fancybox u-media-viewer" href="javascript:;"
+                     data-src="../assets/img/1920x1080/img38.jpg"
+                     data-fancybox="fancyboxGallery6"
+                     data-caption="Front in frames - image #03"
+                     data-speed="700"
+                     data-is-infinite="true">
+                    <img class="img-fluid" src="../assets/img/450x225/img2.jpg" alt="Image Description">
+
+                    <div class="position-absolute bottom-0 right-0 pb-3 pr-3">
+                      <span class="d-sm-inline-block d-lg-none btn btn-sm btn-white">
+                        <span class="fas fa-expand mr-2"></span>
+                        View Photos
+                      </span>
+                    </div>
+                  </a>
+                  <!-- End Gallery -->
+                </div>
+
+                <div class="col-lg-3 d-none d-lg-inline-block">
+                  <!-- Gallery -->
+                  <a class="js-fancybox u-media-viewer mb-2" href="javascript:;"
+                     data-src="../assets/img/1920x1080/img39.jpg"
+                     data-fancybox="fancyboxGallery6"
+                     data-caption="Front in frames - image #04"
+                     data-speed="700"
+                     data-is-infinite="true">
+                    <img class="img-fluid" src="../assets/img/450x225/img3.jpg" alt="Image Description">
+                  </a>
+                  <!-- End Gallery -->
+
+                  <!-- Gallery -->
+                  <a class="js-fancybox u-media-viewer" href="javascript:;"
+                     data-src="../assets/img/1920x1080/img40.jpg"
+                     data-fancybox="fancyboxGallery6"
+                     data-caption="Front in frames - image #04"
+                     data-speed="700"
+                     data-is-infinite="true">
+                    <img class="img-fluid" src="../assets/img/450x225/img4.jpg" alt="Image Description">
+
+                    <div class="position-absolute bottom-0 right-0 pb-3 pr-3">
+                      <span class="d-none d-lg-inline-block btn btn-sm btn-white">
+                        <span class="fas fa-expand mr-2"></span>
+                        View Photos
+                      </span>
+                    </div>
+                  </a>
+                  <!-- End Gallery -->
+
+                  <img class="js-fancybox d-none" alt="Image Description"
+                       data-fancybox="fancyboxGallery6"
+                       data-src="../assets/img/1920x1080/img41.jpg"
+                       data-caption="Front in frames - image #05"
+                       data-speed="700"
+                       data-is-infinite="true">
+                  <img class="js-fancybox d-none" alt="Image Description"
+                       data-caption="Front in frames - image #06"
+                       data-src="../assets/img/1920x1080/img42.jpg"
+                       data-fancybox="fancyboxGallery6"
+                       data-speed="700"
+                       data-is-infinite="true">
+                </div>
+              </div>
+            </div>
+            <!-- End Gallery Section -->
+          </div>
+          <div class="tab-pane fade" id="pills-html-7" role="tabpanel" aria-labelledby="pills-html-tab-7">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- Gallery Section --&gt;
+                &lt;div class="container-fluid position-relative p-2 mb-3"&gt;
+                  &lt;div class="row mx-gutters-1"&gt;
+                    &lt;div class="col-md-8 col-lg-6"&gt;
+                      &lt;!-- Gallery --&gt;
+                      &lt;a class="js-fancybox u-media-viewer" href="javascript:;"
+                         data-src="../../assets/img/1920x1080/img36.jpg"
+                         data-fancybox="fancyboxGallery6"
+                         data-caption="Front in frames - image #01"
+                         data-speed="700"
+                         data-is-infinite="true"&gt;
+                        &lt;img class="img-fluid" src="../../assets/img/900x455/img1.jpg" alt="Image Description"&gt;
+
+                        &lt;div class="position-absolute bottom-0 right-0 pb-3 pr-3"&gt;
+                          &lt;span class="d-md-none btn btn-sm btn-white"&gt;
+                            &lt;span class="fas fa-expand mr-2"&gt;&lt;/span&gt;
+                            View Photos
+                          &lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                      &lt;!-- End Gallery --&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="col-md-4 col-lg-3 d-none d-md-inline-block"&gt;
+                      &lt;!-- Gallery --&gt;
+                      &lt;a class="js-fancybox u-media-viewer mb-2" href="javascript:;"
+                         data-src="../../assets/img/1920x1080/img37.jpg"
+                         data-fancybox="fancyboxGallery6"
+                         data-caption="Front in frames - image #02"
+                         data-speed="700"
+                         data-is-infinite="true"&gt;
+                        &lt;img class="img-fluid" src="../../assets/img/450x225/img1.jpg" alt="Image Description"&gt;
+                      &lt;/a&gt;
+                      &lt;!-- End Gallery --&gt;
+
+                      &lt;!-- Gallery --&gt;
+                      &lt;a class="js-fancybox u-media-viewer" href="javascript:;"
+                         data-src="../../assets/img/1920x1080/img38.jpg"
+                         data-fancybox="fancyboxGallery6"
+                         data-caption="Front in frames - image #03"
+                         data-speed="700"
+                         data-is-infinite="true"&gt;
+                        &lt;img class="img-fluid" src="../../assets/img/450x225/img2.jpg" alt="Image Description"&gt;
+
+                        &lt;div class="position-absolute bottom-0 right-0 pb-3 pr-3"&gt;
+                          &lt;span class="d-sm-inline-block d-lg-none btn btn-sm btn-white"&gt;
+                            &lt;span class="fas fa-expand mr-2"&gt;&lt;/span&gt;
+                            View Photos
+                          &lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                      &lt;!-- End Gallery --&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="col-lg-3 d-none d-lg-inline-block"&gt;
+                      &lt;!-- Gallery --&gt;
+                      &lt;a class="js-fancybox u-media-viewer mb-2" href="javascript:;"
+                         data-src="../../assets/img/1920x1080/img39.jpg"
+                         data-fancybox="fancyboxGallery6"
+                         data-caption="Front in frames - image #04"
+                         data-speed="700"
+                         data-is-infinite="true"&gt;
+                        &lt;img class="img-fluid" src="../../assets/img/450x225/img3.jpg" alt="Image Description"&gt;
+                      &lt;/a&gt;
+                      &lt;!-- End Gallery --&gt;
+
+                      &lt;!-- Gallery --&gt;
+                      &lt;a class="js-fancybox u-media-viewer" href="javascript:;"
+                         data-src="../../assets/img/1920x1080/img40.jpg"
+                         data-fancybox="fancyboxGallery6"
+                         data-caption="Front in frames - image #04"
+                         data-speed="700"
+                         data-is-infinite="true"&gt;
+                        &lt;img class="img-fluid" src="../../assets/img/450x225/img4.jpg" alt="Image Description"&gt;
+
+                        &lt;div class="position-absolute bottom-0 right-0 pb-3 pr-3"&gt;
+                          &lt;span class="d-none d-lg-inline-block btn btn-sm btn-white"&gt;
+                            &lt;span class="fas fa-expand mr-2"&gt;&lt;/span&gt;
+                            View Photos
+                          &lt;/span&gt;
+                        &lt;/div&gt;
+                      &lt;/a&gt;
+                      &lt;!-- End Gallery --&gt;
+
+                      &lt;img class="js-fancybox d-none" alt="Image Description"
+                           data-fancybox="fancyboxGallery6"
+                           data-src="../../assets/img/1920x1080/img41.jpg"
+                           data-caption="Front in frames - image #05"
+                           data-speed="700"
+                           data-is-infinite="true"&gt;
+                      &lt;img class="js-fancybox d-none" alt="Image Description"
+                           data-caption="Front in frames - image #06"
+                           data-src="../../assets/img/1920x1080/img42.jpg"
+                           data-fancybox="fancyboxGallery6"
+                           data-speed="700"
+                           data-is-infinite="true"&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Gallery Section --&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-css-7" role="tabpanel" aria-labelledby="pills-css-tab-7">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;link rel="stylesheet" href="../../assets/vendor/fancybox/jquery.fancybox.css"&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-js-7" role="tabpanel" aria-labelledby="pills-js-tab-7">
             <pre>
               <code class="language-html" data-lang="html">
                 &lt;!-- JS Implementing Plugins --&gt;

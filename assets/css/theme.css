@@ -4722,7 +4722,7 @@ input[type="button"].btn-block {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   list-style: none;
   background-color: transparent;
   border-radius: 0.25rem;
@@ -11231,7 +11231,7 @@ button:focus {
   right: 0;
   left: 0;
   width: 100%;
-  z-index: 101;
+  z-index: 1001;
 }
 
 .u-header__section {
@@ -16300,7 +16300,7 @@ label.btn {
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 102;
+  z-index: 1002;
   width: 23.4375rem;
   height: 100%;
   background-color: #fff;
@@ -16741,6 +16741,13 @@ label.btn {
   }
 }
 
+@media (min-width: 992px) {
+  .dropdown-menu-lg-right {
+    right: 0;
+    left: auto !important;
+  }
+}
+
 /*------------------------------------
   Dropdown Card
 ------------------------------------*/
@@ -16753,6 +16760,30 @@ label.btn {
 @media (min-width: 768px) {
   .dropdown-card {
     min-width: 25rem;
+  }
+}
+
+/*------------------------------------
+  Dropdown Sizes
+------------------------------------*/
+@media (min-width: 576px) {
+  .dropdown-menu-size-md {
+    width: 440px;
+  }
+  .dropdown-menu-size-lg {
+    width: 340px;
+  }
+}
+
+@media (min-width: 768px) {
+  .dropdown-menu-size-lg {
+    width: 440px;
+  }
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu-size-lg {
+    width: 740px;
   }
 }
 
@@ -18620,6 +18651,12 @@ label.btn {
   right: 0;
 }
 
+/* Flat */
+.u-slick__arrow--flat {
+  color: #fff;
+  background-color: rgba(55, 125, 255, 0.8);
+}
+
 /* Offset */
 @media (min-width: 992px) {
   .u-slick__arrow--offset.u-slick__arrow-inner--left {
@@ -19413,6 +19450,10 @@ label.btn {
   fill: #97a4af !important;
 }
 
+.fill-gray-600 {
+  fill: #8c98a4 !important;
+}
+
 /*------------------------------------
   Stop Colors
 ------------------------------------*/
@@ -19674,6 +19715,10 @@ label.btn {
   margin-left: -1rem;
 }
 
+.mr-n2 {
+  margin-right: -.5rem;
+}
+
 .mt-n1 {
   margin-top: -.25rem;
 }
@@ -19703,6 +19748,17 @@ label.btn {
 }
 
 /* Gutters X */
+.mx-gutters-1 {
+  margin-right: -.25rem;
+  margin-left: -.25rem;
+}
+
+.mx-gutters-1 > .col,
+.mx-gutters-1 > [class*="col-"] {
+  padding-right: .25rem;
+  padding-left: .25rem;
+}
+
 .mx-gutters-2 {
   margin-right: -.5rem;
   margin-left: -.5rem;
@@ -19986,6 +20042,11 @@ label.btn {
 /*------------------------------------
   Animate.css
 ------------------------------------*/
+.animated {
+  -webkit-animation-delay: .1s;
+          animation-delay: .1s;
+}
+
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
@@ -19998,6 +20059,7 @@ label.btn {
             transform: none;
   }
 }
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

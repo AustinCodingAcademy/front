@@ -406,7 +406,7 @@ $header-secondary-banner-bg:                                $gray-200 !default;
 $header-sub-menu-border-color:                  				    $primary !default;
 
 // Z-indexes
-$header-z-index:             													      101 !default;
+$header-z-index:             													      1001 !default;
 
 // Width & Heights
 $header-navbar-brand-width:                                 9.375rem !default;
@@ -588,7 +588,7 @@ $sidebar-bg-color:                                          $white !default;
 $sidebar-width:             															  23.4375rem !default;
 
 // Z-Index
-$sidebar-z-index:                                           102 !default;
+$sidebar-z-index:                                           $header-z-index + 1 !default;
 
 // Offset
 $sidebar-open-close-left-offset:                            $sidebar-width !default;
@@ -725,6 +725,9 @@ $breadcrumb-bg:                                             transparent !default
 
 // Border Colors
 $breadcrumb-divider-color:                                  $gray-500 !default;
+
+// Margin Spaces
+$breadcrumb-margin-bottom:                                  .5rem !default;
 
 
 
@@ -1037,12 +1040,14 @@ $slick-arrow-color:                                         $primary !default;
 $slick-arrow-hover-color:                                   $white !default;
 $slick-arrow-classic-color:                                 $white !default;
 $slick-arrow-classic-hover-color:                           $white !default;
+$slick-arrow-flat-color:                                    $white !default;
 
 // Background Colors
 $slick-arrow-bg-color:                                      rgba($primary, .1) !default;
 $slick-arrow-hover-bg-color:                                $primary !default;
 $slick-arrow-classic-bg-color:                              rgba($white, .1) !default;
 $slick-arrow-classic-hover-bg-color:                        $primary !default;
+$slick-arrow-flat-bg-color:                                 rgba($primary, .8) !default;
 
 // Text
 $slick-arrow-font-size:                                     ($font-size-base * .875) !default;

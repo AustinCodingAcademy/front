@@ -34,6 +34,12 @@
 	}
 }
 
+/* Flat */
+.u-slick__arrow--flat {
+	color: $slick-arrow-flat-color;
+	background-color: $slick-arrow-flat-bg-color;
+}
+
 /* Offset */
 .u-slick__arrow--offset {
 	@include media-breakpoint-up(lg) {

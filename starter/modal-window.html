@@ -103,13 +103,13 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.1
+                  v2.2
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1_1">Latest (v2.1.x)</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_2_1">Latest (v2.2.1)</a></li>
                   <li class="dropdown-divider"></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1_1">v2.1.x</a></li>
                   <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
@@ -1616,8 +1616,11 @@
                                 <label class="form-label">Country</label>
                                 <div class="js-form-message">
                                   <div class="input-group">
-                                    <select class="custom-select custom-select-sm">
-                                      <option selected>Select country</option>
+                                    <select class="form-control custom-select custom-select-sm" required
+                                            data-msg="Please select country."
+                                            data-error-class="u-has-error"
+                                            data-success-class="u-has-success">
+                                      <option value="">Select country</option>
                                       <option value="AF">Afghanistan</option>
                                       <option value="AX">Åland Islands</option>
                                       <option value="AL">Albania</option>
@@ -1926,8 +1929,11 @@
                                 <label class="form-label">Country</label>
                                 <div class="js-form-message">
                                   <div class="input-group">
-                                    <select class="custom-select custom-select-sm">
-                                      <option selected>Select country</option>
+                                    <select class="form-control custom-select custom-select-sm" required
+                                            data-msg="Please select country."
+                                            data-error-class="u-has-error"
+                                            data-success-class="u-has-success">
+                                      <option value="">Select country</option>
                                       <option value="AF">Afghanistan</option>
                                       <option value="AX">Åland Islands</option>
                                       <option value="AL">Albania</option>
@@ -2216,9 +2222,12 @@
                           <div class="col-sm-6 mb-4">
                             <label class="form-label">Currency</label>
 
-                            <div class="input-group">
-                              <select class="custom-select custom-select-sm">
-                                <option value="usd">USD</option>
+                            <div class="js-form-message input-group">
+                              <select class="form-control custom-select custom-select-sm" required
+                                      data-msg="Please select currency."
+                                      data-error-class="u-has-error"
+                                      data-success-class="u-has-success">
+                                <option value="usd" selected>USD</option>
                                 <option value="euro">Euro</option>
                                 <option value="gbp">GBP</option>
                               </select>
@@ -2538,8 +2547,11 @@
                                     &lt;label class="form-label"&gt;Country&lt;/label&gt;
                                     &lt;div class="js-form-message"&gt;
                                       &lt;div class="input-group"&gt;
-                                        &lt;select class="custom-select custom-select-sm"&gt;
-                                          &lt;option selected&gt;Select country&lt;/option&gt;
+                                        &lt;select class="form-control custom-select custom-select-sm" required
+                                                data-msg="Please select country."
+                                                data-error-class="u-has-error"
+                                                data-success-class="u-has-success"&gt;
+                                          &lt;option value=""&gt;Select country&lt;/option&gt;
                                           &lt;option value="AF"&gt;Afghanistan&lt;/option&gt;
                                           &lt;option value="AX"&gt;Åland Islands&lt;/option&gt;
                                           &lt;option value="AL"&gt;Albania&lt;/option&gt;
@@ -2848,8 +2860,11 @@
                                     &lt;label class="form-label"&gt;Country&lt;/label&gt;
                                     &lt;div class="js-form-message"&gt;
                                       &lt;div class="input-group"&gt;
-                                        &lt;select class="custom-select custom-select-sm"&gt;
-                                          &lt;option selected&gt;Select country&lt;/option&gt;
+                                        &lt;select class="form-control custom-select custom-select-sm" required
+                                                data-msg="Please select country."
+                                                data-error-class="u-has-error"
+                                                data-success-class="u-has-success"&gt;
+                                          &lt;option value=""&gt;Select country&lt;/option&gt;
                                           &lt;option value="AF"&gt;Afghanistan&lt;/option&gt;
                                           &lt;option value="AX"&gt;Åland Islands&lt;/option&gt;
                                           &lt;option value="AL"&gt;Albania&lt;/option&gt;

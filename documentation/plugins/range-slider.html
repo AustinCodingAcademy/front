@@ -101,13 +101,13 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.1
+                  v2.2
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_1_1">Latest (v2.1.x)</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_2_1">Latest (v2.2.1)</a></li>
                   <li class="dropdown-divider"></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version2_1_1">v2.1.x</a></li>
                   <li><a class="nav-link u-header__sub-menu-nav-link" href="../getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
@@ -201,6 +201,7 @@
           <li><a href="datatables.html">Datatables</a></li>
           <li><a href="unfold.html">Unfold (Dropdown and others)</a></li>
           <li><a href="fancybox.html">Fancybox</a></li>
+          <li><a href="file-attach.html">File attach</a></li>
           <li><a href="flatpickr.html">Flatpickr</a></li>
           <li><a href="google-map.html">Google Map</a></li>
           <li><a href="go-to.html">Go-to</a></li>
@@ -664,28 +665,17 @@
                   <code class="language-markup" data-lang="html">
                     &lt;!-- Range Slider --&gt;
                     &lt;input class="js-range-slider" type="text"
-                           data-extra-classes="u-range-slider u-range-slider-indicator u-range-slider-grid"
+                           data-extra-classes="u-range-slider"
                            data-type="single"
-                           data-grid="true"
-                           data-hide-from-to="false"
                            data-min="0"
                            data-max="1000"
                            data-from="250"
                            data-to="750"
                            data-result-min="#rangeSliderExample1MinResult"&gt;
 
-                    &lt;div class="d-flex justify-content-between align-items-center mt-4"&gt;
-                      &lt;span class="text-muted"&gt;Select required amount&lt;/span&gt;
-                      &lt;div class="js-focus-state"&gt;
-                        &lt;div class="input-group"&gt;
-                          &lt;div class="input-group-prepend"&gt;
-                            &lt;span class="input-group-text"&gt;
-                              &lt;span class="fas fa-dollar-sign"&gt;&lt;/span&gt;
-                            &lt;/span&gt;
-                          &lt;/div&gt;
-                          &lt;input type="text" class="form-control max-width-9" id="rangeSliderExample1MinResult"&gt;
-                        &lt;/div&gt;
-                      &lt;/div&gt;
+                    &lt;div class="mt-4"&gt;
+                      &lt;span class="text-muted"&gt;Result:&lt;/span&gt;
+                      &lt;span id="rangeSliderExample1MinResult" class="text-primary"&gt;&lt;/span&gt;
                     &lt;/div&gt;
                     &lt;!-- End Range Slider --&gt;
                   </code>
@@ -1725,7 +1715,7 @@
                     &lt;script src="../../assets/vendor/chartist/dist/chartist.min.js"&gt;&lt;/script&gt;
 
                     &lt;!-- JS Front --&gt;
-                    &lt;script src="../../assets/js/components/hs.chartist-bar-chart.js"&gt;&lt;/script&gt;
+                    &lt;script src="../../assets/js/components/hs.chartist-are-chart.js"&gt;&lt;/script&gt;
 
                     &lt;!-- JS Plugins Init. --&gt;
                     &lt;script&gt;

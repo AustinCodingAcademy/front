@@ -22,6 +22,9 @@
   <link rel="stylesheet" href="../assets/vendor/summernote/dist/summernote-lite.css">
   <link rel="stylesheet" href="../assets/vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css">
   <link rel="stylesheet" href="../assets/vendor/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="../assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="../assets/vendor/ion-rangeslider/css/ion.rangeSlider.css">
+  <link rel="stylesheet" href="../assets/vendor/chartist/dist/chartist.min.css">
   <link rel="stylesheet" href="../documentation/assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
   <link rel="stylesheet" href="../documentation/assets/vendor/prism/prism.css">
 
@@ -102,13 +105,13 @@
                   data-animation-out="fadeOut"
                   data-position="left">
                 <a id="changelogMenu" class="nav-link u-header__nav-link u-header__nav-link-toggle" href="javascript:;" aria-haspopup="true" aria-expanded="false">
-                  v2.1
+                  v2.2
                 </a>
 
                 <ul class="hs-sub-menu u-header__sub-menu u-header__sub-menu--spacer" style="min-width: 220px;" aria-labelledby="changelogMenu">
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1_1">Latest (v2.1.x)</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_2_1">Latest (v2.2.1)</a></li>
                   <li class="dropdown-divider"></li>
-                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_0_2">v2.0.x</a></li>
+                  <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version2_1_1">v2.1.x</a></li>
                   <li><a class="nav-link u-header__sub-menu-nav-link" href="../documentation/getting-started/changelog.html#version1_3">v1.x</a></li>
                 </ul>
               </li>
@@ -1440,6 +1443,144 @@
     <!-- End Component Block -->
 
     <!-- Component Block -->
+    <div id="contacts-2" class="mb-9">
+      <h2 class="h4 mb-4">Contacts #2 <a class="anchorjs-link" href="#contacts-2" data-anchorjs-icon="#"></a></h2>
+
+      <!-- Tab Wrapper -->
+      <div class="tab-wrapper">
+        <!-- Nav Classic -->
+        <ul class="nav nav-classic" id="pills-tab-25" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-result-tab-25" data-toggle="pill" href="#pills-result-25" role="tab" aria-controls="pills-result-25" aria-selected="true">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-html-tab-25" data-toggle="pill" href="#pills-html-25" role="tab" aria-controls="pills-html-25" aria-selected="false">HTML</a>
+          </li>
+        </ul>
+        <!-- End Nav Classic -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent-25">
+          <div class="tab-pane fade p-4 show active" id="pills-result-25" role="tabpanel" aria-labelledby="pills-result-tab-25">
+            <!-- Contact Form -->
+            <div class="card shadow-sm p-4 w-md-50 w-lg-35">
+              <!-- Header -->
+              <div class="media align-items-center mb-4">
+                <div class="u-avatar mr-3">
+                  <img class="img-fluid rounded-circle" src="../assets/img/100x100/img8.jpg" alt="Image Description">
+                </div>
+                <div class="media-body">
+                  <h4 class="h6 mb-0">Ask me for more information</h4>
+                </div>
+              </div>
+              <!-- End Header -->
+
+              <!-- Form -->
+              <form>
+                <select class="custom-select custom-select-sm mb-2">
+                  <option selected>Tell me more about this property</option>
+                  <option value="aboutProperty1">Request a showing</option>
+                  <option value="aboutProperty2">Request neighborhood information</option>
+                  <option value="aboutProperty3">Request recent area sales</option>
+                </select>
+
+                <div class="mb-2">
+                  <label class="sr-only" for="firstNameSr">First Name</label>
+                  <input type="text" class="form-control form-control-sm" name="text" id="firstNameSr" placeholder="First Name" aria-label="First Name">
+                </div>
+
+                <div class="mb-2">
+                  <label class="sr-only" for="lastNameSr">Last Name</label>
+                  <input type="text" class="form-control form-control-sm" name="text" id="lastNameSr" placeholder="Last Name" aria-label="Last Name">
+                </div>
+
+                <div class="mb-2">
+                  <label class="sr-only" for="emailSr">Email</label>
+                  <input type="email" class="form-control form-control-sm" name="text" id="emailSr" placeholder="Email" aria-label="Email">
+                </div>
+
+                <div class="mb-2">
+                  <label class="sr-only" for="phoneNumberSr">Phone number</label>
+                  <input type="tel" class="form-control form-control-sm" name="tel" id="phoneNumberSr" placeholder="Phone number" aria-label="Phone number">
+                </div>
+
+                <div class="mb-2">
+                  <label class="sr-only" for="propertyQuestionSr">Property question</label>
+                  <textarea class="form-control form-control-sm" rows="4" name="answer" id="propertyQuestionSr" placeholder="I would like more information about ..." aria-label="I would like more information about ..."></textarea>
+                </div>
+
+                <button type="button" class="btn btn-block btn-sm btn-primary btn-wide transition-3d-hover">Submit</button>
+              </form>
+              <!-- End Form -->
+            </div>
+            <!-- End Contact Form -->
+          </div>
+          <div class="tab-pane fade" id="pills-html-25" role="tabpanel" aria-labelledby="pills-html-tab-25">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- Contact Form --&gt;
+                &lt;div class="card shadow-sm p-4"&gt;
+                  &lt;!-- Header --&gt;
+                  &lt;div class="media align-items-center mb-4"&gt;
+                    &lt;div class="u-avatar mr-3"&gt;
+                      &lt;img class="img-fluid rounded-circle" src="../../assets/img/100x100/img8.jpg" alt="Image Description"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="media-body"&gt;
+                      &lt;h4 class="h6 mb-0"&gt;Ask me for more information&lt;/h4&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Header --&gt;
+
+                  &lt;!-- Form --&gt;
+                  &lt;form&gt;
+                    &lt;select class="custom-select custom-select-sm mb-2"&gt;
+                      &lt;option selected&gt;Tell me more about this property&lt;/option&gt;
+                      &lt;option value="aboutProperty1"&gt;Request a showing&lt;/option&gt;
+                      &lt;option value="aboutProperty2"&gt;Request neighborhood information&lt;/option&gt;
+                      &lt;option value="aboutProperty3"&gt;Request recent area sales&lt;/option&gt;
+                    &lt;/select&gt;
+
+                    &lt;div class="mb-2"&gt;
+                      &lt;label class="sr-only" for="firstNameSr"&gt;First Name&lt;/label&gt;
+                      &lt;input type="text" class="form-control form-control-sm" name="text" id="firstNameSr" placeholder="First Name" aria-label="First Name"&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="mb-2"&gt;
+                      &lt;label class="sr-only" for="lastNameSr"&gt;Last Name&lt;/label&gt;
+                      &lt;input type="text" class="form-control form-control-sm" name="text" id="lastNameSr" placeholder="Last Name" aria-label="Last Name"&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="mb-2"&gt;
+                      &lt;label class="sr-only" for="emailSr"&gt;Email&lt;/label&gt;
+                      &lt;input type="email" class="form-control form-control-sm" name="text" id="emailSr" placeholder="Email" aria-label="Email"&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="mb-2"&gt;
+                      &lt;label class="sr-only" for="phoneNumberSr"&gt;Phone number&lt;/label&gt;
+                      &lt;input type="tel" class="form-control form-control-sm" name="tel" id="phoneNumberSr" placeholder="Phone number" aria-label="Phone number"&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="mb-2"&gt;
+                      &lt;label class="sr-only" for="propertyQuestionSr"&gt;Property question&lt;/label&gt;
+                      &lt;textarea class="form-control form-control-sm" rows="4" name="answer" id="propertyQuestionSr" placeholder="I would like more information about ..." aria-label="I would like more information about ..."&gt;&lt;/textarea&gt;
+                    &lt;/div&gt;
+
+                    &lt;button type="button" class="btn btn-block btn-sm btn-primary btn-wide transition-3d-hover"&gt;Submit&lt;/button&gt;
+                  &lt;/form&gt;
+                  &lt;!-- End Form --&gt;
+                &lt;/div&gt;
+                &lt;!-- End Contact Form --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Tab Wrapper -->
+    </div>
+    <!-- End Component Block -->
+
+    <!-- Component Block -->
     <div id="hire-us-1" class="mb-9">
       <h2 class="h4 mb-4">Hire us #1 <a class="anchorjs-link" href="#hire-us-1" data-anchorjs-icon="#"></a></h2>
 
@@ -1554,8 +1695,11 @@
                 </label>
 
                 <div class="js-focus-state">
-                  <select class="custom-select">
-                    <option selected>$20,000 to $50,000</option>
+                  <select class="form-control custom-select" required
+                          data-msg="Please select your budget."
+                          data-error-class="u-has-error"
+                          data-success-class="u-has-success">
+                    <option value="" selected>$20,000 to $50,000</option>
                     <option value="budget1">$20,000 to $50,000</option>
                     <option value="budget2">$100,000 to $200,000</option>
                     <option value="budget3">$200,000+</option>
@@ -1682,7 +1826,10 @@
                     &lt;/label&gt;
 
                     &lt;div class="js-focus-state"&gt;
-                      &lt;select class="custom-select"&gt;
+                      &lt;select class="form-control custom-select" required
+                          data-msg="Please select your budget."
+                          data-error-class="u-has-error"
+                          data-success-class="u-has-success"&gt;
                         &lt;option selected&gt;$20,000 to $50,000&lt;/option&gt;
                         &lt;option value="budget1"&gt;$20,000 to $50,000&lt;/option&gt;
                         &lt;option value="budget2"&gt;$100,000 to $200,000&lt;/option&gt;
@@ -2088,7 +2235,7 @@
                         <span class="fas fa-search"></span>
                       </span>
                     </div>
-                    <input type="email" class="form-control" name="email" id="searchJobsSr" placeholder="Search Jobs" aria-label="Search Jobs" aria-describedby="searchJobs">
+                    <input type="text" class="form-control" name="text" id="searchJobsSr" placeholder="Search Jobs" aria-label="Search Jobs" aria-describedby="searchJobs">
                   </div>
                 </div>
                 <!-- End Department Search Field -->
@@ -2153,7 +2300,7 @@
                             &lt;span class="fas fa-search"&gt;&lt;/span&gt;
                           &lt;/span&gt;
                         &lt;/div&gt;
-                        &lt;input type="email" class="form-control" name="email" id="searchJobsSr" placeholder="Search Jobs" aria-label="Search Jobs" aria-describedby="searchJobs"&gt;
+                        &lt;input type="text" class="form-control" name="text" id="searchJobsSr" placeholder="Search Jobs" aria-label="Search Jobs" aria-describedby="searchJobs"&gt;
                       &lt;/div&gt;
                     &lt;/div&gt;
                     &lt;!-- End Department Search Field --&gt;
@@ -2765,14 +2912,17 @@
 
                     <div class="col-md-6">
                       <!-- Input -->
-                      <div class="mb-6">
+                      <div class="js-form-message mb-6">
                         <label class="form-label">
                           Country
                           <span class="text-danger">*</span>
                         </label>
 
-                        <select class="custom-select">
-                          <option selected>Select country</option>
+                        <select class="form-control custom-select" required
+                                data-msg="Please select country."
+                                data-error-class="u-has-error"
+                                data-success-class="u-has-success">
+                          <option value="">Select country</option>
                           <option value="AF">Afghanistan</option>
                           <option value="AX">Åland Islands</option>
                           <option value="AL">Albania</option>
@@ -3377,8 +3527,11 @@
                               &lt;span class="text-danger"&gt;*&lt;/span&gt;
                             &lt;/label&gt;
 
-                            &lt;select class="custom-select"&gt;
-                              &lt;option selected&gt;Select country&lt;/option&gt;
+                            &lt;select class="form-control custom-select" required
+                                data-msg="Please select country."
+                                data-error-class="u-has-error"
+                                data-success-class="u-has-success"&gt;
+                              &lt;option value=""&gt;Select country&lt;/option&gt;
                               &lt;option value="AF"&gt;Afghanistan&lt;/option&gt;
                               &lt;option value="AX"&gt;Åland Islands&lt;/option&gt;
                               &lt;option value="AL"&gt;Albania&lt;/option&gt;
@@ -3860,6 +4013,85 @@
     <!-- End Component Block -->
 
     <!-- Component Block -->
+    <div id="upload-picture-2" class="mb-9">
+      <h2 class="h4 mb-4">Upload picture #1 <a class="anchorjs-link" href="#upload-picture-2" data-anchorjs-icon="#"></a></h2>
+
+      <!-- Tab Wrapper -->
+      <div class="tab-wrapper">
+        <!-- Nav Classic -->
+        <ul class="nav nav-classic" id="pills-tab-22" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-result-tab-22" data-toggle="pill" href="#pills-result-22" role="tab" aria-controls="pills-result-22" aria-selected="true">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-html-tab-22" data-toggle="pill" href="#pills-html-22" role="tab" aria-controls="pills-html-22" aria-selected="false">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-js-tab-22" data-toggle="pill" href="#pills-js-22" role="tab" aria-controls="pills-js-22" aria-selected="false">JS</a>
+          </li>
+        </ul>
+        <!-- End Nav Classic -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent-22">
+          <div class="tab-pane p-4 fade show active" id="pills-result-22" role="tabpanel" aria-labelledby="pills-result-tab-22">
+            <!-- File Attachment Input -->
+            <label class="file-attachment-input mb-7" for="imagesAttachmentInput">
+              <img class="js-svg-injector max-width-10 mb-3" src="../assets/svg/illustrations/add-file.svg" alt="SVG"
+                   data-parent="#uploadForm">
+              <span class="d-block mb-2">Browse your device and upload images</span>
+              <small class="d-block text-muted">Maximum file size is 2MB</small>
+              <input id="imagesAttachmentInput" name="images-attachment" type="file" class="js-custom-file-attach file-attachment-input__label"
+                     data-result-text-target="#fileUploadText">
+              <span id="fileUploadText"></span>
+            </label>
+            <!-- End File Attachment Input -->
+
+            <button type="submit" class="btn btn-primary btn-block transition-3d-hover">Submit</button>
+          </div>
+          <div class="tab-pane fade" id="pills-html-22" role="tabpanel" aria-labelledby="pills-html-tab-22">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- File Attachment Input --&gt;
+                &lt;label class="file-attachment-input mb-7" for="imagesAttachmentInput"&gt;
+                  &lt;img class="js-svg-injector max-width-10 mb-3" src="../../assets/svg/illustrations/add-file.svg" alt="SVG"
+                       data-parent="#uploadForm"&gt;
+                  &lt;span class="d-block mb-2"&gt;Browse your device and upload images&lt;/span&gt;
+                  &lt;small class="d-block text-muted"&gt;Maximum file size is 2MB&lt;/small&gt;
+                  &lt;input id="imagesAttachmentInput" name="images-attachment" type="file" class="js-custom-file-attach file-attachment-input__label"
+                         data-result-text-target="#fileUploadText"&gt;
+                  &lt;span id="fileUploadText"&gt;&lt;/span&gt;
+                &lt;/label&gt;
+                &lt;!-- End File Attachment Input --&gt;
+
+                &lt;button type="submit" class="btn btn-primary btn-block transition-3d-hover"&gt;Submit&lt;/button&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-js-22" role="tabpanel" aria-labelledby="pills-js-tab-22">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/js/components/hs.file-attach.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  $(document).on('ready', function () {
+                    // initialization of file attach module
+                    $.HSCore.components.HSFileAttach.init('.js-custom-file-attach');
+                  });
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Tab Wrapper -->
+    </div>
+    <!-- End Component Block -->
+
+    <!-- Component Block -->
     <div id="user-info-1" class="mb-9">
       <h2 class="h4 mb-4">User info #1 <a class="anchorjs-link" href="#user-info-1" data-anchorjs-icon="#"></a></h2>
 
@@ -3930,7 +4162,11 @@
                 <div class="col-md-6 mb-3 mb-sm-6">
                   <div class="js-form-message">
                     <div class="form-group">
-                      <select class="custom-select">
+                      <select class="form-control custom-select" required
+                              data-msg="Please select month."
+                              data-error-class="u-has-error"
+                              data-success-class="u-has-success">
+                        <option value="">Select month</option>
                         <option value="birthMonthSelect1">January</option>
                         <option value="birthMonthSelect2">February</option>
                         <option value="birthMonthSelect3">March</option>
@@ -3953,7 +4189,11 @@
                 <div class="col-sm-4 col-md-2 mb-3 mb-sm-6">
                   <div class="js-form-message">
                     <div class="form-group">
-                      <select class="custom-select">
+                      <select class="form-control custom-select" required
+                              data-msg="Please select date."
+                              data-error-class="u-has-error"
+                              data-success-class="u-has-success">
+                        <option value="">Select day</option>
                         <option value="birthDateSelect1">1</option>
                         <option value="birthDateSelect2">2</option>
                         <option value="birthDateSelect3">3</option>
@@ -3995,7 +4235,11 @@
                 <div class="col-sm-4 col-md-2 mb-3 mb-sm-6">
                   <div class="js-form-message">
                     <div class="form-group">
-                      <select class="custom-select">
+                      <select class="form-control custom-select" required
+                              data-msg="Please select year."
+                              data-error-class="u-has-error"
+                              data-success-class="u-has-success">
+                        <option value="">Select year</option>
                         <option value="birthYearSelect1900">1900</option>
                         <option value="birthYearSelect1901">1901</option>
                         <option value="birthYearSelect1902">1902</option>
@@ -4124,7 +4368,11 @@
                 <div class="col-sm-4 col-md-2 mb-6">
                   <div class="js-form-message">
                     <div class="form-group">
-                      <select class="custom-select">
+                      <select class="form-control custom-select" required
+                              data-msg="Please select your gender."
+                              data-error-class="u-has-error"
+                              data-success-class="u-has-success">
+                        <option value="">Select gender</option>
                         <option value="genderSelect1" selected>Male</option>
                         <option value="genderSelect2">Female</option>
                         <option value="genderSelect3">Other</option>
@@ -4247,7 +4495,11 @@
                     </label>
 
                     <div class="form-group">
-                      <select class="custom-select">
+                      <select class="form-control custom-select" required
+                              data-msg="Please select language."
+                              data-error-class="u-has-error"
+                              data-success-class="u-has-success">
+                        <option value="">Select language</option>
                         <option value="languageSelect1" selected>English</option>
                         <option value="languageSelect2">Français</option>
                         <option value="languageSelect3">Deutsch</option>
@@ -4315,7 +4567,11 @@
                     &lt;div class="col-md-6 mb-3 mb-sm-6"&gt;
                       &lt;div class="js-form-message"&gt;
                         &lt;div class="js-focus-state form-group"&gt;
-                          &lt;select class="custom-select"&gt;
+                          &lt;select class="form-control custom-select" required
+                              data-msg="Please select month."
+                              data-error-class="u-has-error"
+                              data-success-class="u-has-success"&gt;
+                            &lt;option value=""&gt;Select month&lt;/option&gt;
                             &lt;option value="birthMonthSelect1"&gt;January&lt;/option&gt;
                             &lt;option value="birthMonthSelect2"&gt;February&lt;/option&gt;
                             &lt;option value="birthMonthSelect3"&gt;March&lt;/option&gt;
@@ -4338,7 +4594,11 @@
                     &lt;div class="col-sm-4 col-md-2 mb-3 mb-sm-6"&gt;
                       &lt;div class="js-form-message"&gt;
                         &lt;div class="js-focus-state form-group"&gt;
-                          &lt;select class="custom-select"&gt;
+                          &lt;select class="form-control custom-select" required
+                              data-msg="Please select date."
+                              data-error-class="u-has-error"
+                              data-success-class="u-has-success"&gt;
+                            &lt;option value=""&gt;Select date&lt;/option&gt;
                             &lt;option value="birthDateSelect1"&gt;1&lt;/option&gt;
                             &lt;option value="birthDateSelect2"&gt;2&lt;/option&gt;
                             &lt;option value="birthDateSelect3"&gt;3&lt;/option&gt;
@@ -4380,7 +4640,11 @@
                     &lt;div class="col-sm-4 col-md-2 mb-3 mb-sm-6"&gt;
                       &lt;div class="js-form-message"&gt;
                         &lt;div class="js-focus-state form-group"&gt;
-                          &lt;select class="custom-select"&gt;
+                          &lt;select class="form-control custom-select" required
+                              data-msg="Please select year."
+                              data-error-class="u-has-error"
+                              data-success-class="u-has-success"&gt;
+                            &lt;option value=""&gt;Select year&lt;/option&gt;
                             &lt;option value="birthYearSelect1900"&gt;1900&lt;/option&gt;
                             &lt;option value="birthYearSelect1901"&gt;1901&lt;/option&gt;
                             &lt;option value="birthYearSelect1902"&gt;1902&lt;/option&gt;
@@ -4509,7 +4773,11 @@
                     &lt;div class="col-sm-4 col-md-2 mb-6"&gt;
                       &lt;div class="js-form-message"&gt;
                         &lt;div class="js-focus-state form-group"&gt;
-                          &lt;select class="custom-select"&gt;
+                          &lt;select class="form-control custom-select" required
+                              data-msg="Please select your gender."
+                              data-error-class="u-has-error"
+                              data-success-class="u-has-success"&gt;
+                            &lt;option value=""&gt;Select gender&lt;/option&gt;
                             &lt;option value="genderSelect1" selected&gt;Male&lt;/option&gt;
                             &lt;option value="genderSelect2"&gt;Female&lt;/option&gt;
                             &lt;option value="genderSelect3"&gt;Other&lt;/option&gt;
@@ -4632,7 +4900,11 @@
                         &lt;/label&gt;
 
                         &lt;div class="js-focus-state form-group"&gt;
-                          &lt;select class="custom-select"&gt;
+                          &lt;select class="form-control custom-select" required
+                              data-msg="Please select language."
+                              data-error-class="u-has-error"
+                              data-success-class="u-has-success"&gt;
+                            &lt;option value=""&gt;Select language&lt;/option&gt;
                             &lt;option value="languageSelect1" selected&gt;English&lt;/option&gt;
                             &lt;option value="languageSelect2"&gt;Français&lt;/option&gt;
                             &lt;option value="languageSelect3"&gt;Deutsch&lt;/option&gt;
@@ -5750,6 +6022,128 @@
     <!-- End Component Block -->
 
     <!-- Component Block -->
+    <div id="checkbox-2" class="mb-9">
+      <h2 class="h4 mb-4">Checkbox #2 <a class="anchorjs-link" href="#checkbox-2" data-anchorjs-icon="#"></a></h2>
+
+      <!-- Tab Wrapper -->
+      <div class="tab-wrapper">
+        <!-- Nav Classic -->
+        <ul class="nav nav-classic" id="pills-tab-21" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-result-tab-21" data-toggle="pill" href="#pills-result-21" role="tab" aria-controls="pills-result-21" aria-selected="true">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-html-tab-21" data-toggle="pill" href="#pills-html-21" role="tab" aria-controls="pills-html-21" aria-selected="false">HTML</a>
+          </li>
+        </ul>
+        <!-- End Nav Classic -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent-21">
+          <div class="tab-pane p-4 fade show active" id="pills-result-21" role="tabpanel" aria-labelledby="pills-result-tab-21">
+            <!-- Radio Checkbox Group -->
+            <div class="row mx-gutters-2">
+              <div class="col-6 col-md-3 mb-3 mb-md-0">
+                <div class="custom-control custom-radio custom-control-inline checkbox-outline text-center">
+                  <input type="radio" id="typeOfListingRadio1" name="typeOfListingRadio1" class="custom-control-input checkbox-outline__input">
+                  <label class="checkbox-outline__label rounded py-3 px-1 mb-0" for="typeOfListingRadio1">
+                    <img class="js-svg-injector w-50 mb-3" src="../assets/svg/flat-icons/small-house.svg" alt="SVG"
+                         data-parent="#uploadForm">
+                    <span class="d-block">House</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 col-md-3 mb-3 mb-md-0">
+                <div class="custom-control custom-radio custom-control-inline checkbox-outline text-center">
+                  <input type="radio" id="typeOfListingRadio2" name="typeOfListingRadio1" class="custom-control-input checkbox-outline__input" checked>
+                  <label class="checkbox-outline__label rounded py-3 px-1 mb-0" for="typeOfListingRadio2">
+                    <img class="js-svg-injector w-50 mb-3" src="../assets/svg/flat-icons/flat-house.svg" alt="SVG"
+                         data-parent="#uploadForm">
+                    <span class="d-block">Flat</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="custom-control custom-radio custom-control-inline checkbox-outline text-center">
+                  <input type="radio" id="typeOfListingRadio3" name="typeOfListingRadio1" class="custom-control-input checkbox-outline__input">
+                  <label class="checkbox-outline__label rounded py-3 px-1 mb-0" for="typeOfListingRadio3">
+                    <img class="js-svg-injector w-50 mb-3" src="../assets/svg/flat-icons/multi-family-house.svg" alt="SVG"
+                         data-parent="#uploadForm">
+                    <span class="d-block">Multi-family</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col-6 col-md-3">
+                <div class="custom-control custom-radio custom-control-inline checkbox-outline text-center">
+                  <input type="radio" id="typeOfListingRadio4" name="typeOfListingRadio1" class="custom-control-input checkbox-outline__input">
+                  <label class="checkbox-outline__label rounded py-3 px-1 mb-0" for="typeOfListingRadio4">
+                    <img class="js-svg-injector w-50 mb-3" src="../assets/svg/flat-icons/farm-land.svg" alt="SVG"
+                         data-parent="#uploadForm">
+                    <span class="d-block">Farms/land</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- End Radio Checkbox Group -->
+          </div>
+          <div class="tab-pane fade" id="pills-html-21" role="tabpanel" aria-labelledby="pills-html-tab-21">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- Radio Checkbox Group --&gt;
+                &lt;div class="row mx-gutters-2"&gt;
+                  &lt;div class="col-6 col-md-3 mb-3 mb-md-0"&gt;
+                    &lt;div class="custom-control custom-radio custom-control-inline checkbox-outline text-center"&gt;
+                      &lt;input type="radio" id="typeOfListingRadio1" name="typeOfListingRadio1" class="custom-control-input checkbox-outline__input"&gt;
+                      &lt;label class="checkbox-outline__label rounded py-3 px-1 mb-0" for="typeOfListingRadio1"&gt;
+                        &lt;img class="js-svg-injector w-50 mb-3" src="../../assets/svg/flat-icons/small-house.svg" alt="SVG"
+                             data-parent="#uploadForm"&gt;
+                        &lt;span class="d-block"&gt;House&lt;/span&gt;
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="col-6 col-md-3 mb-3 mb-md-0"&gt;
+                    &lt;div class="custom-control custom-radio custom-control-inline checkbox-outline text-center"&gt;
+                      &lt;input type="radio" id="typeOfListingRadio2" name="typeOfListingRadio1" class="custom-control-input checkbox-outline__input" checked&gt;
+                      &lt;label class="checkbox-outline__label rounded py-3 px-1 mb-0" for="typeOfListingRadio2"&gt;
+                        &lt;img class="js-svg-injector w-50 mb-3" src="../../assets/svg/flat-icons/flat-house.svg" alt="SVG"
+                             data-parent="#uploadForm"&gt;
+                        &lt;span class="d-block"&gt;Flat&lt;/span&gt;
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="col-6 col-md-3"&gt;
+                    &lt;div class="custom-control custom-radio custom-control-inline checkbox-outline text-center"&gt;
+                      &lt;input type="radio" id="typeOfListingRadio3" name="typeOfListingRadio1" class="custom-control-input checkbox-outline__input"&gt;
+                      &lt;label class="checkbox-outline__label rounded py-3 px-1 mb-0" for="typeOfListingRadio3"&gt;
+                        &lt;img class="js-svg-injector w-50 mb-3" src="../../assets/svg/flat-icons/multi-family-house.svg" alt="SVG"
+                             data-parent="#uploadForm"&gt;
+                        &lt;span class="d-block"&gt;Multi-family&lt;/span&gt;
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class="col-6 col-md-3"&gt;
+                    &lt;div class="custom-control custom-radio custom-control-inline checkbox-outline text-center"&gt;
+                      &lt;input type="radio" id="typeOfListingRadio4" name="typeOfListingRadio1" class="custom-control-input checkbox-outline__input"&gt;
+                      &lt;label class="checkbox-outline__label rounded py-3 px-1 mb-0" for="typeOfListingRadio4"&gt;
+                        &lt;img class="js-svg-injector w-50 mb-3" src="../../assets/svg/flat-icons/farm-land.svg" alt="SVG"
+                             data-parent="#uploadForm"&gt;
+                        &lt;span class="d-block"&gt;Farms/land&lt;/span&gt;
+                      &lt;/label&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Radio Checkbox Group --&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Tab Wrapper -->
+    </div>
+    <!-- End Component Block -->
+
+    <!-- Component Block -->
     <div id="copy-to-clipboard-1" class="mb-9">
       <h2 class="h4 mb-4">Copy-to-clipboard #1 <a class="anchorjs-link" href="#copy-to-clipboard-1" data-anchorjs-icon="#"></a></h2>
 
@@ -6039,6 +6433,1057 @@
       <!-- End Tab Wrapper -->
     </div>
     <!-- End Component Block -->
+
+    <!-- Component Block -->
+    <div id="search-form-2" class="mb-9">
+      <h2 class="h4 mb-4">Search form #2 <a class="anchorjs-link" href="#search-form-2" data-anchorjs-icon="#"></a></h2>
+
+      <!-- Tab Wrapper -->
+      <div class="tab-wrapper">
+        <!-- Nav Classic -->
+        <ul class="nav nav-classic" id="pills-tab-23" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-result-tab-23" data-toggle="pill" href="#pills-result-23" role="tab" aria-controls="pills-result-23" aria-selected="true">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-html-tab-23" data-toggle="pill" href="#pills-html-23" role="tab" aria-controls="pills-html-23" aria-selected="false">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-css-tab-23" data-toggle="pill" href="#pills-css-23" role="tab" aria-controls="pills-css-23" aria-selected="false">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-js-tab-23" data-toggle="pill" href="#pills-js-23" role="tab" aria-controls="pills-js-23" aria-selected="false">JS</a>
+          </li>
+        </ul>
+        <!-- End Nav Classic -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent-23">
+          <div class="tab-pane fade show active" id="pills-result-23" role="tabpanel" aria-labelledby="pills-result-tab-23" style="min-height: 350px;">
+            <!-- Search Section -->
+            <div class="bg-light">
+              <div class="container space-1">
+                <div class="row mx-gutters-2">
+                  <div class="col-lg mb-3 mb-lg-0">
+                    <!-- Search Property Input -->
+                    <div class="js-focus-state">
+                      <label class="sr-only" for="searchPropertySr">Search property</label>
+                      <div class="input-group input-group-sm">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="searchProperty">
+                            <span class="fas fa-search"></span>
+                          </span>
+                        </div>
+                        <input type="text" class="form-control" name="text" id="searchPropertySr" placeholder="Search property" aria-label="Search property" aria-describedby="searchProperty" value="London">
+                      </div>
+                    </div>
+                    <!-- End Search Property Input -->
+                  </div>
+
+                  <div class="col-sm-auto ml-md-auto mb-3 mb-lg-0">
+                    <!-- Filter -->
+                    <div class="position-relative">
+                      <a id="filter2DropdownInvoker" class="btn btn-block btn-sm btn-soft-secondary dropdown-toggle" href="javascript:;" role="button"
+                         aria-controls="filter2Dropdown"
+                         aria-haspopup="true"
+                         aria-expanded="false"
+                         data-unfold-event="click"
+                         data-unfold-target="#filter2Dropdown"
+                         data-unfold-type="css-animation"
+                         data-unfold-duration="300"
+                         data-unfold-delay="300"
+                         data-unfold-animation-in="slidefadeIn"
+                         data-unfold-animation-out="fadeOut">
+                        <span class="fas fa-home dropdown-item-icon"></span>
+                        Property type
+                      </a>
+
+                      <div id="filter2Dropdown" class="dropdown-menu dropdown-unfold dropdown-menu-lg-right dropdown-menu-size-md p-5" aria-labelledby="filter2DropdownInvoker">
+                        <div class="row">
+                          <div class="col-sm-6 u-ver-divider u-ver-divider--none-sm mb-4 mb-sm-0">
+                            <!-- Radio Checkbox -->
+                            <div class="custom-control custom-radio mb-2">
+                              <input type="radio" class="custom-control-input" id="propertyRadioChechbox1" name="propertyRadioChechbox" checked>
+                              <label class="custom-control-label" for="propertyRadioChechbox1">
+                                Show all
+                              </label>
+                            </div>
+                            <!-- End Radio Checkbox -->
+
+                            <!-- Radio Checkbox -->
+                            <div class="custom-control custom-radio mb-2">
+                              <input type="radio" class="custom-control-input" id="propertyRadioChechbox2" name="propertyRadioChechbox">
+                              <label class="custom-control-label" for="propertyRadioChechbox2">
+                                Houses
+                              </label>
+                            </div>
+                            <!-- End Radio Checkbox -->
+
+                            <!-- Radio Checkbox -->
+                            <div class="custom-control custom-radio mb-2">
+                              <input type="radio" class="custom-control-input" id="propertyRadioChechbox3" name="propertyRadioChechbox">
+                              <label class="custom-control-label" for="propertyRadioChechbox3">
+                                Flats
+                              </label>
+                            </div>
+                            <!-- End Radio Checkbox -->
+
+                            <!-- Radio Checkbox -->
+                            <div class="custom-control custom-radio mb-2">
+                              <input type="radio" class="custom-control-input" id="propertyRadioChechbox4" name="propertyRadioChechbox">
+                              <label class="custom-control-label" for="propertyRadioChechbox4">
+                                Multi-family
+                              </label>
+                            </div>
+                            <!-- End Radio Checkbox -->
+
+                            <!-- Radio Checkbox -->
+                            <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" id="propertyRadioChechbox5" name="propertyRadioChechbox">
+                              <label class="custom-control-label" for="propertyRadioChechbox5">
+                                Farms/land
+                              </label>
+                            </div>
+                            <!-- End Radio Checkbox -->
+                          </div>
+
+                          <div class="col-sm-6">
+                            <!-- Radio Checkbox -->
+                            <div class="custom-control custom-radio mb-2">
+                              <input type="radio" class="custom-control-input" id="propertyAddedTimeRadioChechbox1" name="propertyAddedTimeRadioChechbox" checked>
+                              <label class="custom-control-label" for="propertyAddedTimeRadioChechbox1">
+                                Added anytime
+                              </label>
+                            </div>
+                            <!-- End Radio Checkbox -->
+
+                            <!-- Radio Checkbox -->
+                            <div class="custom-control custom-radio mb-2">
+                              <input type="radio" class="custom-control-input" id="propertyAddedTimeRadioChechbox2" name="propertyAddedTimeRadioChechbox">
+                              <label class="custom-control-label" for="propertyAddedTimeRadioChechbox2">
+                                Last 24 hours
+                              </label>
+                            </div>
+                            <!-- End Radio Checkbox -->
+
+                            <!-- Radio Checkbox -->
+                            <div class="custom-control custom-radio mb-2">
+                              <input type="radio" class="custom-control-input" id="propertyAddedTimeRadioChechbox3" name="propertyAddedTimeRadioChechbox">
+                              <label class="custom-control-label" for="propertyAddedTimeRadioChechbox3">
+                                Last 7 days
+                              </label>
+                            </div>
+                            <!-- End Radio Checkbox -->
+
+                            <!-- Radio Checkbox -->
+                            <div class="custom-control custom-radio mb-2">
+                              <input type="radio" class="custom-control-input" id="propertyAddedTimeRadioChechbox4" name="propertyAddedTimeRadioChechbox">
+                              <label class="custom-control-label" for="propertyAddedTimeRadioChechbox4">
+                                Last 14 days
+                              </label>
+                            </div>
+                            <!-- End Radio Checkbox -->
+
+                            <!-- Radio Checkbox -->
+                            <div class="custom-control custom-radio">
+                              <input type="radio" class="custom-control-input" id="propertyAddedTimeRadioChechbox5" name="propertyAddedTimeRadioChechbox">
+                              <label class="custom-control-label" for="propertyAddedTimeRadioChechbox5">
+                                Last 30 days
+                              </label>
+                            </div>
+                            <!-- End Radio Checkbox -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Filter -->
+                  </div>
+
+                  <div class="col-sm-auto mb-3 mb-lg-0">
+                    <!-- Filter -->
+                    <div class="position-relative">
+                      <a id="filter3DropdownInvoker" class="btn btn-block btn-sm btn-soft-secondary dropdown-toggle" href="javascript:;" role="button"
+                         aria-controls="filter3Dropdown"
+                         aria-haspopup="true"
+                         aria-expanded="false"
+                         data-unfold-event="click"
+                         data-unfold-target="#filter3Dropdown"
+                         data-unfold-type="css-animation"
+                         data-unfold-duration="300"
+                         data-unfold-delay="300"
+                         data-unfold-animation-in="slidefadeIn"
+                         data-unfold-animation-out="fadeOut">
+                        <span class="fas fa-sliders-h dropdown-item-icon"></span>
+                        Refine
+                      </a>
+
+                      <div id="filter3Dropdown" class="dropdown-menu dropdown-unfold dropdown-menu-sm-right dropdown-menu-size-lg p-5" aria-labelledby="filter3DropdownInvoker">
+                        <div class="row">
+                          <div class="col-lg-7 u-ver-divider u-ver-divider--none-lg mb-5 mb-lg-0">
+                            <div class="pr-lg-2">
+                              <label class="form-label mb-2">Price range</label>
+
+                              <!-- Area Charts -->
+                              <div class="position-relative overflow-hidden mb-2" style="height: 80px;">
+                                <div class="js-area-chart position-absolute w-100"
+                                     data-height="80px"
+                                     data-high="1500"
+                                     data-low="0"
+                                     data-offset-x="0"
+                                     data-offset-y="0"
+                                     data-is-show-area="true"
+                                     data-is-show-line="false"
+                                     data-is-show-point="false"
+                                     data-is-full-width="true"
+
+                                     data-is-stack-bars="true"
+                                     data-is-show-axis-x="false"
+                                     data-is-show-axis-y="false"
+                                     data-is-show-tooltips="false"
+                                     data-fill-opacity="1"
+                                     data-fill-colors='["#e7eaf3"]'
+                                     data-stroke-color="#e7eaf3"
+                                     data-text-color-x="#77838f"
+                                     data-text-offset-top-x="0"
+
+                                     data-text-size-y=".75rem"
+                                     data-text-color-y="#77838f"
+                                     data-points-colors='["#e7eaf3"]'
+                                     data-series='[
+                                       [
+                                         {"value": 289},
+                                         {"value": 100},
+                                         {"value": 700},
+                                         {"value": 500},
+                                         {"value": 1500},
+                                         {"value": 200},
+                                         {"value": 855},
+                                         {"value": 321},
+                                         {"value": 75}
+                                       ]
+                                     ]'></div>
+
+                                  <div id="foregroundAreaChartDoubleResult" class="position-absolute h-100 overflow-hidden">
+                                    <div class="js-area-chart position-absolute"
+                                         data-height="80px"
+                                         data-high="1500"
+                                         data-low="0"
+                                         data-offset-x="0"
+                                         data-offset-y="0"
+                                         data-is-show-area="true"
+                                         data-is-show-line="false"
+                                         data-is-show-point="false"
+                                         data-is-full-width="true"
+
+                                         data-is-stack-bars="true"
+                                         data-is-show-axis-x="false"
+                                         data-is-show-axis-y="false"
+                                         data-is-show-tooltips="false"
+                                         data-fill-opacity="1"
+                                         data-fill-colors='["#377dff"]'
+                                         data-stroke-color="#377dff"
+                                         data-text-color-x="#77838f"
+                                         data-text-offset-top-x="0"
+
+                                         data-text-size-y=".75rem"
+                                         data-text-color-y="#77838f"
+                                         data-points-colors='["#377dff"]'
+                                         data-series='[
+                                           [
+                                             {"value": 289},
+                                             {"value": 100},
+                                             {"value": 700},
+                                             {"value": 500},
+                                             {"value": 1500},
+                                             {"value": 200},
+                                             {"value": 855},
+                                             {"value": 321},
+                                             {"value": 75}
+                                           ]
+                                         ]'></div>
+                                  </div>
+                              </div>
+                              <!-- End Area Charts -->
+
+                              <!-- Range Slider -->
+                              <input class="js-range-slider" type="text"
+                                     data-extra-classes="u-range-slider"
+                                     data-type="double"
+                                     data-foreground-target="#foregroundAreaChartDoubleResult"
+                                     data-min="0"
+                                     data-max="999000"
+                                     data-from="250000"
+                                     data-to="750000"
+                                     data-result-min="#rangeSliderExample7MinResult"
+                                     data-result-max="#rangeSliderExample7MaxResult">
+
+                              <div class="d-flex justify-content-between align-items-center mt-6">
+                                <div>
+                                  <span class="text-muted">Min price:</span>
+                                  <span id="rangeSliderExample7MinResult" class="text-muted"></span>
+                                </div>
+                                <div>
+                                  <span class="text-muted">Max price:</span>
+                                  <span id="rangeSliderExample7MaxResult" class="text-muted"></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-5">
+                            <div class="pl-lg-2">
+                              <label class="form-label mb-2">Status</label>
+
+                              <!-- Button Group -->
+                              <div class="btn-group btn-group-toggle d-flex mb-5" data-toggle="buttons">
+                                <label class="btn btn-sm btn-outline-secondary btn-custom-toggle-primary flex-fill active">
+                                  <input type="radio" name="options" id="statusOptionExample1" checked>
+                                  For sale
+                                </label>
+                                <label class="btn btn-sm btn-outline-secondary btn-custom-toggle-primary flex-fill">
+                                  <input type="radio" name="options" id="statusOptionExample2">
+                                  For rent
+                                </label>
+                              </div>
+                              <!-- End Button Group -->
+
+                              <!-- Rooms -->
+                              <div class="row mx-gutters-2">
+                                <div class="col-6">
+                                  <label class="form-label mb-2">Beds</label>
+
+                                  <!-- Select -->
+                                  <select class="js-select selectpicker dropdown-select"
+                                          data-size="10"
+                                          data-width="100%"
+                                          data-style="btn-soft-secondary btn-sm">
+                                    <option value="bedValueAll" selected>All</option>
+                                    <option value="bedValueMin1">1</option>
+                                    <option value="bedValueMin2">2</option>
+                                    <option value="bedValueMin3">3</option>
+                                    <option value="bedValueMin4">4</option>
+                                    <option value="bedValueMin5">5</option>
+                                    <option value="bedValueMin6">6</option>
+                                    <option value="bedValueMin7">7</option>
+                                    <option value="bedValueMin8">8</option>
+                                    <option value="bedValueMin9">9</option>
+                                    <option value="bedValueMin10">10</option>
+                                  </select>
+                                  <!-- End Select -->
+                                </div>
+
+                                <div class="col-6">
+                                  <!-- Select -->
+                                  <label for="bathLabel" class="form-label mb-2">Baths</label>
+
+                                  <select id="bathLabel" class="js-select selectpicker dropdown-select"
+                                          data-size="10"
+                                          data-width="100%"
+                                          data-style="btn-soft-secondary btn-sm">
+                                    <option value="bedValueAll" selected>All</option>
+                                    <option value="bedValueMax1">1</option>
+                                    <option value="bedValueMax2">2</option>
+                                    <option value="bedValueMax3">3</option>
+                                    <option value="bedValueMax4">4</option>
+                                    <option value="bedValueMax5">5</option>
+                                    <option value="bedValueMax6">6</option>
+                                    <option value="bedValueMax7">7</option>
+                                    <option value="bedValueMax8">8</option>
+                                    <option value="bedValueMax9">9</option>
+                                    <option value="bedValueMax10">10</option>
+                                  </select>
+                                  <!-- End Select -->
+                                </div>
+                              </div>
+                              <!-- End Rooms -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- End Filter -->
+                  </div>
+
+                  <div class="col-sm-auto">
+                    <button type="submit" class="btn btn-sm btn-primary">Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Search Section -->
+          </div>
+          <div class="tab-pane fade" id="pills-html-23" role="tabpanel" aria-labelledby="pills-html-tab-23">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- Search Section --&gt;
+                &lt;div class="bg-light"&gt;
+                  &lt;div class="container space-1"&gt;
+                    &lt;div class="row mx-gutters-2"&gt;
+                      &lt;div class="col-lg mb-3 mb-lg-0"&gt;
+                        &lt;!-- Search Property Input --&gt;
+                        &lt;div class="js-focus-state"&gt;
+                          &lt;label class="sr-only" for="searchPropertySr"&gt;Search property&lt;/label&gt;
+                          &lt;div class="input-group input-group-sm"&gt;
+                            &lt;div class="input-group-prepend"&gt;
+                              &lt;span class="input-group-text" id="searchProperty"&gt;
+                                &lt;span class="fas fa-search"&gt;&lt;/span&gt;
+                              &lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;input type="text" class="form-control" name="text" id="searchPropertySr" placeholder="Search property" aria-label="Search property" aria-describedby="searchProperty" value="London"&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Search Property Input --&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="col-sm-auto ml-md-auto mb-3 mb-lg-0"&gt;
+                        &lt;!-- Filter --&gt;
+                        &lt;div class="position-relative"&gt;
+                          &lt;a id="filter2DropdownInvoker" class="btn btn-block btn-sm btn-soft-secondary dropdown-toggle" href="javascript:;" role="button"
+                             aria-controls="filter2Dropdown"
+                             aria-haspopup="true"
+                             aria-expanded="false"
+                             data-unfold-event="click"
+                             data-unfold-target="#filter2Dropdown"
+                             data-unfold-type="css-animation"
+                             data-unfold-duration="300"
+                             data-unfold-delay="300"
+                             data-unfold-animation-in="slidefadeIn"
+                             data-unfold-animation-out="fadeOut"&gt;
+                            &lt;span class="fas fa-home dropdown-item-icon"&gt;&lt;/span&gt;
+                            Property type
+                          &lt;/a&gt;
+
+                          &lt;div id="filter2Dropdown" class="dropdown-menu dropdown-unfold dropdown-menu-lg-right dropdown-menu-size-md p-5" aria-labelledby="filter2DropdownInvoker"&gt;
+                            &lt;div class="row"&gt;
+                              &lt;div class="col-sm-6 u-ver-divider u-ver-divider--none-sm mb-4 mb-sm-0"&gt;
+                                &lt;!-- Radio Checkbox --&gt;
+                                &lt;div class="custom-control custom-radio mb-2"&gt;
+                                  &lt;input type="radio" class="custom-control-input" id="propertyRadioChechbox1" name="propertyRadioChechbox" checked&gt;
+                                  &lt;label class="custom-control-label" for="propertyRadioChechbox1"&gt;
+                                    Show all
+                                  &lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Radio Checkbox --&gt;
+
+                                &lt;!-- Radio Checkbox --&gt;
+                                &lt;div class="custom-control custom-radio mb-2"&gt;
+                                  &lt;input type="radio" class="custom-control-input" id="propertyRadioChechbox2" name="propertyRadioChechbox"&gt;
+                                  &lt;label class="custom-control-label" for="propertyRadioChechbox2"&gt;
+                                    Houses
+                                  &lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Radio Checkbox --&gt;
+
+                                &lt;!-- Radio Checkbox --&gt;
+                                &lt;div class="custom-control custom-radio mb-2"&gt;
+                                  &lt;input type="radio" class="custom-control-input" id="propertyRadioChechbox3" name="propertyRadioChechbox"&gt;
+                                  &lt;label class="custom-control-label" for="propertyRadioChechbox3"&gt;
+                                    Flats
+                                  &lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Radio Checkbox --&gt;
+
+                                &lt;!-- Radio Checkbox --&gt;
+                                &lt;div class="custom-control custom-radio mb-2"&gt;
+                                  &lt;input type="radio" class="custom-control-input" id="propertyRadioChechbox4" name="propertyRadioChechbox"&gt;
+                                  &lt;label class="custom-control-label" for="propertyRadioChechbox4"&gt;
+                                    Multi-family
+                                  &lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Radio Checkbox --&gt;
+
+                                &lt;!-- Radio Checkbox --&gt;
+                                &lt;div class="custom-control custom-radio"&gt;
+                                  &lt;input type="radio" class="custom-control-input" id="propertyRadioChechbox5" name="propertyRadioChechbox"&gt;
+                                  &lt;label class="custom-control-label" for="propertyRadioChechbox5"&gt;
+                                    Farms/land
+                                  &lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Radio Checkbox --&gt;
+                              &lt;/div&gt;
+
+                              &lt;div class="col-sm-6"&gt;
+                                &lt;!-- Radio Checkbox --&gt;
+                                &lt;div class="custom-control custom-radio mb-2"&gt;
+                                  &lt;input type="radio" class="custom-control-input" id="propertyAddedTimeRadioChechbox1" name="propertyAddedTimeRadioChechbox" checked&gt;
+                                  &lt;label class="custom-control-label" for="propertyAddedTimeRadioChechbox1"&gt;
+                                    Added anytime
+                                  &lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Radio Checkbox --&gt;
+
+                                &lt;!-- Radio Checkbox --&gt;
+                                &lt;div class="custom-control custom-radio mb-2"&gt;
+                                  &lt;input type="radio" class="custom-control-input" id="propertyAddedTimeRadioChechbox2" name="propertyAddedTimeRadioChechbox"&gt;
+                                  &lt;label class="custom-control-label" for="propertyAddedTimeRadioChechbox2"&gt;
+                                    Last 24 hours
+                                  &lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Radio Checkbox --&gt;
+
+                                &lt;!-- Radio Checkbox --&gt;
+                                &lt;div class="custom-control custom-radio mb-2"&gt;
+                                  &lt;input type="radio" class="custom-control-input" id="propertyAddedTimeRadioChechbox3" name="propertyAddedTimeRadioChechbox"&gt;
+                                  &lt;label class="custom-control-label" for="propertyAddedTimeRadioChechbox3"&gt;
+                                    Last 7 days
+                                  &lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Radio Checkbox --&gt;
+
+                                &lt;!-- Radio Checkbox --&gt;
+                                &lt;div class="custom-control custom-radio mb-2"&gt;
+                                  &lt;input type="radio" class="custom-control-input" id="propertyAddedTimeRadioChechbox4" name="propertyAddedTimeRadioChechbox"&gt;
+                                  &lt;label class="custom-control-label" for="propertyAddedTimeRadioChechbox4"&gt;
+                                    Last 14 days
+                                  &lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Radio Checkbox --&gt;
+
+                                &lt;!-- Radio Checkbox --&gt;
+                                &lt;div class="custom-control custom-radio"&gt;
+                                  &lt;input type="radio" class="custom-control-input" id="propertyAddedTimeRadioChechbox5" name="propertyAddedTimeRadioChechbox"&gt;
+                                  &lt;label class="custom-control-label" for="propertyAddedTimeRadioChechbox5"&gt;
+                                    Last 30 days
+                                  &lt;/label&gt;
+                                &lt;/div&gt;
+                                &lt;!-- End Radio Checkbox --&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Filter --&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="col-sm-auto mb-3 mb-lg-0"&gt;
+                        &lt;!-- Filter --&gt;
+                        &lt;div class="position-relative"&gt;
+                          &lt;a id="filter3DropdownInvoker" class="btn btn-block btn-sm btn-soft-secondary dropdown-toggle" href="javascript:;" role="button"
+                             aria-controls="filter3Dropdown"
+                             aria-haspopup="true"
+                             aria-expanded="false"
+                             data-unfold-event="click"
+                             data-unfold-target="#filter3Dropdown"
+                             data-unfold-type="css-animation"
+                             data-unfold-duration="300"
+                             data-unfold-delay="300"
+                             data-unfold-animation-in="slidefadeIn"
+                             data-unfold-animation-out="fadeOut"&gt;
+                            &lt;span class="fas fa-sliders-h dropdown-item-icon"&gt;&lt;/span&gt;
+                            Refine
+                          &lt;/a&gt;
+
+                          &lt;div id="filter3Dropdown" class="dropdown-menu dropdown-unfold dropdown-menu-sm-right dropdown-menu-size-lg p-5" aria-labelledby="filter3DropdownInvoker"&gt;
+                            &lt;div class="row"&gt;
+                              &lt;div class="col-lg-7 u-ver-divider u-ver-divider--none-lg mb-5 mb-lg-0"&gt;
+                                &lt;div class="pr-lg-2"&gt;
+                                  &lt;label class="form-label mb-2"&gt;Price range&lt;/label&gt;
+
+                                  &lt;!-- Area Charts --&gt;
+                                  &lt;div class="position-relative overflow-hidden mb-2" style="height: 80px;"&gt;
+                                    &lt;div class="js-area-chart position-absolute w-100"
+                                         data-height="80px"
+                                         data-high="1500"
+                                         data-low="0"
+                                         data-offset-x="0"
+                                         data-offset-y="0"
+                                         data-is-show-area="true"
+                                         data-is-show-line="false"
+                                         data-is-show-point="false"
+                                         data-is-full-width="true"
+
+                                         data-is-stack-bars="true"
+                                         data-is-show-axis-x="false"
+                                         data-is-show-axis-y="false"
+                                         data-is-show-tooltips="false"
+                                         data-fill-opacity="1"
+                                         data-fill-colors='["#e7eaf3"]'
+                                         data-stroke-color="#e7eaf3"
+                                         data-text-color-x="#77838f"
+                                         data-text-offset-top-x="0"
+
+                                         data-text-size-y=".75rem"
+                                         data-text-color-y="#77838f"
+                                         data-points-colors='["#e7eaf3"]'
+                                         data-series='[
+                                           [
+                                             {"value": 289},
+                                             {"value": 100},
+                                             {"value": 700},
+                                             {"value": 500},
+                                             {"value": 1500},
+                                             {"value": 200},
+                                             {"value": 855},
+                                             {"value": 321},
+                                             {"value": 75}
+                                           ]
+                                         ]'&gt;&lt;/div&gt;
+
+                                      &lt;div id="foregroundAreaChartDoubleResult" class="position-absolute h-100 overflow-hidden"&gt;
+                                        &lt;div class="js-area-chart position-absolute"
+                                             data-height="80px"
+                                             data-high="1500"
+                                             data-low="0"
+                                             data-offset-x="0"
+                                             data-offset-y="0"
+                                             data-is-show-area="true"
+                                             data-is-show-line="false"
+                                             data-is-show-point="false"
+                                             data-is-full-width="true"
+
+                                             data-is-stack-bars="true"
+                                             data-is-show-axis-x="false"
+                                             data-is-show-axis-y="false"
+                                             data-is-show-tooltips="false"
+                                             data-fill-opacity="1"
+                                             data-fill-colors='["#377dff"]'
+                                             data-stroke-color="#377dff"
+                                             data-text-color-x="#77838f"
+                                             data-text-offset-top-x="0"
+
+                                             data-text-size-y=".75rem"
+                                             data-text-color-y="#77838f"
+                                             data-points-colors='["#377dff"]'
+                                             data-series='[
+                                               [
+                                                 {"value": 289},
+                                                 {"value": 100},
+                                                 {"value": 700},
+                                                 {"value": 500},
+                                                 {"value": 1500},
+                                                 {"value": 200},
+                                                 {"value": 855},
+                                                 {"value": 321},
+                                                 {"value": 75}
+                                               ]
+                                             ]'&gt;&lt;/div&gt;
+                                      &lt;/div&gt;
+                                  &lt;/div&gt;
+                                  &lt;!-- End Area Charts --&gt;
+
+                                  &lt;!-- Range Slider --&gt;
+                                  &lt;input class="js-range-slider" type="text"
+                                         data-extra-classes="u-range-slider"
+                                         data-type="double"
+                                         data-foreground-target="#foregroundAreaChartDoubleResult"
+                                         data-min="0"
+                                         data-max="999000"
+                                         data-from="250000"
+                                         data-to="750000"
+                                         data-result-min="#rangeSliderExample7MinResult"
+                                         data-result-max="#rangeSliderExample7MaxResult"&gt;
+
+                                  &lt;div class="d-flex justify-content-between align-items-center mt-6"&gt;
+                                    &lt;div&gt;
+                                      &lt;span class="text-muted"&gt;Min price:&lt;/span&gt;
+                                      &lt;span id="rangeSliderExample7MinResult" class="text-muted"&gt;&lt;/span&gt;
+                                    &lt;/div&gt;
+                                    &lt;div&gt;
+                                      &lt;span class="text-muted"&gt;Max price:&lt;/span&gt;
+                                      &lt;span id="rangeSliderExample7MaxResult" class="text-muted"&gt;&lt;/span&gt;
+                                    &lt;/div&gt;
+                                  &lt;/div&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+
+                              &lt;div class="col-lg-5"&gt;
+                                &lt;div class="pl-lg-2"&gt;
+                                  &lt;label class="form-label mb-2"&gt;Status&lt;/label&gt;
+
+                                  &lt;!-- Button Group --&gt;
+                                  &lt;div class="btn-group btn-group-toggle d-flex mb-5" data-toggle="buttons"&gt;
+                                    &lt;label class="btn btn-sm btn-outline-secondary btn-custom-toggle-primary flex-fill active"&gt;
+                                      &lt;input type="radio" name="options" id="option1" checked&gt;
+                                      For sale
+                                    &lt;/label&gt;
+                                    &lt;label class="btn btn-sm btn-outline-secondary btn-custom-toggle-primary flex-fill"&gt;
+                                      &lt;input type="radio" name="options" id="option2"&gt;
+                                      For rent
+                                    &lt;/label&gt;
+                                  &lt;/div&gt;
+                                  &lt;!-- End Button Group --&gt;
+
+                                  &lt;!-- Rooms --&gt;
+                                  &lt;div class="row mx-gutters-2"&gt;
+                                    &lt;div class="col-6"&gt;
+                                      &lt;label class="form-label mb-2"&gt;Beds&lt;/label&gt;
+
+                                      &lt;!-- Select --&gt;
+                                      &lt;select class="js-select selectpicker dropdown-select"
+                                              data-size="10"
+                                              data-width="100%"
+                                              data-style="btn-soft-secondary btn-sm"&gt;
+                                        &lt;option value="bedValueAll" selected&gt;All&lt;/option&gt;
+                                        &lt;option value="bedValueMin1"&gt;1&lt;/option&gt;
+                                        &lt;option value="bedValueMin2"&gt;2&lt;/option&gt;
+                                        &lt;option value="bedValueMin3"&gt;3&lt;/option&gt;
+                                        &lt;option value="bedValueMin4"&gt;4&lt;/option&gt;
+                                        &lt;option value="bedValueMin5"&gt;5&lt;/option&gt;
+                                        &lt;option value="bedValueMin6"&gt;6&lt;/option&gt;
+                                        &lt;option value="bedValueMin7"&gt;7&lt;/option&gt;
+                                        &lt;option value="bedValueMin8"&gt;8&lt;/option&gt;
+                                        &lt;option value="bedValueMin9"&gt;9&lt;/option&gt;
+                                        &lt;option value="bedValueMin10"&gt;10&lt;/option&gt;
+                                      &lt;/select&gt;
+                                      &lt;!-- End Select --&gt;
+                                    &lt;/div&gt;
+
+                                    &lt;div class="col-6"&gt;
+                                      &lt;!-- Select --&gt;
+                                      &lt;label for="bathLabel" class="form-label mb-2"&gt;Baths&lt;/label&gt;
+
+                                      &lt;select id="bathLabel" class="js-select selectpicker dropdown-select"
+                                              data-size="10"
+                                              data-width="100%"
+                                              data-style="btn-soft-secondary btn-sm"&gt;
+                                        &lt;option value="bedValueAll" selected&gt;All&lt;/option&gt;
+                                        &lt;option value="bedValueMax1"&gt;1&lt;/option&gt;
+                                        &lt;option value="bedValueMax2"&gt;2&lt;/option&gt;
+                                        &lt;option value="bedValueMax3"&gt;3&lt;/option&gt;
+                                        &lt;option value="bedValueMax4"&gt;4&lt;/option&gt;
+                                        &lt;option value="bedValueMax5"&gt;5&lt;/option&gt;
+                                        &lt;option value="bedValueMax6"&gt;6&lt;/option&gt;
+                                        &lt;option value="bedValueMax7"&gt;7&lt;/option&gt;
+                                        &lt;option value="bedValueMax8"&gt;8&lt;/option&gt;
+                                        &lt;option value="bedValueMax9"&gt;9&lt;/option&gt;
+                                        &lt;option value="bedValueMax10"&gt;10&lt;/option&gt;
+                                      &lt;/select&gt;
+                                      &lt;!-- End Select --&gt;
+                                    &lt;/div&gt;
+                                  &lt;/div&gt;
+                                  &lt;!-- End Rooms --&gt;
+                                &lt;/div&gt;
+                              &lt;/div&gt;
+                            &lt;/div&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;!-- End Filter --&gt;
+                      &lt;/div&gt;
+
+                      &lt;div class="col-sm-auto"&gt;
+                        &lt;button type="submit" class="btn btn-sm btn-primary"&gt;Search&lt;/button&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- End Search Section --&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-css-23" role="tabpanel" aria-labelledby="pills-css-tab-23">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;link rel="stylesheet" href="../../assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css"&gt;
+                &lt;link rel="stylesheet" href="../../assets/vendor/ion-rangeslider/css/ion.rangeSlider.css"&gt;
+                &lt;link rel="stylesheet" href="../../assets/vendor/chartist/dist/chartist.min.css"&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="tab-pane fade" id="pills-js-23" role="tabpanel" aria-labelledby="pills-js-tab-23">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;!-- JS Implementing Plugins --&gt;
+                &lt;script src="../../assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"&gt;&lt;/script&gt;
+                &lt;script src="../../assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"&gt;&lt;/script&gt;
+                &lt;script src="../../assets/vendor/chartist/dist/chartist.min.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Front --&gt;
+                &lt;script src="../../assets/js/components/hs.unfold.js"&gt;&lt;/script&gt;
+                &lt;script src="../../assets/js/components/hs.selectpicker.js"&gt;&lt;/script&gt;
+                &lt;script src="../../assets/js/components/hs.range-slider.js"&gt;&lt;/script&gt;
+                &lt;script src="../../assets/js/components/hs.chartist-area-chart.js"&gt;&lt;/script&gt;
+
+                &lt;!-- JS Plugins Init. --&gt;
+                &lt;script&gt;
+                  // initialization of select picker
+                  $.HSCore.components.HSSelectPicker.init('.js-select');
+
+                  // initialization of unfold component
+                  $.HSCore.components.HSUnfold.init($('[data-unfold-target]:not(#filter3DropdownInvoker)'));
+
+                  $.HSCore.components.HSUnfold.init($('#filter3DropdownInvoker'), {
+                    afterOpen: function() {
+                      $.HSCore.components.HSRangeSlider.init('.js-range-slider');
+                      $.HSCore.components.HSChartistAreaChart.init('.js-area-chart');
+                    }
+                  });
+
+                  $(window).on('resize', function() {
+                    setTimeout(function() {
+                      $.HSCore.components.HSChartistAreaChart.init('.js-area-chart');
+                    }, 800);
+                  });
+                &lt;/script&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Tab Wrapper -->
+    </div>
+    <!-- End Component Block -->
+
+    <!-- Component Block -->
+    <div id="payment-calculator-1" class="mb-9">
+      <h2 class="h4 mb-4">Payment calculator #1 <a class="anchorjs-link" href="#payment-calculator-1" data-anchorjs-icon="#"></a></h2>
+
+      <!-- Tab Wrapper -->
+      <div class="tab-wrapper">
+        <!-- Nav Classic -->
+        <ul class="nav nav-classic" id="pills-tab-24" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-result-tab-24" data-toggle="pill" href="#pills-result-24" role="tab" aria-controls="pills-result-24" aria-selected="true">Result</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-html-tab-24" data-toggle="pill" href="#pills-html-24" role="tab" aria-controls="pills-html-24" aria-selected="false">HTML</a>
+          </li>
+        </ul>
+        <!-- End Nav Classic -->
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="pills-tabContent-24">
+          <div class="tab-pane p-4 fade show active" id="pills-result-24" role="tabpanel" aria-labelledby="pills-result-tab-24">
+            <div class="card bg-light p-5">
+              <!-- Total Price -->
+              <div class="mb-4">
+                <span class="h4 font-weight-medium">$37,469</span>
+                <span class="h6 font-weight-medium">monthly.</span>
+                <span class="h6 text-secondary font-weight-normal ml-3">In association with:</span>
+              </div>
+              <!-- End Total Price -->
+
+              <!-- Stats -->
+              <div class="row mb-2 mb-lg-0">
+                <div class="col-lg-7 mb-2 mb-lg-0">
+                  <!-- Calculator Form -->
+                  <form class="row">
+                    <div class="col-md-6 mb-4">
+                      <!-- Input -->
+                      <label class="form-label">Price of property</label>
+
+                      <div class="js-focus-state input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">$</span>
+                        </div>
+                        <input class="form-control" type="text" value="$8,999,000" disabled>
+                      </div>
+                      <!-- End Input -->
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                      <!-- Input -->
+                      <label class="form-label">Deposit</label>
+
+                      <div class="js-focus-state input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">$</span>
+                        </div>
+                        <input class="form-control" type="text" value="1,799,800">
+                      </div>
+                      <!-- End Input -->
+                    </div>
+
+                    <div class="w-100"></div>
+
+                    <div class="col-md-6 mb-4">
+                      <!-- Input -->
+                      <label class="form-label">Interest rate</label>
+
+                      <div class="js-focus-state input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">%</span>
+                        </div>
+                        <input class="form-control" type="text" value="3.5">
+                      </div>
+                      <!-- End Input -->
+                    </div>
+
+                    <div class="col-md-6 mb-4">
+                      <!-- Input -->
+                      <label class="form-label">Amortization</label>
+
+                      <select class="custom-select">
+                        <option value="amortization1">30 years</option>
+                        <option selected>25 years</option>
+                        <option value="amortization2">20 years</option>
+                        <option value="amortization3">15 years</option>
+                        <option value="amortization4">10 years</option>
+                      </select>
+                      <!-- End Input -->
+                    </div>
+                  </form>
+                  <!-- End Calculator Form -->
+                </div>
+
+                <div class="col-lg-5">
+                  <!-- Progress -->
+                  <div class="progress mb-3" style="height: .5rem;">
+                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 10%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <!-- End Progress -->
+
+                  <!-- Fact List -->
+                  <ul class="list-unstyled font-size-1 mb-0">
+                    <li class="d-flex align-items-center py-1">
+                      <small class="far fa-circle text-primary mr-2"></small>
+                      <span class="font-weight-medium">Principal and Interest</span>
+                      <div class="ml-auto">
+                        <span class="text-secondary">$35,943 /mo</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex align-items-center py-1">
+                      <small class="far fa-circle text-success mr-2"></small>
+                      <span class="font-weight-medium">Property Taxes</span>
+                      <div class="ml-auto">
+                        <span class="text-secondary">$1,526 /mo</span>
+                      </div>
+                    </li>
+
+                    <li class="d-flex align-items-center py-1">
+                      <small class="far fa-circle text-info mr-2"></small>
+                      <span class="font-weight-medium">Yearly Condo Fees</span>
+                      <div class="ml-auto">
+                        <span class="text-secondary">n/a</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- End Fact List -->
+                </div>
+              </div>
+              <!-- End Stats -->
+
+              <p class="small">* These results are not provided by Front House and are only indicative based on a repayment mortgage product. Repayments will be subject to the product provided and your circumstances.</p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-html-24" role="tabpanel" aria-labelledby="pills-html-tab-24">
+            <pre>
+              <code class="language-html" data-lang="html">
+                &lt;div class="card bg-light p-5"&gt;
+                  &lt;!-- Total Price --&gt;
+                  &lt;div class="mb-4"&gt;
+                    &lt;span class="h4 font-weight-medium"&gt;$37,469&lt;/span&gt;
+                    &lt;span class="h6 font-weight-medium"&gt;monthly.&lt;/span&gt;
+                    &lt;span class="h6 text-secondary font-weight-normal ml-3"&gt;In association with:&lt;/span&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Total Price --&gt;
+
+                  &lt;!-- Stats --&gt;
+                  &lt;div class="row mb-2 mb-lg-0"&gt;
+                    &lt;div class="col-lg-7 mb-2 mb-lg-0"&gt;
+                      &lt;!-- Calculator Form --&gt;
+                      &lt;form class="row"&gt;
+                        &lt;div class="col-md-6 mb-4"&gt;
+                          &lt;!-- Input --&gt;
+                          &lt;label class="form-label"&gt;Price of property&lt;/label&gt;
+
+                          &lt;div class="js-focus-state input-group"&gt;
+                            &lt;div class="input-group-prepend"&gt;
+                              &lt;span class="input-group-text"&gt;$&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;input class="form-control" type="text" value="$8,999,000" disabled&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Input --&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-md-6 mb-4"&gt;
+                          &lt;!-- Input --&gt;
+                          &lt;label class="form-label"&gt;Deposit&lt;/label&gt;
+
+                          &lt;div class="js-focus-state input-group"&gt;
+                            &lt;div class="input-group-prepend"&gt;
+                              &lt;span class="input-group-text"&gt;$&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;input class="form-control" type="text" value="1,799,800"&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Input --&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="w-100"&gt;&lt;/div&gt;
+
+                        &lt;div class="col-md-6 mb-4"&gt;
+                          &lt;!-- Input --&gt;
+                          &lt;label class="form-label"&gt;Interest rate&lt;/label&gt;
+
+                          &lt;div class="js-focus-state input-group"&gt;
+                            &lt;div class="input-group-prepend"&gt;
+                              &lt;span class="input-group-text"&gt;%&lt;/span&gt;
+                            &lt;/div&gt;
+                            &lt;input class="form-control" type="text" value="3.5"&gt;
+                          &lt;/div&gt;
+                          &lt;!-- End Input --&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="col-md-6 mb-4"&gt;
+                          &lt;!-- Input --&gt;
+                          &lt;label class="form-label"&gt;Amortization&lt;/label&gt;
+
+                          &lt;select class="custom-select"&gt;
+                            &lt;option value="amortization1"&gt;30 years&lt;/option&gt;
+                            &lt;option selected&gt;25 years&lt;/option&gt;
+                            &lt;option value="amortization2"&gt;20 years&lt;/option&gt;
+                            &lt;option value="amortization3"&gt;15 years&lt;/option&gt;
+                            &lt;option value="amortization4"&gt;10 years&lt;/option&gt;
+                          &lt;/select&gt;
+                          &lt;!-- End Input --&gt;
+                        &lt;/div&gt;
+                      &lt;/form&gt;
+                      &lt;!-- End Calculator Form --&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="col-lg-5"&gt;
+                      &lt;!-- Progress --&gt;
+                      &lt;div class="progress mb-3" style="height: .5rem;"&gt;
+                        &lt;div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+                        &lt;div class="progress-bar bg-success" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+                        &lt;div class="progress-bar bg-info" role="progressbar" style="width: 10%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"&gt;&lt;/div&gt;
+                      &lt;/div&gt;
+                      &lt;!-- End Progress --&gt;
+
+                      &lt;!-- Fact List --&gt;
+                      &lt;ul class="list-unstyled font-size-1 mb-0"&gt;
+                        &lt;li class="d-flex align-items-center py-1"&gt;
+                          &lt;small class="far fa-circle text-primary mr-2"&gt;&lt;/small&gt;
+                          &lt;span class="font-weight-medium"&gt;Principal and Interest&lt;/span&gt;
+                          &lt;div class="ml-auto"&gt;
+                            &lt;span class="text-secondary"&gt;$35,943 /mo&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="d-flex align-items-center py-1"&gt;
+                          &lt;small class="far fa-circle text-success mr-2"&gt;&lt;/small&gt;
+                          &lt;span class="font-weight-medium"&gt;Property Taxes&lt;/span&gt;
+                          &lt;div class="ml-auto"&gt;
+                            &lt;span class="text-secondary"&gt;$1,526 /mo&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+
+                        &lt;li class="d-flex align-items-center py-1"&gt;
+                          &lt;small class="far fa-circle text-info mr-2"&gt;&lt;/small&gt;
+                          &lt;span class="font-weight-medium"&gt;Yearly Condo Fees&lt;/span&gt;
+                          &lt;div class="ml-auto"&gt;
+                            &lt;span class="text-secondary"&gt;n/a&lt;/span&gt;
+                          &lt;/div&gt;
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+                      &lt;!-- End Fact List --&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;!-- End Stats --&gt;
+
+                  &lt;p class="small"&gt;* These results are not provided by Front House and are only indicative based on a repayment mortgage product. Repayments will be subject to the product provided and your circumstances.&lt;/p&gt;
+                &lt;/div&gt;
+              </code>
+            </pre>
+          </div>
+        </div>
+        <!-- End Tab Content -->
+      </div>
+      <!-- End Tab Wrapper -->
+    </div>
+    <!-- End Component Block -->
   </main>
   <!-- ========== END MAIN ========== -->
 
@@ -6070,6 +7515,9 @@
   <script src="../assets/vendor/flatpickr/dist/flatpickr.min.js"></script>
   <script src="../assets/vendor/clipboard/dist/clipboard.min.js"></script>
   <script src="../assets/vendor/pwstrength-bootstrap/dist/pwstrength-bootstrap.min.js"></script>
+  <script src="../assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+  <script src="../assets/vendor/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+  <script src="../assets/vendor/chartist/dist/chartist.min.js"></script>
   <script src="../documentation/assets/vendor/jquery-ui/jquery-ui.core.min.js"></script>
   <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
   <script src="../documentation/assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
@@ -6079,6 +7527,7 @@
   <!-- JS Front -->
   <script src="../assets/js/hs.core.js"></script>
   <script src="../assets/js/components/hs.header.js"></script>
+  <script src="../assets/js/components/hs.unfold.js"></script>
   <script src="../assets/js/components/hs.focus-state.js"></script>
   <script src="../assets/js/components/hs.go-to.js"></script>
   <script src="../assets/js/components/hs.malihu-scrollbar.js"></script>
@@ -6091,6 +7540,10 @@
   <script src="../assets/js/components/hs.clipboard.js"></script>
   <script src="../assets/js/components/hs.show-animation.js"></script>
   <script src="../assets/js/components/hs.password-strength.js"></script>
+  <script src="../assets/js/components/hs.selectpicker.js"></script>
+  <script src="../assets/js/components/hs.range-slider.js"></script>
+  <script src="../assets/js/components/hs.chartist-area-chart.js"></script>
+  <script src="../assets/js/components/hs.file-attach.js"></script>
   <script src="../documentation/assets/js/components/hs.autocomplete-local-search.js"></script>
 
   <!-- JS Plugins Init. -->
@@ -6139,6 +7592,28 @@
 
       // initialization of password strength module
       $.HSCore.components.HSPasswordStrength.init('#newPassword');
+
+      // initialization of select picker
+      $.HSCore.components.HSSelectPicker.init('.js-select');
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]:not(#filter3DropdownInvoker)'));
+
+      $.HSCore.components.HSUnfold.init($('#filter3DropdownInvoker'), {
+        afterOpen: function() {
+          $.HSCore.components.HSRangeSlider.init('.js-range-slider');
+          $.HSCore.components.HSChartistAreaChart.init('.js-area-chart');
+        }
+      });
+
+      // initialization of file attach module
+      $.HSCore.components.HSFileAttach.init('.js-custom-file-attach');
+    });
+
+    $(window).on('resize', function() {
+      setTimeout(function() {
+        $.HSCore.components.HSChartistAreaChart.init('.js-area-chart');
+      }, 800);
     });
 
     $(window).on('load', function () {

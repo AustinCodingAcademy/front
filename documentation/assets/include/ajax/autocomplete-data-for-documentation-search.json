@@ -153,6 +153,10 @@
     "url": "plugins/fancybox.html"
   },{
     "category": "Plugins",
+    "label": "File attach",
+    "url": "plugins/file-attach.html"
+  },{
+    "category": "Plugins",
     "label": "Flatpickr",
     "url": "plugins/flatpickr.html"
   },{
@@ -1838,6 +1842,26 @@
     "section": "FancyBox",
     "label": "FancyBox - Methods",
     "url": "plugins/fancybox.html#methods"
+  },{
+    "category": "Plugins",
+    "section": "File attach",
+    "label": "File attach - How to use",
+    "url": "plugins/file-attach.html#how-to-use"
+  },{
+    "category": "Plugins",
+    "section": "File attach",
+    "label": "File attach - Basic example",
+    "url": "plugins/file-attach.html#basic-example"
+  },{
+    "category": "Plugins",
+    "section": "File attach",
+    "label": "File attach - JavaScript behavior",
+    "url": "plugins/file-attach.html#js-behavior"
+  },{
+    "category": "Plugins",
+    "section": "File attach",
+    "label": "File attach - Methods",
+    "url": "plugins/file-attach.html#methods"
   },{
     "category": "Plugins",
     "section": "Flatpickr",

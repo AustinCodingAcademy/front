@@ -122,3 +122,13 @@
     }
   }
 }
+
+// Large Devices
+@include media-breakpoint-up(lg) {
+  .dropdown-menu {
+    &-lg-right {
+      right: 0;
+      left: auto !important;
+    }
+  }
+}
